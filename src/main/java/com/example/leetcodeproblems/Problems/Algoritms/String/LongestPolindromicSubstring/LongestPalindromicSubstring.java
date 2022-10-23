@@ -1,4 +1,4 @@
-package com.example.leetcodeproblems.Problems.Algoritms.String;
+package com.example.leetcodeproblems.Problems.Algoritms.String.LongestPolindromicSubstring;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
