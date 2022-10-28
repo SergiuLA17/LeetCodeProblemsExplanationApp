@@ -1,4 +1,4 @@
-package com.example.leetcodeproblems.Interview.OOP.Modificators.Exemple.Pack1;
+package com.example.leetcodeproblems.Interview.OOP.Incapsularea.Modificators.Exemples.Pack1;
 
 public class Clasa1 {
     public int x_is_public;
