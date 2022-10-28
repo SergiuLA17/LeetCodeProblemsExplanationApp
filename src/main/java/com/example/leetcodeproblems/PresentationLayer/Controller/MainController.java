@@ -17,6 +17,14 @@ public class MainController {
         return "greeting";
     }
 
+    @GetMapping("/classes")
+    public String classes() {
+        service.classes();
+        return "greeting";
+    }
+
+
+
 
 
 
