@@ -1,6 +1,4 @@
-package com.example.leetcodeproblems.Interview.OOP.Modificators.Exemple.Pack1;
-
-import com.example.leetcodeproblems.Interview.OOP.Modificators.Exemple.Pack2.Clasa2;
+package com.example.leetcodeproblems.Interview.OOP.Incapsularea.Modificators.Exemples.Pack1;
 
 public class Class4 {
     public static void main(String[] args) {

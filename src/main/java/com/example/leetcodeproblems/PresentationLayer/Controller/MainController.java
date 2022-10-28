@@ -1,22 +1,23 @@
 package com.example.leetcodeproblems.PresentationLayer.Controller;
 
+import com.example.leetcodeproblems.Interview.OOP.StudyService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
 
+@RestController
 public class MainController {
+    @Autowired
+    StudyService service;
 
-    @GetMapping("/greeting")
-    public String greetingForm(Model model) {
-        model.addAttribute("greeting");
+    @GetMapping("/encapsulation")
+    public String greetingForm() {
+        service.encapsulation();
         return "greeting";
     }
 
-    @PostMapping("/greeting")
-    public String greetingSubmit(@ModelAttribute  Model model) {
-        model.addAttribute("greeting");
-        return "result";
-    }
+
+
 
 }

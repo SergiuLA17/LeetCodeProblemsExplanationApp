@@ -1,18 +1,24 @@
-package com.example.leetcodeproblems.Interview.OOP.Modificators;
+package com.example.leetcodeproblems.Interview.OOP.Incapsularea.Modificators.Exemples;
+//incapsularea in java
+//este izolarea unor date de la user de care el nu are nevoie
 
-public class Main {
-    public static void main(String[] args) {
-        Modificators modificators = new Modificators();
-        modificators.printInfoAboutModificators();
-        modificators.printInfoAboutSetterAndGetter();
+import org.springframework.stereotype.Service;
 
+@Service
+public class ModificatorExemple {
+    protected int x;
+
+    public ModificatorExemple() {
+    }
+
+    public static void explanation(){
         String explanation = """
                 ---------------------------------------------
-                Avem 2 clase in 2 pachete diferite
+                Explanation:
                 Clasa Class1 este in pachetul Pack1
                 Clasa Class2 este in pachetul Pack2
-                Clasa Class3 este in pachetul Pack1
-                Clasa Clasa4 este in pachetul Pack2                                
+                Clasa Class3 este in pachetul Pack1, Classa2 mosteneste clasa Class1
+                Clasa Clasa4 este in pachetul Pack1                                
                 ---------------------------------------------
                 Vizibilitatea variabilelor din Clasa Class1 in alte clase:
                                    
