@@ -10,7 +10,7 @@ public class NumberOf1Its {
         //folosim o variabila
         //in care se va stoca
         //de cate ori operatia n & 1
-        //vareturna 1
+        //va returna 1
         //exemplu
         int ones = 0;
         while(n!=0) {
