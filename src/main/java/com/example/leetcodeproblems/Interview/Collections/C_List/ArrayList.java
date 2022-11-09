@@ -4,7 +4,7 @@ package com.example.leetcodeproblems.Interview.Collections.C_List;
 import org.springframework.stereotype.Component;
 
 @Component
-public class ArrayList {
+public class ArrayList<H> {
     public void theory(){
         String theory = """
                 ArrayList este clasa care extinde clasa AbstractList.

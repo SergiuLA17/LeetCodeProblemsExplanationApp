@@ -3,15 +3,14 @@ package com.example.leetcodeproblems.Interview.Collections.D_Set;
 public class Set {
     public void setTheory(){
         String setTheory  = """
-                -Set mosteneste Collection
+                -Set mosteneste interfata Collection
+                -set nu adauga metode noi ci le supracrie din interfata Collection, de ex. metoda add(),
+                 cara adauga elemetul si returneaza true daca elementul nu exista deja in set
+                 
                 -Set este o colectie de elemente care nu sunt ordonate si nu sunt indexate.
-                -Set nu permite duplicate.
-                -metoda add() este supra
+                -Set nu permite duplicate.         
                 -In set nu putem accesa un element prin index, deoarece nu sunt indexate.
-                -Set sunt de tipul HashSet, LinkedHashSet si TreeSet.
-                -HashSet este cel mai rapid, dar nu este ordonat.
-                -LinkedHashSet este ordonat, dar nu este cel mai rapid.
-                -TreeSet este ordonat si este cel mai lent.
+                -Set este implementat in  clasa HashSet, TreeSet si LinkedHashSet.
                 """;
     }
 

@@ -15,6 +15,14 @@ public class CollectionService {
     @Autowired
     private Iterable interfaceIterable;
 
+    public void collection(){
+        String theory = """
+                Colectia este un conteiner pentre a stoca si manipula grupuri de obiecte.
+                Avantajul colectiilor in Java este ca programistul nu este nevoit sa implementeze anumite metode
+                pentru a manipula colectiile, ci poate folosi metodele deja implementate in colectii.
+                """;
+    }
+
     public void interfaceList() {
         interfaceList.interfaceList();
         interfaceList.arrayList();
