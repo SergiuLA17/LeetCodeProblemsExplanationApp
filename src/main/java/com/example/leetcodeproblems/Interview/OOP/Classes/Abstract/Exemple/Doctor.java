@@ -1,4 +1,4 @@
-package com.example.leetcodeproblems.Interview.Classes.Abstract.Exemple;
+package com.example.leetcodeproblems.Interview.OOP.Classes.Abstract.Exemple;
 
 public class Doctor extends Human {
     public Doctor(String name, String age) {

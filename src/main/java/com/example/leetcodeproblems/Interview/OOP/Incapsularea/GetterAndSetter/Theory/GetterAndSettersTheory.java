@@ -32,6 +32,7 @@ public class GetterAndSettersTheory {
                     this este un keyword care se foloseste pentru a face referire la obiectul curent.
                     this este folosit pentru a face referire la variabilele de instanta.
                     this este folosit pentru a face referire la metodele de instanta.
+                    nu putem atribui la this valoarea null.
                 """;
         System.out.println(setterOptions);
         System.out.println(thisKeyword);
@@ -42,6 +43,9 @@ public class GetterAndSettersTheory {
     public void theory() {
         System.out.println("======================================================");
         System.out.println("                    Informatie despre Setter si Getter");
+        System.out.println("Cea mai buna logica in settere su gettere este de a pune anumite restrictii in" +
+                "scrierea codului, adica daca noi scrim un cod in grup, prin settere si gettere noi spunem," +
+                "ca variabilele date nu sunt pentru folosire publica.");
         setX(10);
         getX();
     }

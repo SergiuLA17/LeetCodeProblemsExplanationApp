@@ -1,4 +1,4 @@
-package com.example.leetcodeproblems.Interview.Collections.D_Set;
+package com.example.leetcodeproblems.Interview.OOP.Collections.D_Set;
 
 public class Set {
     public void setTheory(){

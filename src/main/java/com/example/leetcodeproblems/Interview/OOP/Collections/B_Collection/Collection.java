@@ -1,4 +1,4 @@
-package com.example.leetcodeproblems.Interview.Collections.B_Collection;
+package com.example.leetcodeproblems.Interview.OOP.Collections.B_Collection;
 
 import org.springframework.stereotype.Component;
 

@@ -1,4 +1,4 @@
-package com.example.leetcodeproblems.Interview.Classes.Abstract.Theory;
+package com.example.leetcodeproblems.Interview.OOP.Classes.Abstract.Theory;
 
 public class AbstractClass {
     public static void theory(){

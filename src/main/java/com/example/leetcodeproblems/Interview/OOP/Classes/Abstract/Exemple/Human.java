@@ -1,4 +1,4 @@
-package com.example.leetcodeproblems.Interview.Classes.Abstract.Exemple;
+package com.example.leetcodeproblems.Interview.OOP.Classes.Abstract.Exemple;
 
 import java.util.Random;
 

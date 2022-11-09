@@ -1,4 +1,4 @@
-package com.example.leetcodeproblems.Interview.Collections.C_List;
+package com.example.leetcodeproblems.Interview.OOP.Collections.C_List;
 
 import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;

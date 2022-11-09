@@ -1,4 +1,4 @@
-package com.example.leetcodeproblems.Interview.Collections.A_Iterable;
+package com.example.leetcodeproblems.Interview.OOP.Collections.A_Iterable;
 
 import org.springframework.stereotype.Component;
 

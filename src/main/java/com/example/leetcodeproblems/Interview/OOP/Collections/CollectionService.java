@@ -1,8 +1,8 @@
-package com.example.leetcodeproblems.Interview.Collections;
+package com.example.leetcodeproblems.Interview.OOP.Collections;
 
-import com.example.leetcodeproblems.Interview.Collections.A_Iterable.Iterable;
-import com.example.leetcodeproblems.Interview.Collections.B_Collection.Collection;
-import com.example.leetcodeproblems.Interview.Collections.C_List.InterfaceListService;
+import com.example.leetcodeproblems.Interview.OOP.Collections.A_Iterable.Iterable;
+import com.example.leetcodeproblems.Interview.OOP.Collections.B_Collection.Collection;
+import com.example.leetcodeproblems.Interview.OOP.Collections.C_List.InterfaceListService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
