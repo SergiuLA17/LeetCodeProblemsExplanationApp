@@ -13,20 +13,9 @@ public class MainController {
     @GetMapping("/encapsulation")
     public String greetingForm() {
         service.encapsulation();
-        return "greeting";
+        return "questions";
     }
 
-    @GetMapping("/classes")
-    public String classes() {
-        service.classes();
-        return "greeting";
-    }
-
-    @GetMapping("/collection")
-    public String collection() {
-        service.collection();
-        return "greeting";
-    }
 
 
 
