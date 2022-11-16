@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        button {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #666666;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 15px;
+            padding: 10px;
+            width: 100px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 120px;background: #222;}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 120px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    </style>
+</head>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <!-- Avatar image in top left corner -->
+    <a href="../../index.html">
+        <img src="https://icon-library.com/images/icon-java/icon-java-13.jpg" style="width:100%">
+    </a>
+</nav>
+
+
+<div class="w3-padding-large">
+    <h2 align="center" class="w3-text-light-grey">Incapsularea</h2>
+    <hr style="width:max" class="w3-opacity">
+    <div class="w3-container w3-text-light-grey">
+        <p>Idea Incapsularii este -  noi unim datele si metodele de lucru cu ele intr-un obiect.
+            Incapsularea permite schimbarea codului fara a afecta alte parti ale programului.
+            De exemplu, daca vrem sa schimbam numele unei variabile, nu trebuie sa cautam prin tot programul unde este folosita aceasta variabila.
+            De si codul poate lucra si fara idea incapsularii.
+            Nu este recomandat de anu nu o folosi, mai ales cand scrim in grup, deoarece fiecare poate sa faca modificari in codul celuilalt si se va primi un chaos.
+        </p>
+    </div>
+</div>
+<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <button style="position: left;" class="button" onclick="history.go(-1)" ><span>Back</span></button>
+    <p>Learn Java</p>
+    <a href="https://wakatime.com/@1c67ce54-d05a-440d-87af-38b7397cfd18"><img src="https://wakatime.com/badge/user/1c67ce54-d05a-440d-87af-38b7397cfd18.svg" alt="Total time coded since Oct 13 2022" /></a>
+</footer>
+
+</body>
+</html>
