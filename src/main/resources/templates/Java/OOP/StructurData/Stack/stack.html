@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        .button {
+        button {
             display: inline-block;
             border-radius: 4px;
             background-color: #666666;
@@ -31,7 +31,6 @@
         }
 
         .button span:after {
-
             content: '\00bb';
             position: absolute;
             opacity: 0;
@@ -48,34 +47,49 @@
             opacity: 1;
             right: 0;
         }
-        body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-        .w3-row-padding img {margin-bottom: 12px}
-        /* Set the width of the sidebar to 120px */
-        .w3-sidebar {width: 120px;background: #222;}
-        /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-        #main {margin-left: 120px}
-        /* Remove margins from "page content" on small screens */
-        @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 120px;background: #222;}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 120px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
     </style>
 </head>
 <body class="w3-black">
 
-
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
     <!-- Avatar image in top left corner -->
-    <a href="../../../index.html">
-        <img src="https://icon-library.com/images/icon-java/icon-java-13.jpg" style="width:100%" alt="">
+    <a href="../../../../index.html">
+        <img src="https://icon-library.com/images/icon-java/icon-java-13.jpg" style="width:100%" alt="ToPrincipalPage">
     </a>
 </nav>
-<div class="w3-content w3-justify w3-text-grey w3-padding-64">
-    <h2 class="w3-text-light-grey">Primitive</h2>
-    <hr style="width:100px" class="w3-opacity">
-    <button style="position: left;" class="button" onclick="history.go(-1)" ><span>Back</span></button>
-</div>
 
 <div class="w3-padding-large" id="main">
+    <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+        <h1 class="w3-jumbo"> Stack </h1>
+    </header>
 
-    <footer style="position: fixed; bottom: 0; width: 100%;" class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64">
+        <hr style="width:200px" class="w3-opacity">
+        <h6>
+            Stack este o structura de date care salveaza elemente si procesa elemente similare sau legate logic.
+            Este o stocare de date pe care le vom folosi in algoritmi.
+            Cu alte cuvinte, este o colectie de elemente care urmeaza principiul LIFO (Last In First Out).
+            In cazul in care se adauga un element nou, acesta va fi adaugat la sfarsitul listei.
+            In Java exista o clasa care se numeste Stack, care implementeaza aceasta structura de date.
+
+        </h6>
+        <hr style="width:100px" class="w3-opacity">
+    </div>
+
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64">
+        <button style="position: left;" class="button" onclick="history.go(-1)" ><span>Back</span></button>
+    </div>
+
+    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
         <p>Learn Java</p>
         <a href="https://wakatime.com/@1c67ce54-d05a-440d-87af-38b7397cfd18"><img src="https://wakatime.com/badge/user/1c67ce54-d05a-440d-87af-38b7397cfd18.svg" alt="Total time coded since Oct 13 2022" /></a>
     </footer>

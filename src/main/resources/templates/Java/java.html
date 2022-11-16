@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
 
 .button {
@@ -67,35 +66,44 @@
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
     <!-- Avatar image in top left corner -->
     <a href="../index.html">
-        <img src="https://icon-library.com/images/icon-java/icon-java-13.jpg" style="width:100%">
-    </a>
-    <a href="GeneralInfo/general.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <i class="fa fa-search w3-xxlarge"></i>
-        <p>General Info</p>
-    </a>
-    <a href="DataStructure.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <i class="fa fa-bars w3-xxlarge"></i>
-        <p>Data Structure</p>
+        <img src="https://icon-library.com/images/icon-java/icon-java-13.jpg" style="width:100%" alt="Java">
     </a>
     <a href="Variabile/variabiles.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
         <i class="fa fa-home w3-xxlarge"></i>
         <p>Variabiles</p>
     </a>
 </nav>
-<div class="w3-content w3-justify w3-text-grey w3-padding-64">
-    <h2 class="w3-text-light-grey">Java</h2>
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">General info</h2>
     <hr style="width:100px" class="w3-opacity">
-    <a href="../index.html">
-        <button style="position: left;" class="button" ><span>Back</span></button>
-    </a>
+    <div id="1question">
+        <h1>Java ca crossplatforma</h1>
+        <h> Java se porneste pe Java Virtual Machine. Noi scriem cod, care este transformat
+            in bite cod. Realizara JMV este aproape pe toate sitemele de operare. Si Java scrisa o data poate fi
+            folosita pe orce dispozititv. << Sloganul limbajului.</h>ere
+    </div>
+    <hr style="width:100px" class="w3-opacity">
+    <div id="2question">
+        <h1>Nu este 100% bazata OOP</h1>
+        <h> Are date <a href="index.html">primitive</a> care nu sunt obiecte si se salveaza in
+            <a href="index.html">stack-e</a> si nu este nevoie de a le scaotem. Sunt bune pentru optimizare.
+            Dar si ele au clase care prezinta adaptarea acestor primitive la obiecte,
+            ele sunt numite wrapper class, aceste clase sunt create pentru ca in collectii nu este posibilitatea de a lucra cu primitive.
+            Si aceste wrapper classe le inlocueste.
+        </h>
+    </div>
+
 </div>
 
-<div class="w3-padding-large" id="main">
+<div class="w3-content w3-justify w3-text-grey w3-padding-64">
+    <hr style="width:100px" class="w3-opacity">
+    <button style="position: left;" class="button" onclick="history.go(-1)" ><span>Back</span></button>
+</div>
+<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <p>Learn Java</p>
+    <a href="https://wakatime.com/@1c67ce54-d05a-440d-87af-38b7397cfd18"><img src="https://wakatime.com/badge/user/1c67ce54-d05a-440d-87af-38b7397cfd18.svg" alt="Total time coded since Oct 13 2022" /></a>
 
-    <footer style="position: fixed; bottom: 0; width: 100%;" class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-        <p>Learn Java</p>
-    </footer>
-
+</footer>
 </div>
 
 </body>

@@ -9,7 +9,7 @@ public class StackT {
                 Pentru manipularea cu stack sunt 2 metode:
                 1)Pop - scoaterea datelor
                 2)Push - introducrea datelor. Cand se foloseste metoda pop() se face controlul daca marimea stackului
-                nu depaseste dcat cea curenta,             
+                nu depaseste dcat cea curenta, daca depaseste, atunci se mareste lungimea.             
                 """;
     }
 
