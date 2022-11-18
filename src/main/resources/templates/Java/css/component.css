@@ -1,14 +1,13 @@
 .cbp-hrmenu {
-	width: 444;
+	width: auto;
 	margin-top: -5em;
 	border-bottom: 4px solid #6C656E;
 }
 
-/* general ul style */
-.cbp-hrmenu ul {
-	margin: ;
-	padding: 0;
-	list-style-type: none;
+
+.whiteTextOverride
+{
+    color: #afdefa !important;
 }
 
 /* first level ul style */
@@ -33,9 +32,6 @@
 	display: inline-block;
 }
 
-.cbp-hrmenu > ul > li > a:hover {
-	color: #47a3d;
-}
 
 .cbp-hrmenu > ul > li.cbp-hropen a,
 .cbp-hrmenu > ul > li.cbp-hropen > a:hover {
@@ -217,8 +213,7 @@ abbr[title],
 abbr[data-original-title] {
   text-decoration: underline;
   -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
-  cursor: help;
+    cursor: help;
   border-bottom: 0;
   text-decoration-skip-ink: none; }
 
@@ -329,9 +324,6 @@ label {
 button {
   border-radius: 0; }
 
-button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color; }
 
 input,
 button,
@@ -1873,7 +1865,6 @@ textarea.form-control {
   margin-bottom: 0; }
 
 .form-check-inline {
-  display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
@@ -2862,7 +2853,6 @@ input[type="button"].btn-block {
 .btn-group,
 .btn-group-vertical {
   position: relative;
-  display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   vertical-align: middle; }
@@ -3134,7 +3124,6 @@ input[type="button"].btn-block {
   padding-left: 1.5rem; }
 
 .custom-control-inline {
-  display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin-right: 1rem; }
@@ -4023,8 +4012,8 @@ input[type="button"].btn-block {
         display: -ms-flexbox;
         display: flex;
         -webkit-box-flex: 1;
-        -ms-flex: 1 0 0%;
-        flex: 1 0 0%;
+        -ms-flex: 1 0 0;
+        flex: 1 0 0;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -5678,7 +5667,6 @@ button.bg-dark:focus {
   display: flex !important; }
 
 .d-inline-flex {
-  display: -webkit-inline-box !important;
   display: -ms-inline-flexbox !important;
   display: inline-flex !important; }
 
@@ -5702,7 +5690,6 @@ button.bg-dark:focus {
     display: -ms-flexbox !important;
     display: flex !important; }
   .d-sm-inline-flex {
-    display: -webkit-inline-box !important;
     display: -ms-inline-flexbox !important;
     display: inline-flex !important; } }
 
@@ -5726,7 +5713,6 @@ button.bg-dark:focus {
     display: -ms-flexbox !important;
     display: flex !important; }
   .d-md-inline-flex {
-    display: -webkit-inline-box !important;
     display: -ms-inline-flexbox !important;
     display: inline-flex !important; } }
 
@@ -5750,7 +5736,6 @@ button.bg-dark:focus {
     display: -ms-flexbox !important;
     display: flex !important; }
   .d-lg-inline-flex {
-    display: -webkit-inline-box !important;
     display: -ms-inline-flexbox !important;
     display: inline-flex !important; } }
 
@@ -5774,7 +5759,6 @@ button.bg-dark:focus {
     display: -ms-flexbox !important;
     display: flex !important; }
   .d-xl-inline-flex {
-    display: -webkit-inline-box !important;
     display: -ms-inline-flexbox !important;
     display: inline-flex !important; } }
 
@@ -5798,7 +5782,6 @@ button.bg-dark:focus {
     display: -ms-flexbox !important;
     display: flex !important; }
   .d-print-inline-flex {
-    display: -webkit-inline-box !important;
     display: -ms-inline-flexbox !important;
     display: inline-flex !important; } }
 
@@ -5970,7 +5953,6 @@ button.bg-dark:focus {
 
 .align-self-auto {
   -ms-flex-item-align: auto !important;
-  -ms-grid-row-align: auto !important;
   align-self: auto !important; }
 
 .align-self-start {
@@ -6102,7 +6084,7 @@ button.bg-dark:focus {
     align-content: stretch !important; }
   .align-self-sm-auto {
     -ms-flex-item-align: auto !important;
-    -ms-grid-row-align: auto !important;
+
     align-self: auto !important; }
   .align-self-sm-start {
     -ms-flex-item-align: start !important;
@@ -6229,7 +6211,6 @@ button.bg-dark:focus {
     align-content: stretch !important; }
   .align-self-md-auto {
     -ms-flex-item-align: auto !important;
-    -ms-grid-row-align: auto !important;
     align-self: auto !important; }
   .align-self-md-start {
     -ms-flex-item-align: start !important;
@@ -6356,7 +6337,6 @@ button.bg-dark:focus {
     align-content: stretch !important; }
   .align-self-lg-auto {
     -ms-flex-item-align: auto !important;
-    -ms-grid-row-align: auto !important;
     align-self: auto !important; }
   .align-self-lg-start {
     -ms-flex-item-align: start !important;
@@ -6483,7 +6463,6 @@ button.bg-dark:focus {
     align-content: stretch !important; }
   .align-self-xl-auto {
     -ms-flex-item-align: auto !important;
-    -ms-grid-row-align: auto !important;
     align-self: auto !important; }
   .align-self-xl-start {
     -ms-flex-item-align: start !important;
@@ -8188,7 +8167,6 @@ a.text-dark:hover, a.text-dark:focus {
   color: rgba(255, 255, 255, 0.5) !important; }
 
 .text-hide {
-  font: 0/0 a;
   color: transparent;
   text-shadow: none;
   background-color: transparent;
@@ -8299,7 +8277,7 @@ h1, h2, h3, h4, h5,
   background: #f39422 !important; }
 
 .ftco-section {
-  padding: 4em 0; }
+  padding: 1em 0; }
 
 .ftco-no-pt {
   padding-top: 0; }
@@ -8322,7 +8300,7 @@ h1, h2, h3, h4, h5,
   background: transparent;
   color: rgba(255, 255, 255, 0.8) !important;
   font-size: 14px;
-  border-radius: 0px;
+  border-radius: 0;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
   border: 1px solid rgba(255, 255, 255, 0.2); }
@@ -8349,9 +8327,9 @@ textarea.form-control {
   width: 100%;
   overflow: hidden;
   border-radius: 10px;
-  -webkit-box-shadow: 0px 21px 41px -13px rgba(0, 0, 0, 0.18);
-  -moz-box-shadow: 0px 21px 41px -13px rgba(0, 0, 0, 0.18);
-  box-shadow: 0px 21px 41px -13px rgba(0, 0, 0, 0.18); }
+  -webkit-box-shadow: 0 21px 41px -13px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0 21px 41px -13px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 21px 41px -13px rgba(0, 0, 0, 0.18); }
 
 .contact-wrap {
   background: #272a34; }
