@@ -30,7 +30,6 @@ public class AddTextToFile {
         addTextToFile.moveFiles();
         System.out.println("Replace text");
 //        addTextToFile.multiReplaceString(indexStart,indexStop,replaceLines);
-        addTextToFile.replaceString(60,"<li><a href=\"structurDataStack.html\">Stack</a></li>"); //line number -1
  //       addTextToFile.addLine(60,"<li><a ></li>"); //line number -1
         System.out.println("Move files to java folder");
         addTextToFile.moveBackFiles();

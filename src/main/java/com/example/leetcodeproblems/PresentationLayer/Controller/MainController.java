@@ -12,7 +12,9 @@ public class MainController {
 
     @GetMapping("/encapsulation")
     public String greetingForm() {
-        service.encapsulation();
+
+
+
         return "questions";
     }
 
