@@ -68,6 +68,7 @@ public class Templates {
                                                         <h4><a href="OOPGeneralInfo.html"><h3 class="whiteTextOverride">Date generale</h3></a>
                                                         </h4>
                                                     </div>
+                                                  
                                                     <div>
                                                         <h4>Data Structure</h4>
                                                         <ul>
@@ -78,6 +79,12 @@ public class Templates {
                                                     </div>
                                                     <div>
                                                         <h4><a href="OOPincapsulare.html"><h3 class="whiteTextOverride">Incapsulare</h3></a></h4>
+                                                    </div>
+                                                    <div>
+                                                           <h4><a href="OOPMostenire.html"><h3 class="whiteTextOverride">Mostenire</h3></a></h4>
+                                                           <ul>
+                                                               <li><a href="OOPMostenireInterface.html">Interface</a></li>
+                                                           </ul>
                                                     </div>
                                                 </div><!-- /cbp-hrsub-inner -->
                                             </div><!-- /cbp-hrsub -->

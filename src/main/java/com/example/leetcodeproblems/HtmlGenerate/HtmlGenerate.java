@@ -4,6 +4,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+
 public class HtmlGenerate {
     public static void taskDetailsView(String component, String name) throws IOException {
         File f = new File("src/main/resources/templates/Java/" + name);
@@ -796,6 +797,31 @@ public class HtmlGenerate {
         taskDetailsView(referinta, "clasVariabileReferinta.html");
     }
 
+    public static void generateOOPMostenire() throws IOException {
+        String mostenire = """
+                    <section class="ftco-section">
+                                     <div class="container">
+                                         <div class="row justify-content-center">
+                                              <div class="col-md-6 text-center mb-5">
+                                                       <h2 id="stack" class="heading-section">Stack</h2>
+                                                           
+                                                     <div class="row justify-content-center">
+                                               <div class="col-lg-10">
+                                           <div class="wrapper">
+                                         <div class="row no-gutters">
+                                      <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                                      <p>mostenire</p>
+                                   </div>
+                                 </div>
+                               </div>
+                           </div>
+                      </div>
+                    </div>
+                </section>
+                    """;
+        taskDetailsView(mostenire, "OOPMostenire.html");
+    }
+
     public static void generateCuvantCheieStatic() throws IOException {
         String cuvantStatic = """
                 <section class="ftco-section">
@@ -823,6 +849,165 @@ public class HtmlGenerate {
         taskDetailsView(cuvantStatic, "javaCuvantCheieStatic.html");
     }
 
+    public static void generateOOPMostenireInterface() throws IOException {
+        String interfaceInfo = """
+                <section class="ftco-section">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 text-center mb-5">
+                                <h2 id="interface" class="heading-section">Interface</h2>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="wrapper">
+                                    <div class="row no-gutters">
+                                        <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                                            <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                                                <p>Interfața are scop de care lega 2 obiecte care interacționează între ele. </p>
+                                                <p>Interfața a fost creata pentru a rezolva problema mostenirii multipla. </p>
+                                                <p>Interfața nu poate avea constructori. </p>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="ftco-section">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 text-center mb-5">
+                                <h2 class="heading-section">Exemplu</h2>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="wrapper">
+                                    <div class="row no-gutters">
+                                        <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                                            <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                                                Modelam o situație.
+                                                Avem o familie, mama, tata și copil.
+                                                Mama si tata au cate ceva, ce copilul ar dori sa moștenească, în cazul dat culoarea
+                                                parului al tatălui si culoarea ochilor al mamei.
+                                                Realizarea doar cu clase nu este posibilă, deoarece moștenirea multiplă nu este permisă
+                                                în Java.
+                                                <div><img width="230" height="100" src="../../../../photo/interface/1.png"
+                                                          alt="inheritance">
+                                                    <img width="230" height="100" src="../../../../photo/interface/2.png"
+                                                         alt="inheritance">
+                                                    <img width="230" height="100" src="../../../../photo/interface/3.png"
+                                                         alt="inheritance">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="ftco-section">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 text-center mb-5">
+                                <h2 class="heading-section">Exemplu</h2>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="wrapper">
+                                    <div class="row no-gutters">
+                                        <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                                            <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                                                Pentru a rezolva problema data, au fost create interfețele.
+                                                Vom crea 2 interfecte, una pentru culoarea parului și una pentru culoarea ochilor.
+                                                Și vom crea în ele câte o metodă default, unde vom scri ce culoare are părul si ce culoare al părinților.
+                                                Și le vom implementa în clasele copi.
+                                                <div><img width="230" height="100" src="../../../../photo/interface/4.png"
+                                                          alt="inheritance">
+                                                    <img width="230" height="100" src="../../../../photo/interface/5.png"
+                                                         alt="inheritance">
+                                                    <img width="230" height="100" src="../../../../photo/interface/6.png"
+                                                         alt="inheritance">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>         
+                """;
+        taskDetailsView(interfaceInfo, "OOPMostenireInterface.html");
+    }
+
+    public static void generateOOPMostenireAbstract() throws IOException {
+        String abstractInfo = """
+                <section class="ftco-section">
+                          <div class="container">
+                              <div class="row justify-content-center">
+                                  <div class="col-md-6 text-center mb-5">
+                                      <h2 class="heading-section">Exemplu</h2>
+                                  </div>
+                              </div>
+                              <div class="row justify-content-center">
+                                  <div class="col-lg-10">
+                                      <div class="wrapper">
+                                          <div class="row no-gutters">
+                                              <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                                                  Clasa abstracta este o clasa care reprezinta o varianta generala a unui obiect.
+                                                  In clasa abstracta nu putem crea obiecte, dar putem sa o mostenim.
+                                                  Pentru a crea o clasa abstracta, folosim cuvantul cheie abstract.
+                                                  In clasa abstracta putem ave metode cat abstracte, care nu au o implementare si prezinta
+                                                  abilitatile obiectului, dar si metode care au implementare.
+                                                  Putem crea variabile si sa le initializam in clasa abstracta. Putem crea constructori.
+                                                  Clasa abstracta nu poate fi finala deoarece clasa abstracta numai decat trebuie sa fie
+                                                  mostenita.
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </section>
+                      <section class="ftco-section">
+                          <div class="container">
+                              <div class="row justify-content-center">
+                                  <div class="col-md-6 text-center mb-5">
+                                      <h2 class="heading-section">Exemplu</h2>
+                                  </div>
+                              </div>
+                              <div class="row justify-content-center">
+                                  <div class="col-lg-10">
+                                      <div class="wrapper">
+                                          <div class="row no-gutters">
+                                              <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                      
+                                                  <p> </p>
+                                                  <img class="center"  src="../../../../photo/abstract/1.png"
+                                                       alt="inheritance">
+                                                  <p> </p>
+                                                  <img class="center" src="../../../../photo/abstract/2.png"
+                                                       alt="inheritance">
+                      
+                                                  <p> </p>
+                                                  <img class="center" src="../../../../photo/abstract/3.png"
+                                                       alt="inheritance">
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </section>
+                    """;
+        taskDetailsView(abstractInfo, "OOPMostenireAbstract.html");
+    }
 
 
     public static void generateAllFiles() throws IOException {
@@ -841,6 +1026,9 @@ public class HtmlGenerate {
         generateStructData();
         generateVariabileReferinta();
         generateCuvantCheieStatic();
+        generateOOPMostenire();
+        generateOOPMostenireInterface();
+        generateOOPMostenireAbstract();
 
     }
 }

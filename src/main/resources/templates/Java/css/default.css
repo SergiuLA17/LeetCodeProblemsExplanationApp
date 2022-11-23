@@ -191,3 +191,10 @@ div.absolute {
   top: 125px;
   width: 1200px;
 }
+
+        .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
