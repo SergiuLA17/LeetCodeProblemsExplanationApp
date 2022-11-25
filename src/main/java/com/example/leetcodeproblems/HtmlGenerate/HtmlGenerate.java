@@ -489,6 +489,54 @@ public class HtmlGenerate {
                                                                                     </div>
                                                                                 </div>
                                                                             </section>
+                                                                            <section class="ftco-section">
+                                                                                <div class="container">
+                                                                                    <div class="row justify-content-center">
+                                                                                        <div class="col-lg-10">
+                                                                                            <div class="wrapper">
+                                                                                                <div class="row no-gutters">
+                                                                                                    <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                                                                                                        <h3 class="mb-4"><font size="3">Care este diferenta dintre interface si clasa abstracta?</font></h3>
+                                                                                                        <p>Clasa abstracta poate avea variabile, constructor pentru aceste variabile, metode implementate sau metode abstracte.</p>
+                                                                                                        <p>In interfate sunt metode care obligatoriu vor vi implementate in clase care va implementa interfata.</p>
+                                                                                                        
+                                                                                                        <p>Metodele in interfata sunt numai publice</p>
+                                                                                                        <p>Metodele in clase abstracte sunt cu toate tipuri de modificator.</p>
+                                                                                                        
+                                                                                                        <p> Interfacta reprezinta o abilitate.
+                                                                                                         Clasa abstracta reprezint o stare a obiectului.</p>
+                                                                                                         
+                                                                                                         <p>Clasa abstracta este mostenita de acelasi tip de obiecte.
+                                                                                                         De ex: tipuri de masine, sedan, coupe ect.
+                                                                                                         Interfatele pot fi implementate de diferite tipuri de obiect.
+                                                                                                         De ex: a merge, a zbura ect.</p>
+                                                                                                       
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </section>
+                                                                            <section class="ftco-section">
+                                                                                <div class="container">
+                                                                                    <div class="row justify-content-center">
+                                                                                        <div class="col-lg-10">
+                                                                                            <div class="wrapper">
+                                                                                                <div class="row no-gutters">
+                                                                                                    <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                                                                                                        <h3 class="mb-4"><font size="3">Cand avem posibilitatea de a folosi si interfata si clasa abstracta, ce vom alege?</font></h3>
+                                                                                                        <p>Vom alege interfata, deoarece interfata reprezinta un contract care se va realiza in orce caz, deoarece are 
+                                                                                                        metoda cu modificatrul public, pe cant in clase abstracte, metodele pot avea toate tipurile, ce nu garanteaza ca vom putea realiza metoda in orice loc al proeictului.</p>
+                                                                                                        
+                                                                                                       
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </section>
                 """;
         taskDetailsView(question, "interviewQuestion.html");
     }
@@ -1009,6 +1057,554 @@ public class HtmlGenerate {
         taskDetailsView(abstractInfo, "OOPMostenireAbstract.html");
     }
 
+    public static void generateCollection() throws IOException {
+        String collection = """
+                <section class="ftco-section">
+                          <div class="container">
+                              <div class="row justify-content-center">
+                                  <div class="col-md-6 text-center mb-5">
+                                      <h2 class="heading-section">Collection</h2>
+                                  </div>
+                              </div>
+                              <div class="row justify-content-center">
+                                  <div class="col-lg-10">
+                                      <div class="wrapper">
+                                          <div class="row no-gutters">
+                                              <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                                                  <p>Collection este interfata care extinde Iterable si contine metode de adaugare,
+                stergere, cautare si alte metode utile pentru manipularea colectiilor.
+                <p>Collection contine metodele:</p>
+                <p>add() - adauga un element in colectie,</p>
+                <p>remove() - sterge un element din colectie,</p>
+                <p>contains() - verifica daca un element se afla in colectie,</p>
+                <p>size() - returneaza numarul de elemente din colectie,</p>
+                <p>isEmpty() - verifica daca colectia este goala,</p>
+                <p>toArray() - returneaza un array cu elementele din colectie,</p>
+                <p>clear() - sterge toate elementele din colectie.</p>
+                <p>addAll() - adauga toate elementele dintr-o colectie in alta colectie,</p>
+                <p>containsAll() - verifica daca toate elementele dintr-o colectie se afla in alta colectie,</p>
+                <p>equals() - verifica daca doua colectii contin aceleasi elemente,</p>
+                <p>hashCode() - returneaza un hashcode pentru colectie.</p>
+                De la Collection se extind interfetele List, Set si Queue si clasa abstracta AbstractCollection.
+                AbstractCollection este clasa abstracta care implementeaza metodele din interfata Collection, 
+                de aceea nu este nevoie sa le implementam noi. </p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      
+                    """;
+        taskDetailsView(collection, "collection.html");
+    }
+
+    public static void generateCollectionIterable() throws IOException {
+        String iterable = """
+                <section class="ftco-section">
+                          <div class="container">
+                              <div class="row justify-content-center">
+                                  <div class="col-md-6 text-center mb-5">
+                                      <h2 class="heading-section">Iterable</h2>
+                                  </div>
+                              </div>
+                              <div class="row justify-content-center">
+                                  <div class="col-lg-10">
+                                      <div class="wrapper">
+                                          <div class="row no-gutters">
+                                              <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                                                  <p>Iterable este interfata care contine o metoda iterator(),
+                aceasta metoda returneaza un obiect de tip Iterator.
+                Interfata Iterator contine metode hasNext() si next().
+                hasNext() returneaza true daca mai exista elemente in colectie,
+                next() returneaza elementul curent si muta cursorul la urmatorul element,
+                daca nu mai exista elemente in colectie, next() va arunca exceptia NoSuchElementException. </p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <section class="ftco-section">
+                          <div class="container">
+                              <div class="row justify-content-center">
+                                  <div class="col-md-6 text-center mb-5">
+                                      <h2 class="heading-section">Exemplu</h2>
+                                  </div>
+                              </div>
+                              <div class="row justify-content-center">
+                                  <div class="col-lg-10">
+                                      <div class="wrapper">
+                                          <div class="row no-gutters">
+                                              <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                                                  <p><img class="center"  src="../../../../photo/collections/iterable.png"
+                                                       alt="inheritance"></p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      
+                    """;
+        taskDetailsView(iterable, "collectionIterable.html");
+    }
+
+    public static void generateCollectionList() throws IOException {
+        String listCollection = """
+                <section class="ftco-section">
+                          <div class="container">
+                              <div class="row justify-content-center">
+                                  <div class="col-md-6 text-center mb-5">
+                                      <h2 class="heading-section">Iterable</h2>
+                                  </div>
+                              </div>
+                              <div class="row justify-content-center">
+                                  <div class="col-lg-10">
+                                      <div class="wrapper">
+                                          <div class="row no-gutters">
+                                              <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                                                  
+                                                <p>List este interfata care extinde interfata Collection.
+                                                    <p>List este o colectie care permite elemente duplicate si permite accesarea elementelor
+                                                    prin index.
+                                                                </p>
+                                                    <ul>List contine metodele:
+                                                    <li>get() - returneaza elementul de pe pozitia index,</li>
+                                                    <li>set() - seteaza elementul de pe pozitia index,</li>
+                                                    <li>add() - adauga un element in colectie,</li>
+                                                    <li>indexOf() - returneaza indexul primului element egal cu elementul dat,</li>
+                                                    <li>lastIndexOf() - returneaza indexul ultimului element egal cu elementul dat,</li>
+                                                    <li>listIterator() - returneaza un obiect de tip ListIterator,</li>
+                                                    <li>subList() - returneaza o sublista cu elementele din intervalul (fromIndex, toIndex).</li>
+                                                                </ul>
+                                                    <p>List extinde interfetele RandomAccess, Cloneable si Serializable.
+                                                    RandomAccess este o interfata marker care indica ca lista este accesata random,
+                                                    adica elementele nu sunt accesate in ordinea in care sunt adaugate.
+                                                    Cloneable este o interfata marker care indica ca lista poate fi clonata.
+                                                    Serializable este o interfata marker care indica ca lista poate fi serializata.
+                                                    Serializarea representeaza procesul de transformare a unui obiect intr-un sir de biti.
+                                                    Pentru al pastra intr-un file sau pentru a-l transmite pe retea.
+                                                    De la List se extind interfetele ArrayList, LinkedList, Vector si Stack.    </p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      
+                    """;
+        taskDetailsView(listCollection, "collectionList.html");
+    }
+
+    public static void generateCollectionListArrayList() throws IOException {
+        String listArrayList = """
+                <section class="ftco-section">
+                          <div class="container">
+                              <div class="row justify-content-center">
+                                  <div class="col-md-6 text-center mb-5">
+                                      <h2 class="heading-section">ArrayList</h2>
+                                  </div>
+                              </div>
+                              <div class="row justify-content-center">
+                                  <div class="col-lg-10">
+                                      <div class="wrapper">
+                                          <div class="row no-gutters">
+                                              <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                                                  
+                <p>ArrayList este clasa care extinde clasa AbstractList.</p>
+                <p>ArrayList implementeaza interfata List.</p>
+                <p>De la ArrayList se extind clasa Stack si clasa Vector.</p>
+                <p>ArrayList permite elemente duplicate si permite elemente nule.</p>
+                <p>Permite de asi schimba dimensiunea.</p>        
+                <p>Permite accesarea elementelor prin index.</p>
+                <p>Permite accesarea elementelor random.</p>
+                <p>Permite accesarea elementelor in ordinea in care sunt adaugate.</p>
+                <p>ArrayList este reprezentat in memoria calculatorului ca un vector, ce ii permite procesorului de a 
+                accesa foarte rapid elementele din memorie</p>
+                                
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                    """;
+        taskDetailsView(listArrayList, "collectionListArrayList.html");
+    }
+
+    public static void generateCollectionSet() throws IOException {
+        String set = """
+                <section class="ftco-section">
+                          <div class="container">
+                              <div class="row justify-content-center">
+                                  <div class="col-md-6 text-center mb-5">
+                                      <h2 class="heading-section">Set</h2>
+                                  </div>
+                              </div>
+                              <div class="row justify-content-center">
+                                  <div class="col-lg-10">
+                                      <div class="wrapper">
+                                          <div class="row no-gutters">
+                                              <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                                                  
+                <p>Set mosteneste Collection</p>
+                <p>Set este o colectie de elemente care nu sunt ordonate si nu sunt indexate.</p>
+                <p>Set nu permite duplicate.</p>
+                <p>-metoda add() este suprascrisa pentru a nu permite duplicate.</p>
+                <p>In set nu putem accesa un element prin index, deoarece nu sunt indexate.</p>
+                <p>Set sunt de tipul HashSet, LinkedHashSet si TreeSet.</p>
+                <p>HashSet este cel mai rapid, dar nu este ordonat.</p>
+                <p>LinkedHashSet este ordonat, dar nu este cel mai rapid.</p>
+                <p>TreeSet este ordonat si este cel mai lent.</p>
+                                
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                    """;
+        taskDetailsView(set, "collectionSet.html");
+    }
+
+    public static void generateHashTable() throws IOException {
+        String hashtable = """
+                <section class="ftco-section">
+                          <div class="container">
+                              <div class="row justify-content-center">
+                                  <div class="col-md-6 text-center mb-5">
+                                      <h2 class="heading-section">HashTable</h2>
+                                  </div>
+                              </div>
+                              <div class="row justify-content-center">
+                                  <div class="col-lg-10">
+                                      <div class="wrapper">
+                                          <div class="row no-gutters">
+                                              <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                                                  
+                <p>HashTable este o colectie de date care stocheaza perechi de cheie si valoare.</p>
+                <p>Este posibila introducerea valorii null pentru cheie sau valoare.</p>
+                <p>Un exemplar are 2 parametri, care afecteaza performanta: initialCapacity si loadFactor.</p>
+                <ul>
+                    <li>initialCapacity - capacitatea initiala a tabelei hash.</li>
+                    <li>loadFactor - factorul de incarcare al tabelei hash. De baza este 0.75.</li>
+                </ul>
+                               
+                <p>Datele in hashtable sunt stocare in dependenta de cheie, multe celule pot fi goale in cazul dat,
+                   indexul este calculat pe baza cheii, cheia este transformata in index cu ajutorul functiei hash(hasuita).</p>
+                                
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <section class="ftco-section">
+                          <div class="container">
+                              <div class="row justify-content-center">
+                                <p>Coleziune</p>
+                              </div>
+                              <div class="row justify-content-center">
+                                  <div class="col-lg-10">
+                                      <div class="wrapper">
+                                          <div class="row no-gutters">
+                                              <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                                                  
+                <p>hashcode = key.hashCode() % table.length</p>
+                                 <p>hashcode = 213124%100=24</p>
+                                 <p>Dupa formula de mai sus, este probabilitatea ca 2 chei sa aiba acelasi index, numita colizie</p>
+                                 <ul>Sunt 2 tipuri de coleziuni:
+                                     <li>open addressing</li>
+                                     <p>in cazul dat se cauta de la stanga la dreapta in hashtable, pana cand se gaseste o celula goala</p>
+                                     <li>separate chaining</li>
+                                     <p>elementul se adauga in celula, ast fel se creaza o lista linkata in celula</p>
+                                 </ul>
+                                
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <section class="ftco-section">
+                          <div class="container">
+                              <div class="row justify-content-center">
+                                <p>Cautarea/stergerea elementului</p>
+                              </div>
+                              <div class="row justify-content-center">
+                                  <div class="col-lg-10">
+                                      <div class="wrapper">
+                                          <div class="row no-gutters">
+                                              <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                                                  
+                <p>Cautarea in hashtable:</p>
+                <p>se hasueste keya si se cauta dupa index, se verifica daca keya este egala cu keya din hashtable,
+                in cazul in care keya nu corespunde, se cauta urmatoarea celula goala, pana se gaseste obiectul
+                ,in cazul in care nu se gaseste keya corespunzatoare, inseamna ca obiectul nu exista.
+                In cazul cand stergem din hashtable, se cauta keya si se sterge obiectul corespunzator.        
+                Celula care a fost stearsa, se marcheaza ca goala.</p>
+                                
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          
+                          <section class="ftco-section">
+                          <div class="container">
+                              <div class="row justify-content-center">
+                                <p></p>
+                              </div>
+                              <div class="row justify-content-center">
+                                  <div class="col-lg-10">
+                                      <div class="wrapper">
+                                          <div class="row no-gutters">
+                                              <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                <p>pentru metoda de cautare se cauta o celula goala si se adauga obiectul in hashtable</p>
+                <p>pentru metoda de adaugare, se ia in vigoare ca celulele pot avea marcajul de celula goala</p>
+                                
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          
+                          <section class="ftco-section">
+                          <div class="container">
+                              <div class="row justify-content-center">
+                                <p>
+                                Hashuierea </p>
+                              </div>
+                              <div class="row justify-content-center">
+                                  <div class="col-lg-10">
+                                      <div class="wrapper">
+                                          <div class="row no-gutters">
+                                              <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                                                  
+                                               <ul>
+                                               <li>Hash-codu pentru String: se ia valoarea ascii a fiecarui caracter si se aduna</li>
+                                               <li>Hash-codu pentru Integer: se ia valoarea integer-ului</li>
+                                               <li>Hash-codul pentru obiecte: se ea toate campurile obiectului si se ia hashcode-ul fiecarui camp si se aduna, pentru 
+                                               a nu avea colizii,  fiecare canm se inmulteste la un numar impar, mai des 31</li>
+                                               </ul>
+                                
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                    """;
+        taskDetailsView(hashtable, "OOPStrucDataHashTable.html");
+    }
+
+    public static void generateOOPIncapsulareGetterSetter() throws IOException {
+        String gettersetter = """
+                <section class="ftco-section">
+                          <div class="container">
+                              <div class="row justify-content-center">
+                                  <div class="col-md-6 text-center mb-5">
+                                      <h2 class="heading-section">Getter & Setter</h2>
+                                  </div>
+                              </div>
+                              <div class="row justify-content-center">
+                                  <div class="col-lg-10">
+                                      <div class="wrapper">
+                                          <div class="row no-gutters">
+                                              <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                                                  <p>Sunt folosite pentru a face legatura proiectul in care lucram si obiect de care avem nevoie.
+                                                  Si in caz cand se fac modificari in obiect, proiectul nu este afectat de erori.
+                </p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                <section class="ftco-section">
+                          <div class="container">
+                              <div class="row justify-content-center">
+                                  <div class="col-md-6 text-center mb-5">
+                                      <h2 class="heading-section">Setter</h2>
+                                  </div>
+                              </div>
+                              <div class="row justify-content-center">
+                                  <div class="col-lg-10">
+                                      <div class="wrapper">
+                                          <div class="row no-gutters">
+                                              <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                                                 
+                    <p>Putem adauga oarecare logica</p>
+                    <p>Putem verifica daca valoarea este corecta.</p>
+                    <p>Putem face conversii de tipuri.</p>
+                    <p>Putem face conversii de unitati de masura.</p>
+                    <p>Putem face conversii de valori.</p>
+                                
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          
+                          <section class="ftco-section">
+                          <div class="container">
+                              <div class="row justify-content-center">
+                                  <div class="col-md-6 text-center mb-5">
+                                      <h2 class="heading-section">Getter</h2>
+                                  </div>
+                              </div>
+                              <div class="row justify-content-center">
+                                  <div class="col-lg-10">
+                                      <div class="wrapper">
+                                          <div class="row no-gutters">
+                                              <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                                                 
+                    <p>Putem sa folosim getteri pentru a accesa variabilele private</p>
+                   
+                                
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+
+                    """;
+        taskDetailsView(gettersetter, "OOPIncapsulareGetterSetter.html");
+    }
+
+    public static void generateOOPIncapsulareModificators() throws IOException {
+        String gettersetter = """
+                <section class="ftco-section">
+                          <div class="container">
+                              <div class="row justify-content-center">
+                                  <div class="col-md-6 text-center mb-5">
+                                      <h2 class="heading-section">private</h2>
+                                  </div>
+                              </div>
+                              <div class="row justify-content-center">
+                                  <div class="col-lg-10">
+                                      <div class="wrapper">
+                                          <div class="row no-gutters">
+                                              <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                    <p>pentru  clasele mostenite variabilele nu sunt vizibile</p>
+                    <p>pentru clasele din acelasi pachet variabilele nu sunt vizibile</p>
+                    <p>pentru clasele din alte pachete variabilele nu sunt vizibile</p>
+                    <p>pentru clasele din alte proiecte variabilele nu sunt vizibile</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          
+                          <section class="ftco-section">
+                          <div class="container">
+                              <div class="row justify-content-center">
+                                  <div class="col-md-6 text-center mb-5">
+                                      <h2 class="heading-section">public</h2>
+                                  </div>
+                              </div>
+                              <div class="row justify-content-center">
+                                  <div class="col-lg-10">
+                                      <div class="wrapper">
+                                          <div class="row no-gutters">
+                                              <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                  
+                   <p> pentru  clasele mostenite variabilele sunt vizibile</p>
+                   <p> pentru clasele din acelasi pachet variabilele sunt vizibile</p>
+                   <p> pentru clasele din alte pachete variabilele sunt vizibile</p>
+                   <p>pentru clasele din alte proiecte variabilele sunt vizibile</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          
+                          <section class="ftco-section">
+                          <div class="container">
+                              <div class="row justify-content-center">
+                                  <div class="col-md-6 text-center mb-5">
+                                      <h2 class="heading-section">default</h2>
+                                  </div>
+                              </div>
+                              <div class="row justify-content-center">
+                                  <div class="col-lg-10">
+                                      <div class="wrapper">
+                                          <div class="row no-gutters">
+                                              <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                  
+                    <p>pentru  clasele mostenite variabilele nu sunt vizibile</p>
+                    <p>pentru clasele din acelasi pachet variabilele sunt vizibile</p>
+                    <p>pentru clasele din alte pachete variabilele nu sunt vizibile</p>
+                    <p>pentru clasele din alte proiecte variabilele nu sunt vizibile</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          
+                          <section class="ftco-section">
+                          <div class="container">
+                              <div class="row justify-content-center">
+                                  <div class="col-md-6 text-center mb-5">
+                                      <h2 class="heading-section">protected</h2>
+                                  </div>
+                              </div>
+                              <div class="row justify-content-center">
+                                  <div class="col-lg-10">
+                                      <div class="wrapper">
+                                          <div class="row no-gutters">
+                                              <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                  
+                    <p>pentru  clasele mostenite variabilele sunt vizibile</p>
+                    <p>pentru clasele din acelasi pachet variabilele sunt vizibile</p>
+                    <p>pentru clasele din alte pachete variabilele nu sunt vizibile</p>
+                    <p>pentru clasele din alte proiecte variabilele nu sunt vizibile</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          
+                          <section class="ftco-section">
+                          <div class="container">
+                              <div class="row justify-content-center">
+                                  <div class="col-md-6 text-center mb-5">
+                                      <h2 class="heading-section">Exemplu</h2>
+                                  </div>
+                              </div>
+                              <div class="row justify-content-center">
+                                  <div class="col-lg-10">
+                                      <div class="wrapper">
+                                          <div class="row no-gutters">
+                                              <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                    <p class ="center">Avem Clasa1 cu variabule cu toate tipurile de modificator.</p>
+                    <img class ="center" alt="" height="200" src="../../../../photo/modificators/1.png"
+                    <p class ="center">Avem Clasa3 care mosteneste CLasa1 si nu avem acces doar la variabila cu modificator private.</p>
+                    <img class ="center" alt="" height="200" src="../../../../photo/modificators/2.png"    
+                    <p class ="center">Avem Clasa4 care nu mosteneste Clasa1 si to are acees la variabile in afara de private.</p>
+                    <img class ="center" alt="" height="200" src="../../../../photo/modificators/3.png"    
+                    <p class ="center">Avem Clasa2 care nu mosteneste Clasa1 si este in alt packeage, in cazul dat avem doar acces la variabila cu modificator private.</p>
+                    <img class ="center" alt="" height="200" src="../../../../photo/modificators/4.png"                
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          
+                    """;
+        taskDetailsView(gettersetter, "OOPIncapsulareModificators.html");
+    }
+
 
     public static void generateAllFiles() throws IOException {
         generateJava();
@@ -1029,6 +1625,15 @@ public class HtmlGenerate {
         generateOOPMostenire();
         generateOOPMostenireInterface();
         generateOOPMostenireAbstract();
+        generateCollection();
+        generateCollectionIterable();
+        generateCollectionList();
+        generateCollectionListArrayList();
+        generateCollectionSet();
+        generateHashTable();
+        generateOOPIncapsulareGetterSetter();
+        generateOOPIncapsulareModificators();
+
 
     }
 }

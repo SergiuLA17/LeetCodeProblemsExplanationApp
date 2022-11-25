@@ -75,21 +75,62 @@ public class Templates {
                                                             <li><a href="OOPStrucDataStack.html">Stack</a></li>
                                                             <li><a href="#">Queque</a></li>
                                                             <li><a href="#">Heap</a></li>
+                                                            <li><a href="OOPStrucDataHashTable.html">HashTable</a></li>
                                                         </ul>
                                                     </div>
                                                     <div>
                                                         <h4><a href="OOPincapsulare.html"><h3 class="whiteTextOverride">Incapsulare</h3></a></h4>
+                                                        <ul>
+                                                          OOPIncapsulareModificators.html
+                                                               <li><a href="OOPIncapsulareGetterSetter.html">Getter & Setter</a>
+                                                               </li><li><a href="OOPIncapsulareModificators.html">Modificators</a></li>
+                                                               
+                                                              
+                                                           </ul>
                                                     </div>
                                                     <div>
                                                            <h4><a href="OOPMostenire.html"><h3 class="whiteTextOverride">Mostenire</h3></a></h4>
                                                            <ul>
+                                                          
                                                                <li><a href="OOPMostenireInterface.html">Interface</a></li>
+                                                               <li><a href="OOPMostenireAbstract.html">clasa Abstracta</a></li>
                                                            </ul>
                                                     </div>
                                                 </div><!-- /cbp-hrsub-inner -->
                                             </div><!-- /cbp-hrsub -->
                                         </li>
                                         <li>
+                                            <a href="#">Collection</a>
+                                                                <div class="cbp-hrsub">
+                                                                    <div class="cbp-hrsub-inner">
+                                                                        <div>
+                                                                            <h4><a href="collection.html"><h3 class="whiteTextOverride">Collection</h3></a>
+                                                                            </h4>
+                                                                                    <ul>
+                                                                                        <li><a href="collectionIterable.html">Iterable</a></li>
+                                                                                        <ul>
+                                                                                            <li><a href="#">PriorityQueque</a></li>
+                                                                                        </ul>
+                                                                                        <li><a href="collectionList.html">List</a></li>
+                                                                                        <ul>
+                                                                                            <li><a href="collectionListArrayList.html">ArrayList</a></li>
+                                                                                            <li><a href="#">LinkedList</a></li>
+                                                                                        </ul>
+                                                                                        <li><a href="collectionSet.html">Set</a></li>
+                                                                                        <ul>
+                                                                                            <li><a href="#">HashSet</a></li>
+                                                                                            <li><a href="#">LinkedHashSet</a></li>
+                                                                                            <li><a href="#">TreeSet</a></li>
+                                                                                            <li><a href="#">SoertedSet</a></li>
+                                                                                            <li><a href="#">NavigableSet</a></li>
+                                                                                        </ul>
+                                                                                    </ul>
+                                                                        </div>
+                                            
+                                                                    </div><!-- /cbp-hrsub-inner -->
+                                                                </div><!-- /cbp-hrsub -->
+                                                            </li>
+                                                            <li>
                                             <a href="#">Interview</a>
                                             <div class="cbp-hrsub">
                                                 <div class="cbp-hrsub-inner">
@@ -100,6 +141,7 @@ public class Templates {
                                                 </div><!-- /cbp-hrsub-inner -->
                                             </div><!-- /cbp-hrsub -->
                                         </li>
+                         
                                     </ul>
                                 </nav>
                             </div>
@@ -127,23 +169,23 @@ public class Templates {
 
     String componentTemplate = """
                        <section class="ftco-section">
-                                 <div class="container">
-                                     <div class="row justify-content-center">
-                                          <div class="col-md-6 text-center mb-5">
-                                                   <h2 id="stack" class="heading-section">Stack</h2>
-                                                       
-                                                 <div class="row justify-content-center">
-                                           <div class="col-lg-10">
-                                       <div class="wrapper">
-                                     <div class="row no-gutters">
-                                  <div class="contact-wrap w-100 p-md-5 p-4 py-5">
-                                  <p>static</p>
-                               </div>
-                             </div>
-                           </div>
-                       </div>
-                  </div>
-                </div>
-            </section>
+                          <div class="container">
+                              <div class="row justify-content-center">
+                                  <div class="col-md-6 text-center mb-5">
+                                      <h2 class="heading-section">Iterable</h2>
+                                  </div>
+                              </div>
+                              <div class="row justify-content-center">
+                                  <div class="col-lg-10">
+                                      <div class="wrapper">
+                                          <div class="row no-gutters">
+                                              <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                                                  
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
                        """;
 }

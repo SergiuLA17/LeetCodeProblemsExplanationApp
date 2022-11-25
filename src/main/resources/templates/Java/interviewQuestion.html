@@ -71,21 +71,62 @@
                                                 <li><a href="OOPStrucDataStack.html">Stack</a></li>
                                                 <li><a href="#">Queque</a></li>
                                                 <li><a href="#">Heap</a></li>
+                                                <li><a href="OOPStrucDataHashTable.html">HashTable</a></li>
                                             </ul>
                                         </div>
                                         <div>
                                             <h4><a href="OOPincapsulare.html"><h3 class="whiteTextOverride">Incapsulare</h3></a></h4>
+                                            <ul>
+                                              OOPIncapsulareModificators.html
+                                                   <li><a href="OOPIncapsulareGetterSetter.html">Getter & Setter</a>
+                                                   </li><li><a href="OOPIncapsulareModificators.html">Modificators</a></li>
+
+
+                                               </ul>
                                         </div>
                                         <div>
                                                <h4><a href="OOPMostenire.html"><h3 class="whiteTextOverride">Mostenire</h3></a></h4>
                                                <ul>
+
                                                    <li><a href="OOPMostenireInterface.html">Interface</a></li>
+                                                   <li><a href="OOPMostenireAbstract.html">clasa Abstracta</a></li>
                                                </ul>
                                         </div>
                                     </div><!-- /cbp-hrsub-inner -->
                                 </div><!-- /cbp-hrsub -->
                             </li>
                             <li>
+                                <a href="#">Collection</a>
+                                                    <div class="cbp-hrsub">
+                                                        <div class="cbp-hrsub-inner">
+                                                            <div>
+                                                                <h4><a href="collection.html"><h3 class="whiteTextOverride">Collection</h3></a>
+                                                                </h4>
+                                                                        <ul>
+                                                                            <li><a href="collectionIterable.html">Iterable</a></li>
+                                                                            <ul>
+                                                                                <li><a href="#">PriorityQueque</a></li>
+                                                                            </ul>
+                                                                            <li><a href="collectionList.html">List</a></li>
+                                                                            <ul>
+                                                                                <li><a href="collectionListArrayList.html">ArrayList</a></li>
+                                                                                <li><a href="#">LinkedList</a></li>
+                                                                            </ul>
+                                                                            <li><a href="collectionSet.html">Set</a></li>
+                                                                            <ul>
+                                                                                <li><a href="#">HashSet</a></li>
+                                                                                <li><a href="#">LinkedHashSet</a></li>
+                                                                                <li><a href="#">TreeSet</a></li>
+                                                                                <li><a href="#">SoertedSet</a></li>
+                                                                                <li><a href="#">NavigableSet</a></li>
+                                                                            </ul>
+                                                                        </ul>
+                                                            </div>
+
+                                                        </div><!-- /cbp-hrsub-inner -->
+                                                    </div><!-- /cbp-hrsub -->
+                                                </li>
+                                                <li>
                                 <a href="#">Interview</a>
                                 <div class="cbp-hrsub">
                                     <div class="cbp-hrsub-inner">
@@ -96,6 +137,7 @@
                                     </div><!-- /cbp-hrsub-inner -->
                                 </div><!-- /cbp-hrsub -->
                             </li>
+
                         </ul>
                     </nav>
                 </div>
@@ -229,6 +271,54 @@
                                                                                     <div class="contact-wrap w-100 p-md-5 p-4 py-5">
                                                                                         <h3 class="mb-4"><font size="3">Putem o pentru this sa setam null?</font></h3>
                                                                                         <a> Nu, deoarece obietul nu poate să-și piarda referința la el însuși </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </section>
+                                                            <section class="ftco-section">
+                                                                <div class="container">
+                                                                    <div class="row justify-content-center">
+                                                                        <div class="col-lg-10">
+                                                                            <div class="wrapper">
+                                                                                <div class="row no-gutters">
+                                                                                    <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                                                                                        <h3 class="mb-4"><font size="3">Care este diferenta dintre interface si clasa abstracta?</font></h3>
+                                                                                        <p>Clasa abstracta poate avea variabile, constructor pentru aceste variabile, metode implementate sau metode abstracte.</p>
+                                                                                        <p>In interfate sunt metode care obligatoriu vor vi implementate in clase care va implementa interfata.</p>
+
+                                                                                        <p>Metodele in interfata sunt numai publice</p>
+                                                                                        <p>Metodele in clase abstracte sunt cu toate tipuri de modificator.</p>
+
+                                                                                        <p> Interfacta reprezinta o abilitate.
+                                                                                         Clasa abstracta reprezint o stare a obiectului.</p>
+
+                                                                                         <p>Clasa abstracta este mostenita de acelasi tip de obiecte.
+                                                                                         De ex: tipuri de masine, sedan, coupe ect.
+                                                                                         Interfatele pot fi implementate de diferite tipuri de obiect.
+                                                                                         De ex: a merge, a zbura ect.</p>
+
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </section>
+                                                            <section class="ftco-section">
+                                                                <div class="container">
+                                                                    <div class="row justify-content-center">
+                                                                        <div class="col-lg-10">
+                                                                            <div class="wrapper">
+                                                                                <div class="row no-gutters">
+                                                                                    <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                                                                                        <h3 class="mb-4"><font size="3">Cand avem posibilitatea de a folosi si interfata si clasa abstracta, ce vom alege?</font></h3>
+                                                                                        <p>Vom alege interfata, deoarece interfata reprezinta un contract care se va realiza in orce caz, deoarece are
+                                                                                        metoda cu modificatrul public, pe cant in clase abstracte, metodele pot avea toate tipurile, ce nu garanteaza ca vom putea realiza metoda in orice loc al proeictului.</p>
+
+
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
