@@ -48,6 +48,7 @@ public class Templates {
                                                             </ul>
                                                             <li><h6><a href="classConstructor.html"><h6>Constructor</h6></a></h6></li>
                                                             <li><h6><a href="claseMetode.html"><h6>Metode</h6></a></h6></li>
+                                                            <li><h6><a href="classImmutableClass.html"><h6>Clasa Imutabila</h6></a></h6></li>
                                                         </ul>
                                                     </div>
                                                     <div>
@@ -76,6 +77,7 @@ public class Templates {
                                                             <li><a href="#">Queque</a></li>
                                                             <li><a href="#">Heap</a></li>
                                                             <li><a href="OOPStrucDataHashTable.html">HashTable</a></li>
+                                                            <li><a href="OOPStructDataRedBlackTree.html">Red and Black Tree</a></li>
                                                         </ul>
                                                     </div>
                                                     <div>
@@ -118,7 +120,7 @@ public class Templates {
                                                                                         </ul>
                                                                                         <li><a href="collectionSet.html">Set</a></li>
                                                                                         <ul>
-                                                                                            <li><a href="#">HashSet</a></li>
+                                                                                            <li><a href="collectionHashSet.html">HashSet</a></li>
                                                                                             <li><a href="#">LinkedHashSet</a></li>
                                                                                             <li><a href="#">TreeSet</a></li>
                                                                                             <li><a href="#">SoertedSet</a></li>
@@ -168,6 +170,7 @@ public class Templates {
             """;
 
     String componentTemplate = """
+                       <img alt="" src="../../../../photo/interviewPractice/1.png" "> 
                        <section class="ftco-section">
                           <div class="container">
                               <div class="row justify-content-center">

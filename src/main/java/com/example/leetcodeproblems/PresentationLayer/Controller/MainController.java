@@ -6,16 +6,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class MainController {
-    @Autowired
-    StudyService service;
-
-    @GetMapping("/encapsulation")
-    public String greetingForm() {
-
-
-
-        return "questions";
-    }
 
 
 
