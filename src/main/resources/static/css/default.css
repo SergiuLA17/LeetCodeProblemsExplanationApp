@@ -203,11 +203,13 @@ div.absolute {
 }
 
 .zoom{
-	  transition: transform .2s; /* Animation */
+	  transition: transform .3s; /* Animation */
 
 }
 
 .zoom:hover {
+	position: relative;
+	z-index: 9999;
 	transform: scale(2.0); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
@@ -216,12 +218,12 @@ p {
 	color: #aeb1b2;
 }
 
-div.relative {
+.relative {
 	position: relative;
 
 }
 
-div.absolute {
+.absolute {
 	position: absolute;
 
 }

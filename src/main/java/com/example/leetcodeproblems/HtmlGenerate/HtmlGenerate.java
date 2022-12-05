@@ -30,6 +30,7 @@ import com.example.leetcodeproblems.HtmlGenerate.POO.Mostenire.Abstract;
 import com.example.leetcodeproblems.HtmlGenerate.POO.Mostenire.Interfata;
 import com.example.leetcodeproblems.HtmlGenerate.POO.Mostenire.Mostenire;
 import com.example.leetcodeproblems.HtmlGenerate.POO.POO;
+import com.example.leetcodeproblems.HtmlGenerate.Utilits.ConvertStrArrToList;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -83,6 +84,7 @@ public class HtmlGenerate {
         TreeSetCol.generateCollectionTreeSet();
         RedBlackTree.OOPStrucDataRedBlckTree();
         ClasaImmutabila.generateClassImmutableClass();
+        ConvertStrArrToList.convertArrToList();
 
 
     }

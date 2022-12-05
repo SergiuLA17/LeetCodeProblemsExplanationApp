@@ -144,7 +144,36 @@ public class Templates {
                                                 </div><!-- /cbp-hrsub-inner -->
                                             </div><!-- /cbp-hrsub -->
                                         </li>
-                         
+                                        <li>
+                                            <a href="#">Utilits</a>
+                                             <div class="cbp-hrsub">
+                                                 <div class="cbp-hrsub-inner">
+                                                      <div>
+                                                          <h4><h3 class="whiteTextOverride">String's</h3></a></h4>
+                                                          <ul>
+                                                             <li><a href="collectionIterable.html">Convert</a></li>
+                                                                <ul>
+                                                                    <li><a href="convertStringArrToList.html">Array to List</a></li>
+                                                                </ul>
+                                                                <li><a href="collectionList.html">List</a></li>
+                                                                <ul>
+                                                                    <li><a href="collectionListArrayList.html">ArrayList</a></li>
+                                                                    <li><a href="#">LinkedList</a></li>
+                                                                </ul>
+                                                                <li><a href="collectionSet.html">Set</a></li>
+                                                                <ul>
+                                                                    <li><a href="collectionHashSet.html">HashSet</a></li>
+                                                                    <li><a href="#">LinkedHashSet</a></li>
+                                                                    <li><a href="#">TreeSet</a></li>
+                                                                    <li><a href="#">SoertedSet</a></li>
+                                                                    <li><a href="#">NavigableSet</a></li>
+                                                                </ul>
+                                                                </ul>
+                                                        
+                                                      </div>
+                                                 </div><!-- /cbp-hrsub-inner -->
+                                             </div><!-- /cbp-hrsub -->
+                                        </li>
                                     </ul>
                                 </nav>
                             </div>
