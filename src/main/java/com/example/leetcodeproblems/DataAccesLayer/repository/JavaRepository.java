@@ -1,0 +1,9 @@
+package com.example.leetcodeproblems.DataAccesLayer.repository;
+
+import com.example.leetcodeproblems.CommonLayer.entity.Java;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface JavaRepository extends CrudRepository<Java, Integer> {
+}
