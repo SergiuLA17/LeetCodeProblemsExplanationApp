@@ -1,6 +1,5 @@
 package com.example.leetcodeproblems.PresentationLayer.Controller;
 
-
 import com.example.leetcodeproblems.BussinesLayer.logger.LoggerService;
 import com.example.leetcodeproblems.DataAccesLayer.dao.JavaService;
 import com.example.leetcodeproblems.Util.ProcessModel;
@@ -106,6 +105,36 @@ public class MainController {
     @GetMapping("/convertstringtoarrtolist")
     public String convertstringtoarrtolist(Model model) {
         model = processModel.process(model,javaService.findConvertStringToArrayList());
+        return "index";
+    }
+
+    @GetMapping("/interwiev")
+    public String interview(Model model) {
+        model = processModel.process(model,javaService.findCLassesAll());
+        return "index";
+    }
+
+    @GetMapping("/classes")
+    public String classes(Model model) {
+        model = processModel.process(model,javaService.findCLassesAll());
+        return "index";
+    }
+
+    @GetMapping("/null")
+    public String nullword(Model model) {
+        model = processModel.process(model,javaService.findAllNull());
+        return "index";
+    }
+
+    @GetMapping("/static")
+    public String staticword(Model model) {
+        model = processModel.process(model,javaService.findStaticAll());
+        return "index";
+    }
+
+    @GetMapping("/pooInfo")
+    public String pooInfo(Model model) {
+        model = processModel.process(model,javaService.findPooInfoALl());
         return "index";
     }
 }

@@ -141,3 +141,169 @@ VALUES ('Convertarea String array to List array .',
         <br>
         <br>
         <br>');
+
+INSERT INTO `LearnJavaDB`.`interview` (`title`, `description`)
+VALUES ('De ce Java este un limbaj care poate lucra pe orce platform?',
+        'Pentru ca este un limbaj cross-platforma.');
+
+INSERT INTO `LearnJavaDB`.`interview` (`title`, `description`)
+VALUES ('De ce Java nu se socoate 100% orientata pe obiecte?',
+        '<a href="http://localhost:7777/primitive">Pentru ca are variabile primitive.</a>');
+
+INSERT INTO `LearnJavaDB`.`interview` (`title`, `description`)
+VALUES ('Ce-i asta autoboxing/unboxing?',
+        '<a href="http://localhost:7777/autoboxing">Atribuirea automata al variabilelor primitive la calse wrapper.</a>');
+
+INSERT INTO `LearnJavaDB`.`interview` (`title`, `description`)
+VALUES ('Care este diferența dintre o metodă și un <a href="classConstructor.html">constructor?',
+        '<p><a href="classConstructor.html">Constructorul</a> participă la crearea instanței, pe când metoda reprezintă o instrucțiune. </p> <p><a href="classConstructor.html">Constructorul</a> obligatoriu are denumirea ca și clasa. Metoda are ori ce denumire.</p>
+<p> Metodele pot fi suprascrise și supraâncărcate, pe cănd <a href="classConstructor.html">constructorul</a> poate fi doar supraâncărcat.
+Nu este sens să-l suprascrim, suprascrierea se face la metodele moștenite, dar
+<a href="classConstructor.html">constructorul</a> prea conportamentul de la <a href="classConstructor.html">constructorul</a> superclasei și
+java, nu ne va permite să-l suprascrim.</p> <p><a href="classConstructor.html">constructorul</a> apelează prin operatorul "new", metodele dacă sunt statice, prin denumirea clase, dacă nu, prin instansul obiectului.</p>');
+
+INSERT INTO `LearnJavaDB`.`interview` (`title`, `description`)
+VALUES ('Va fi apelat <a href="classConstructor.html">constructorul</a> superclasei când este creat obiectul moștenit.',
+        'Da.');
+
+INSERT INTO `LearnJavaDB`.`interview` (`title`, `description`)
+VALUES ('Ce este incapsularea?',
+        'Un pilon al POO.');
+
+INSERT INTO `LearnJavaDB`.`interview` (`title`, `description`)
+VALUES ('Putem o pentru this sa setam null?',
+        'Nu, deoarece obietul nu poate să-și piarda referința la el însuși.');
+
+INSERT INTO `LearnJavaDB`.`interview` (`title`, `description`)
+VALUES ('Care este diferenta dintre interface si clasa <a href="OOPMostenireAbstract.html">abstracta</a>?',
+        'Clasa <a href="OOPMostenireAbstract.html">abstracta</a> poate avea variabile, <a href="classConstructor.html">constructor</a> pentru aceste variabile, metode
+implementate sau metode abstracte.</p>
+<p>In interfate sunt metode care obligatoriu vor vi implementate in clase care va implementa interfata.</p>
+<p>Metodele in <a href="OOPMostenireInterface.html">interfata</a> sunt numai publice</p>
+<p>Metodele in clase <a href="OOPMostenireAbstract.html">abstracta</a> sunt cu toate tipuri de <a href="OOPIncapsulareModificators.html">modificatpor</a>.</p>
+<p><a href="OOPMostenireInterface.html">Interfata</a> reprezinta o abilitate. Clasa abstracta reprezint o stare a obiectului.</p>
+<p>Clasa <a href="OOPMostenireAbstract.html">abstracta</a> este mostenita de acelasi tip de obiecte.
+De ex: tipuri de masine, sedan, coupe ect.
+Interfatele pot fi implementate de diferite tipuri de obiect.
+De ex: a merge, a zbura ect.</p>');
+
+INSERT INTO `LearnJavaDB`.`interview` (`title`, `description`)
+VALUES ('Cand avem posibilitatea de a folosi si <a href="OOPMostenireInterface.html">interfata</a> si clasa <a href="OOPMostenireAbstract.html">abstracta</a>, ce vom alege?',
+        'Vom alege <a href="OOPMostenireInterface.html">interfata</a>, deoarece <a
+href="OOPMostenireInterface.html">interfata</a> reprezinta un contract care se va realiza in orce caz, deoarece are
+metoda cu <a href="OOPIncapsulareModificators.html">modificatorul</a> <a href="OOPIncapsulareModificators.html">public</a>, pe cand in clase abstracte,
+metodele pot avea toate tipurile, ce nu garanteaza ca vom putea realiza metoda in orice loc al proeictului.</p>');
+
+INSERT INTO `LearnJavaDB`.`interview` (`title`, `description`)
+VALUES ('Care este diferenta dintre HashSet si <a href="collectionTreeSet.html">TreeSet</a>',
+        '<p>Unda dintre diferente este ca au diferite structuri de date, una are <a href="OOPStrucDataHashTable.html">HashTable?</a>, alta are RedBlackWhite.</p>
+<p>Alta diferenta este in timpul de realizare a operatiilor, HashSet este mai rapid(constanta), <a href="collectionTreeSet.html">TreeSet</a> este mai lent(Logarifmica).</p> in ordine, HashSet nu.</p>
+<p>In hashSet putem avea null, in <a href="collectionTreeSet.html">TreeSet</a> nu.</p>');
+
+INSERT INTO `LearnJavaDB`.`interview` (`title`, `description`)
+VALUES ('Cum se compara obiectele in <a href="collectionHashSet.html">HashSet</a>?',
+        '<p>Cu ajutorul metodei equals si hashCode, le aranjam in lista pentru a le putea accesa in timp constant.</p>');
+
+INSERT INTO `LearnJavaDB`.`interview` (`title`, `description`)
+VALUES ('Poate <a href="collectionTreeSet.html">TreeSet</a> avea null?',
+        '<p>Nu, deoarece in <a href="collectionTreeSet.html">TreeSet</a> elementele sunt sortate si in cazul dat,
+seface comparatie intre obiecte, si daca se face comparatie cu null, atunci se arunca exceptie.
+<a href="collectionTreeSet.html">TreeSet</a> este de tip homogeneous objects.</p>');
+
+INSERT INTO `LearnJavaDB`.`interview` (`title`, `description`)
+VALUES ('Ce fel de metode se folosesc pentru sortare si comparare obiectelor <a href="collectionTreeSet.html">TreeSet</a>?',
+        '<p>Putem sa folosim interfata Comparable, care are 2 metode, compare so compare to. Daca nu folosim interfata Comparable, atunci se foloseste natural-ordering.</p>');
+
+INSERT INTO `LearnJavaDB`.`interview` (`title`, `description`)
+VALUES ('Ce este JRE?',
+        '<p>JRE este Java Runtime Environment, este un mediu de executie pentru a rula aplicatii Java.</p>
+<p>Se foloseste pentru a rula aplicatii deja gata.</p>');
+
+INSERT INTO `LearnJavaDB`.`interview` (`title`, `description`)
+VALUES ('Cum de procedat cand avem de lucrat cu o parola si cum sa ne asiguram ca in heap nu a ramas parola?',
+        '<p>Putem parola sa o inscrim intr-un char array si dupa ce am termita de lucru cu parola,
+in char array putem schimba valorile in care vrem, deoarece char array nu este mutabil
+in comparatie cu String. </p>');
+
+INSERT INTO `LearnJavaDB`.`interview` (`title`, `description`)
+VALUES ('Care este diferenta intre HashMap si <a href="OOPStrucDataHashTable.html">HashTable?',
+        '<p>In <a href="OOPStrucDataHashTable.html">HashTable</a> nu poate sa salva null, toate metodele sunt sincronizate din cauza data ea lucreaza mai lent. </p>
+<p><a href="OOPStrucDataHashTable.html">HashTable</a> nu este recomandata pentru folosinta, este invechita, mai bine de folosit HashMap </p>
+<p>Daca avem nevoie de a folosi pentru paralelism putem folosi ConcurrentHashMap</p>');
+
+INSERT INTO `LearnJavaDB`.`interview` (`title`, `description`)
+VALUES ('Cum putem crea o <a href="classImmutableClass.html">clasa immutable?</a>',
+        '<img class="center" alt="" src="../../../../photo/interviewPractice/1.png" ">');
+
+INSERT INTO `LearnJavaDB`.`interview` (`title`, `description`)
+VALUES ('Ce o safiseze in codul de mai jos?',
+        '<img class="center" alt="" src="../../../../photo/interviewPractice/img_1.png" ">
+<p>Raspuns:</p>
+<p>Se va afisa "Not Equal", deoarece char daca sunt obiecte diferite, ele se adreseaza la aceleiasi referinta din heap</p>');
+
+INSERT INTO `LearnJavaDB`.`classes` (`title`, `description`)
+VALUES ('Clasele sunt modele',
+        '<p class="mb-4">Clasele sunt modele pentru obiecte.
+Clasele sunt definite prin cuvântul cheie class.
+Clasele pot conține:
+<ul>
+<li>date</li>
+<li>metode</li>
+</ul>
+</p>');
+
+INSERT INTO `LearnJavaDB`.`nullword` (`title`, `description`)
+VALUES ('Clasele sunt modele',
+        '<p class="mb-4">Clasele sunt modele pentru obiecte.
+Clasele sunt definite prin cuvântul cheie class.
+Clasele pot conține:
+<ul>
+<li>date</li>
+<li>metode</li>
+</ul>
+</p>');
+
+INSERT INTO `LearnJavaDB`.`staticword` (`title`, `description`)
+VALUES ('Clasele sunt modele',
+        '<p class="mb-4">Clasele sunt modele pentru obiecte.
+Clasele sunt definite prin cuvântul cheie class.
+Clasele pot conține:
+<ul>
+<li>date</li>
+<li>metode</li>
+</ul>
+</p>');
+
+INSERT INTO `LearnJavaDB`.`pooinfo` (`title`, `description`)
+VALUES ('POO represinta o abordare in care un program este considerat o multime de obiecte care interactioneaaz intre ele.',
+        '<p>Fieacre avand proprietati si comportament. Permite scrierea codului mai rapida si mai izibila. </p>
+<p> Poo are 4 piloni:</p>
+<ul>
+<li>Abstractizarea</li>
+<li><a href="OOPincapsulare.html">Incapsularea</a></li>
+<li>Mostenirea</li>
+<li>Poliformizm</li>
+</ul>');
+
+INSERT INTO `LearnJavaDB`.`pooinfo` (`title`, `description`)
+VALUES ('Avantajele POO:',
+        '<ul>
+<li>Permite scrierea unui cod structurat, ceia ce permite altor programamtori sa-l intaleaga.
+Datorita incapsularii, se reduc numarul de greseli si permit crearea mai rapida a programelor in grup.</li>
+<li>POO cod este foarte usor de schimbat, extins sau adaugat. Datorita poliformizmului putem adapta codul la cerintele sarcinii fara a crea noi obiecte si functii. </li>
+<li>POO permite crearea de programe mai complexe, care sa poata fi folosite de cat mai multe persoane. </li>
+<li>Datorita pilonilor sai, nu este nevoie de scris unul si acelasi cod de mai multe ori. Interfatele si clasele pot fi transformate in biblioteci, care pot fi folosite in alte proiecte. </li>
+</ul>');
+
+INSERT INTO `LearnJavaDB`.`interview` (`title`, `description`)
+VALUES ('Dezavantajele POO:',
+        '<ul>
+<li>Greu de inteles.</li>
+<li>Datorita particularitatilor accesului la date si a numarului mare de entitai, programele scrise pot lucra mai lent.  </li>
+<li>COdul scris este mai mare si ocupa mai mult loc. Astfel programele pot avea greutate mare. </li>
+</ul>');
+
+
+
+
+

@@ -8,6 +8,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class JavaService {
     @Autowired
+    private interviewRep interviewRep;
+    @Autowired
     private JavaRepository javaRepository;
     @Autowired
     private MethodsRepository methodsRepository;
@@ -37,6 +39,14 @@ public class JavaService {
     private SetsRepository setsRepository;
     @Autowired
     private ConvertArrayToListRepository convertArrayToListRepository;
+    @Autowired
+    private ClassesRep  classesRep;
+    @Autowired
+    private NullRep nullRep;
+    @Autowired
+    private StaticWordRep staticWordRep;
+    @Autowired
+    private PooInfoRep pooInfoRep;
 
 
 
@@ -82,6 +92,16 @@ public class JavaService {
     public Iterable<Sets> findSetsAll() {return setsRepository.findAll();}
 
     public Iterable<convertstringtoarrtolist> findConvertStringToArrayList() {return convertArrayToListRepository.findAll();}
+
+    public Iterable<interview> findInterviewAll() {return interviewRep.findAll();}
+
+    public Iterable<Classes> findCLassesAll() {return classesRep.findAll();}
+
+    public Iterable<Nullword> findAllNull() {return nullRep.findAll();}
+
+    public Iterable<Staticword> findStaticAll() {return staticWordRep.findAll();}
+
+    public Iterable<pooinfo> findPooInfoALl() {return pooInfoRep.findAll();}
 
 
 }
