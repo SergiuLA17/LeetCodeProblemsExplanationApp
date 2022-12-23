@@ -40,7 +40,7 @@ public class ConvertStrArrToList {
                               </div>
                           </div>
                 """;
-        HtmlGenerate.taskDetailsView(convert, "convertStringArrToList.html");
+
     }
 }
 

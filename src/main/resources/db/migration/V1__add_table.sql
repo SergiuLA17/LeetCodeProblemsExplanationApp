@@ -1,31 +1,255 @@
 CREATE TABLE `LearnJavaDB`.`java`
 (
-    `id`  INT  NOT NULL AUTO_INCREMENT,
-    `question` text NULL,
-    `answer`   text NULL,
-    `category`   text NULL,
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
     PRIMARY KEY (`id`)
 );
 
+CREATE TABLE `LearnJavaDB`.`methods`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
 
-INSERT INTO `LearnJavaDB`.`java` (`question`, `answer`,`category`)
-VALUES (
-            'Java cross-platform',
-            'Java se pornește pe Java Virtual Machine(JVM).
-            Noi scriem cod, care este transformat in bite cod.
-            Realizarea JMV este aproape pe toate sistemele de operare.
-            Și Java scrisă o dată, poate fi folosită pe orice dispozitiv.',
-            'Java'
-        );
-INSERT INTO `LearnJavaDB`.`java` (`question`, `answer`,`category`)
-VALUES (
-           'Nu este 100% bazată OOP',
-           'Java are date primitive care nu sunt obiecte și se salvează în stack șinu este nevoie de a le elimina din limbaj.
-            Sunt bune pentru optimizare.
-            Dar si ele au clase care prezintă adaptarea acestor primitive la obiecte, ele sunt
-            numite wrapper class,
-            aceste clase sunt create din cauza, ca că collecții nu este posibilitatea de a lucra cu primitive.
-            Și aceste wrapper classe le inlocuește.',
-           'Java'
-       );
+CREATE TABLE `LearnJavaDB`.`primitive`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
 
+CREATE TABLE `LearnJavaDB`.`autoboxing`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`bytes`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`constructors`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`immutable`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`referinta`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`collections`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`hashsets`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`iterables`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`lists`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`arraylists`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`sets`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`convertstringtoarrtolist`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`interview`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`classes`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`nullword`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`staticword`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`pooinfo`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`gettersetter`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`modificators`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`mostenire`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`abstractclass`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`interfaceclass`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`hashtableinfo`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`stackinfo`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`treesetinfo`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`redblacktreeinfo`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`enuminfo`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`enumpractice`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`scopeinfo`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
