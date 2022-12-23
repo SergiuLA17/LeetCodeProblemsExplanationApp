@@ -1,7 +1,11 @@
 package com.example.leetcodeproblems.DataAccesLayer.dao;
 
-import com.example.leetcodeproblems.CommonLayer.entity.*;
-import com.example.leetcodeproblems.DataAccesLayer.repository.*;
+import com.example.leetcodeproblems.CommonLayer.entity.info.*;
+import com.example.leetcodeproblems.CommonLayer.entity.practice.enumpractice;
+import com.example.leetcodeproblems.CommonLayer.entity.spring.scopeinfo;
+import com.example.leetcodeproblems.DataAccesLayer.repository.info.*;
+import com.example.leetcodeproblems.DataAccesLayer.repository.practice.EnumPracticeRep;
+import com.example.leetcodeproblems.DataAccesLayer.repository.spring.ScopeInfoRep;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -40,13 +44,37 @@ public class JavaService {
     @Autowired
     private ConvertArrayToListRepository convertArrayToListRepository;
     @Autowired
-    private ClassesRep  classesRep;
+    private ClassesRep classesRep;
     @Autowired
     private NullRep nullRep;
     @Autowired
     private StaticWordRep staticWordRep;
     @Autowired
     private PooInfoRep pooInfoRep;
+    @Autowired
+    private GetterSetterRep getterSetterRep;
+    @Autowired
+    private ModificatrRep  modificators;
+    @Autowired
+    private MostenireRep mostenireRep;
+    @Autowired
+    private AbstractClassRep abstractClassRep;
+    @Autowired
+    private InterfaceClassRep interfaceClassRep;
+    @Autowired
+    private HashTableClass hashTableClass;
+    @Autowired
+    private StackInfoRep stackInfoRep;
+    @Autowired
+    private TreeSetInfo treeSetInfo;
+    @Autowired
+    private redblacktreeinfo redblacktreeinfo;
+    @Autowired
+    private EnumInfoRep enumInfoRep;
+    @Autowired
+    private EnumPracticeRep enumPracticeRep;
+    @Autowired
+    private ScopeInfoRep scopeInfoRep;
 
 
 
@@ -102,6 +130,34 @@ public class JavaService {
     public Iterable<Staticword> findStaticAll() {return staticWordRep.findAll();}
 
     public Iterable<pooinfo> findPooInfoALl() {return pooInfoRep.findAll();}
+
+    public Iterable<gettersetter> findsAllSetterGettre() {return getterSetterRep.findAll();}
+
+    public Iterable<modificators> findAllmodificatros() {return modificators.findAll();}
+
+    public Iterable<mostenire> findAllMostenire() {return mostenireRep.findAll();}
+
+    public Iterable<abstractclass> findAllAbstractClass() {return abstractClassRep.findAll();}
+
+    public Iterable<interfaceclass> findAllInterfaceClass() {return interfaceClassRep.findAll();}
+
+    public Iterable<hashtableinfo> findAllHashTable() {return hashTableClass.findAll();}
+
+    public Iterable<stackinfo> findAllStackInfo() {return stackInfoRep.findAll();}
+
+    public Iterable<treesetinfo> findAllTreeSetInfo() {return treeSetInfo.findAll();}
+
+    public Iterable<redblacktree> findAllRedBlackInfo() {return redblacktreeinfo.findAll();}
+
+    public Iterable<enuminfo> findEnumInfoAll() {return enumInfoRep.findAll();}
+
+    public Iterable<enumpractice> findAllEnumPractice() {return enumPracticeRep.findAll();}
+
+    public Iterable<scopeinfo> findAllScopeInfo() {return scopeInfoRep.findAll();}
+
+
+
+
 
 
 }

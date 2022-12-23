@@ -157,3 +157,99 @@ CREATE TABLE `LearnJavaDB`.`pooinfo`
     `description` text NULL,
     PRIMARY KEY (`id`)
 );
+
+CREATE TABLE `LearnJavaDB`.`gettersetter`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`modificators`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`mostenire`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`abstractclass`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`interfaceclass`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`hashtableinfo`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`stackinfo`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`treesetinfo`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`redblacktreeinfo`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`enuminfo`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`enumpractice`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`scopeinfo`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);

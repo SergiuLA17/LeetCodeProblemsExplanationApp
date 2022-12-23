@@ -16,6 +16,4 @@ const renderQuestion = questions => {
     });
     return data;
 };
-
-
 root.innerHTML = renderQuestion(questions);

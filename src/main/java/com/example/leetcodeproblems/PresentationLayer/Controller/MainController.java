@@ -110,7 +110,7 @@ public class MainController {
 
     @GetMapping("/interwiev")
     public String interview(Model model) {
-        model = processModel.process(model,javaService.findCLassesAll());
+        model = processModel.process(model,javaService.findInterviewAll());
         return "index";
     }
 
@@ -135,6 +135,78 @@ public class MainController {
     @GetMapping("/pooInfo")
     public String pooInfo(Model model) {
         model = processModel.process(model,javaService.findPooInfoALl());
+        return "index";
+    }
+
+    @GetMapping("/setterGetter")
+    public String setterGetter(Model model) {
+        model = processModel.process(model,javaService.findsAllSetterGettre());
+        return "index";
+    }
+
+    @GetMapping("/modificators")
+    public String modificators(Model model) {
+        model = processModel.process(model,javaService.findAllmodificatros());
+        return "index";
+    }
+
+    @GetMapping("/mostenire")
+    public String mostenire(Model model) {
+        model = processModel.process(model,javaService.findAllMostenire());
+        return "index";
+    }
+
+    @GetMapping("/abstractClass")
+    public String abstractClass(Model model) {
+        model = processModel.process(model,javaService.findAllAbstractClass());
+        return "index";
+    }
+
+    @GetMapping("/interfaceClass")
+    public String interfaceClass(Model model) {
+        model = processModel.process(model,javaService.findAllInterfaceClass());
+        return "index";
+    }
+
+    @GetMapping("/hashTableInfo")
+    public String hashTableInfo(Model model) {
+        model = processModel.process(model,javaService.findAllHashTable());
+        return "index";
+    }
+
+    @GetMapping("/stackInfo")
+    public String stackInfo(Model model) {
+        model = processModel.process(model,javaService.findAllStackInfo());
+        return "index";
+    }
+
+    @GetMapping("/treeSetInfo")
+    public String treeSetInfo(Model model) {
+        model = processModel.process(model,javaService.findAllTreeSetInfo());
+        return "index";
+    }
+
+    @GetMapping("/RedBlackTreeInfo")
+    public String redBlackTreeInfo(Model model) {
+        model = processModel.process(model,javaService.findAllRedBlackInfo());
+        return "index";
+    }
+
+    @GetMapping("/enumInfo")
+    public String enumInfo(Model model) {
+        model = processModel.process(model,javaService.findEnumInfoAll());
+        return "index";
+    }
+
+    @GetMapping("/enumPractice")
+    public String enumPractice(Model model) {
+        model = processModel.process(model,javaService.findAllEnumPractice());
+        return "index";
+    }
+
+    @GetMapping("/scopeInfo")
+    public String scopeInfo(Model model) {
+        model = processModel.process(model,javaService.findAllScopeInfo());
         return "index";
     }
 }
