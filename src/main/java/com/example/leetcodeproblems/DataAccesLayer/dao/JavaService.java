@@ -2,12 +2,16 @@ package com.example.leetcodeproblems.DataAccesLayer.dao;
 
 import com.example.leetcodeproblems.CommonLayer.entity.info.*;
 import com.example.leetcodeproblems.CommonLayer.entity.practice.enumpractice;
+import com.example.leetcodeproblems.CommonLayer.entity.quiz.quiz;
 import com.example.leetcodeproblems.CommonLayer.entity.spring.scopeinfo;
 import com.example.leetcodeproblems.DataAccesLayer.repository.info.*;
 import com.example.leetcodeproblems.DataAccesLayer.repository.practice.EnumPracticeRep;
+import com.example.leetcodeproblems.DataAccesLayer.repository.quiz.QuizRep;
 import com.example.leetcodeproblems.DataAccesLayer.repository.spring.ScopeInfoRep;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.time.LocalDate;
 
 @Service
 public class JavaService {
@@ -75,6 +79,8 @@ public class JavaService {
     private EnumPracticeRep enumPracticeRep;
     @Autowired
     private ScopeInfoRep scopeInfoRep;
+    @Autowired
+    QuizRep quizRep;
 
 
 
@@ -155,9 +161,14 @@ public class JavaService {
 
     public Iterable<scopeinfo> findAllScopeInfo() {return scopeInfoRep.findAll();}
 
+    public Iterable<quiz> findAllQuiz(){
+        return quizRep.findAll();
+    }
 
-
-
-
-
+    public void saveDataQuiz(int data){
+        quiz quiz = new quiz();
+        quiz.setDate(LocalDate.now());
+        quiz.setData(data);
+        quizRep.save(quiz);
+    }
 }
