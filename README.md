@@ -18,8 +18,6 @@ Hello, I'm a beginner programmer, while I'm more into the backend, but I'm learn
 ### ✍️ Random Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
-### 😂 Random Dev Meme
-<img src="https://random-memer.herokuapp.com/" width="512px"/>
 
 ---
 [![](https://visitcount.itsvg.in/api?id=SergiuLA17&icon=1&color=3)](https://visitcount.itsvg.in)
