@@ -4,9 +4,11 @@ import com.example.leetcodeproblems.BussinesLayer.logger.LoggerService;
 import com.example.leetcodeproblems.DataAccesLayer.dao.JavaService;
 import com.example.leetcodeproblems.Util.ProcessModel;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class MainController {
@@ -18,15 +20,33 @@ public class MainController {
     private ProcessModel processModel;
 
 
+    @RequestMapping(value = "/manageCandidatesPage", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
+    public @ResponseBody int manageCandidatesPage(@RequestBody int scoreContainer) {
+        javaService.saveDataQuiz(scoreContainer);
+        return scoreContainer;
+    }
+
+    @GetMapping("/quiz")
+    public String quiz() {
+        return "quiz";
+    }
+
+    @GetMapping({"/getQuizScore", "/"})
+    public ModelAndView getAllEmployees() {
+        ModelAndView mav = new ModelAndView("quizscore");
+        mav.addObject("score", javaService.findAllQuiz());
+        return mav;
+    }
+
     @GetMapping("/java")
     public String java(Model model) {
-        model = processModel.process(model,javaService.findJavaAll());
+        model = processModel.process(model, javaService.findJavaAll());
         return "index";
     }
 
     @GetMapping("/methods")
     public String methods(Model model) {
-        model = processModel.process(model,javaService.findMethodsAll());
+        model = processModel.process(model, javaService.findMethodsAll());
         return "index";
     }
 

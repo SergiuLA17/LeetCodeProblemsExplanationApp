@@ -253,3 +253,11 @@ CREATE TABLE `LearnJavaDB`.`scopeinfo`
     `description` text NULL,
     PRIMARY KEY (`id`)
 );
+
+CREATE TABLE `LearnJavaDB`.`quiz`
+(
+    `id`   INT  NOT NULL AUTO_INCREMENT,
+    `Date` date NULL,
+    `Data` text NULL,
+    PRIMARY KEY (`id`)
+);

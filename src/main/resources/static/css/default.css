@@ -290,31 +290,3 @@ p {
 	from {transform:scale(0)}
 	to {transform:scale(1)}
 }
-/*unhide text toggle*/
-#show,#content{display:none;}
-#show:checked~#content{display:block;}
-
-#dev {
-	position: center;
-	padding: 10px 10px;
-	text-align: center;
-	background-color: #a19f9f;
-	margin-top: 10px;
-	color:#111010;
-	border: 2px solid;
-	padding: 10px;
-	border-radius: 25px;
-}
-
-#content {
-	width: 100%;
-	padding: 50px 0;
-	text-align: center;
-	background-color: #858181;
-	margin-top: 20px;
-	color: #130c0c;
-	border: 2px solid;
-	padding: 10px;
-	border-radius: 25px;
-}
-/*unhide text toggle*/
