@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>LearnJava</title>
+    <div th:replace="~{fragments/header.html}"></div>
+</head>
+<body>
+<div th:replace="~{fragments/menu.html}"></div>
+<div id="section">
+</div>
+
+<div id="preview"></div>
+<div>
+    <h1 class="centreIteams" id="-about-me-">💫 About Me:</h1>
+    <p class="centreIteams">Hello, I&#39;m a beginner programmer, while I&#39;m more into the backend, but I&#39;m
+        learning a little on the frontend. I like to learn something new and make new acquaintances, for a good
+        experience and a good time.</p>
+    <h2 class="centreIteams" id="-socials-">🌐 Socials:</h2>
+    <p class="centreIteams"><a href="https://www.facebook.com/sergiuL1991"><img
+            src="https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&amp;logoColor=white" alt="Facebook"></a>
+        <a href="https://www.instagram.com/serho75/"><img
+                src="https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&amp;logoColor=white"
+                alt="Instagram"></a> <a href="https://www.linkedin.com/in/lungu-sergiu-b9827b23b/"><img
+                src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&amp;logoColor=white"
+                alt="LinkedIn"></a></p>
+    <h1 class="centreIteams" id="-tech-stack-">💻 Tech Stack:</h1>
+    <p class="centreIteams"><img
+            src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&amp;logo=java&amp;logoColor=white"
+            alt="Java"> <img
+            src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&amp;logo=javascript&amp;logoColor=%23F7DF1E"
+            alt="JavaScript"> <img
+            src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&amp;logo=html5&amp;logoColor=white"
+            alt="HTML5"> <img
+            src="https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&amp;logo=spring&amp;logoColor=white"
+            alt="Spring"> <img
+            src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&amp;logo=mysql&amp;logoColor=white"
+            alt="MySQL"> <img
+            src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&amp;logo=figma&amp;logoColor=white"
+            alt="Figma"> <img
+            src="https://img.shields.io/badge/Thymeleaf-%23005C0F.svg?style=for-the-badge&amp;logo=Thymeleaf&amp;logoColor=white"
+            alt="Thymeleaf"> <img
+            src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&amp;logo=python&amp;logoColor=ffdd54"
+            alt="Python"></p>
+    <h1 class="centreIteams" id="-github-stats-">📊 GitHub Stats:</h1>
+    <p class="centreIteams">
+    <p class="centreIteams"><img style="position: center"
+            src="https://github-readme-stats.vercel.app/api?username=SergiuLA17&amp;theme=react&amp;hide_border=false&amp;include_all_commits=false&amp;count_private=false"
+            alt="">
+    <p><br/>
+    <p class="centreIteams"><img  style="position: center"
+            src="https://github-readme-streak-stats.herokuapp.com/?user=SergiuLA17&amp;theme=react&amp;hide_border=false"
+            alt=""></p><br/>
+    <p class="centreIteams"><img  style="position: center"
+         src="https://github-readme-stats.vercel.app/api/top-langs/?username=SergiuLA17&amp;theme=react&amp;hide_border=false&amp;include_all_commits=false&amp;count_private=false&amp;layout=compact"
+         alt=""><p></p>
+    <h2 class="centreIteams" id="-github-trophies">🏆 GitHub Trophies</h2>
+    <p class="centreIteams"><img
+            src="https://github-profile-trophy.vercel.app/?username=SergiuLA17&amp;theme=buddhism&amp;no-frame=false&amp;no-bg=true&amp;margin-w=4"
+            alt=""></p>
+    <h3 class="centreIteams" id="-random-dev-quote">✍️ Random Dev Quote</h3>
+    <p class="centreIteams"><img src="https://quotes-github-readme.vercel.app/api?type=horizontal&amp;theme=radical"
+                                 alt=""></p>
+</div>
+
+<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+<script type="text/javascript" th:inline="javascript">
+    let root = document.getElementById("section");
+    /*<![CDATA[*/
+    const length = /*[[${length}]]*/;
+    const questions = /*[[${dataList}]]*/;
+    /*]]>*/
+    let data = ``;
+    for (let i = 0; i < length; i++) {
+        data += `
+            <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center">
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="wrapper">
+                        <div class="row no-gutters">
+                            <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                                <h3 id="1question" class="mb-4">${questions[i].title}</h3>
+                                <p class="mb-4">${questions[i].description}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>`;
+    }
+
+    root.innerHTML = renderQuestion(data);
+
+    function renderQuestion(data) {
+        return data;
+    }
+</script>
+<div th:replace="~{fragments/footer.html}"></div>
+</body>
+</html>

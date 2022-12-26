@@ -261,3 +261,35 @@ CREATE TABLE `LearnJavaDB`.`quiz`
     `Data` text NULL,
     PRIMARY KEY (`id`)
 );
+
+CREATE TABLE `LearnJavaDB`.`beaninfo`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`iocinfo`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`configinfo`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`componentinfo`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);

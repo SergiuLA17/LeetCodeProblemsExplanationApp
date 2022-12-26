@@ -11,7 +11,7 @@ let startScreen = document.querySelector(".start-screen");
 let startButton = document.getElementById("start-button");
 let questionCount;
 let scoreCount = 0;
-let count = 21;
+let count = 61;
 let countdown;
 //Questions and Options array
 const quizArray = [
@@ -135,6 +135,24 @@ const quizArray = [
         options: ["Singletone creaa instantele la startarea aplicatiei si pot fi sterse la cerere.", "Prototype sunt instante care sunt dirijate cat de aplicatie atat si de catre utilizator.", "Singletone creaza instanta la startarea aplicatiei, iar prototype la cerere."],
         correct: "Singletone creaza instanta la startarea aplicatiei, iar prototype la cerere.",
     },
+    {
+        id: "20",
+        question: "<img class = \"center zoom\" alt=\"\" src=\"../../../../photo/beans/img.png\" \"> Cate beanuri se vor crea in acest caz?",
+        options: ["Se vor crea 3 bean-uri.", "Se vor crea 2 bean-uri", "Se va crea un singur bean."],
+        correct: "Se bor crea 2 bean-uri",
+    },
+    {
+        id: "21",
+        question: "<img class = \"center zoom\" alt=\"\" src=\"../../../../photo/beans/img_1.png\" \"> Cate beanuri se vor crea in acest caz?",
+        options: ["Se vor crea 3 bean-uri.", "Se vor crea 2 bean-uri", "Se va crea un singur bean."],
+        correct: "Se bor crea 3 bean-uri",
+    },
+    {
+        id: "22",
+        question: "Este posibil de creat 2 beanuri singleton?",
+        options: ["Nu, deoarece spring creaza doar un bean si il foloseste cand are nevoie.", "Da, deoarece singleton bean se creaza doar intr-un container, dar container pot fi mai multe intr-o aplicatie.", "Da, daor daca o sa-l cream noi singuri."],
+        correct: "Da, deoarece singleton bean se creaza doar intr-un container, dar container pot fi mai multe intr-o aplicatie.",
+    },
 ];
 //Restart Quiz
 restart.addEventListener("click", () => {
@@ -169,7 +187,7 @@ nextBtn.addEventListener(
                 questionCount + 1 + " of " + quizArray.length + " Question";
             //display quiz
             quizDisplay(questionCount);
-            count = 11;
+            count = 61;
             clearInterval(countdown);
             timerDisplay();
         }
@@ -184,7 +202,7 @@ const timerDisplay = () => {
             clearInterval(countdown);
             displayNext();
         }
-    }, 2000);
+    }, 1000);
 };
 //Display quiz
 const quizDisplay = (questionCount) => {
@@ -254,7 +272,7 @@ function initial() {
     quizContainer.innerHTML = "";
     questionCount = 0;
     scoreCount = 0;
-    count = 11;
+    count = 61;
     clearInterval(countdown);
     timerDisplay();
     quizCreator();

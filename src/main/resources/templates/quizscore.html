@@ -2,7 +2,7 @@
 
 <head>
     <title>List Employees</title>
-
+    <div th:replace="~{fragments/header.html}"></div>
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
           integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
@@ -10,7 +10,7 @@
 </head>
 
 <body>
-
+<div th:replace="~{fragments/menu.html}"></div>
 <div class="container">
 
     <h3>History Score</h3>
@@ -36,7 +36,41 @@
     </table>
 </div>
 
+<div th:replace="~{fragments/footer.html}"></div>
+<script type="text/javascript" th:inline="javascript" >
+    let root = document.getElementById("section");
+    /*<![CDATA[*/
+    const length = /*[[${length}]]*/;
+    const questions = /*[[${dataList}]]*/;
+    /*]]>*/
+    let data = ``;
+    for (let i = 0; i < length; i++) {
+        data += `
+            <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center">
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="wrapper">
+                        <div class="row no-gutters">
+                            <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                                <h3 id="1question" class="mb-4">${questions[i].title}</h3>
+                                <p class="mb-4">${questions[i].description}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>`;
+    }
 
+    root.innerHTML = renderQuestion(data);
+    function renderQuestion(data) {
+        return data;
+    }
+</script>
 </body>
 
 </html>

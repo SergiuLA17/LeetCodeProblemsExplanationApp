@@ -290,3 +290,9 @@ p {
 	from {transform:scale(0)}
 	to {transform:scale(1)}
 }
+
+.centreIteams{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

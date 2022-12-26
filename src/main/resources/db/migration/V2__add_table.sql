@@ -358,9 +358,74 @@ In cazul dae enum-ul ne ajuta. Simplu cream un enum cu numele zeilor si schimbar
 
 INSERT INTO `LearnJavaDB`.`scopeinfo` (`title`, `description`)
 VALUES ('Scope-ul este zona in care o variabila este vizibila.',
-        'Exista 3 tipuri de scope:
+        'Exista mai multe tipuri de scope:
 <ul>
 <li>Singleton - clasa se va crea la pornirea programei de catre spring si exista pana cand programul se va finisa.</li>
 <li>Prototype - clasa va fi creata de catre spring la fiecare request si va fi distrusa la sfarsitul requestului.</li>
+By default, spring foloseste singleton, dar daca vrem sa folosim prototype, trebuie sa adaugam  @Scope("prototype")
 ');
+
+INSERT INTO `LearnJavaDB`.`beaninfo` (`title`, `description`)
+VALUES ('Anotatia @Bean este folosita pentru a crea un bean.',
+        'bean-ul este o instanta a unei clase, care este creata si administrat de catre spring, care este folosita in aplicatie.
+         Spring creaza bean-ul si il roleaza in container, care este un obiect care contine toate bean-urile. Din container se extrag bean-urile, care sunt folosite in aplicatie.
+
+');
+INSERT INTO `LearnJavaDB`.`beaninfo` (`title`, `description`)
+VALUES ('Bean-urile se salveaza in container classa ApplicationContext.',
+        'Clasa data se creaza la initializarea applicatiei si dirijeaza cu ciclul de viata al bean-urilor.
+
+');
+
+INSERT INTO `LearnJavaDB`.`iocinfo` (`title`, `description`)
+VALUES ('Spring IoC reprezinta reprezinta un principiu de proiectare, permite ca obiectele sa nu fie create de catre noi, ci de catre spring.',
+        '
+In Spring IoC se realizeaza prin Dependency Injection (DI).
+Dependency Injection - injectarea dependintelor, este o metoda prin care se injecteaza dependintele in clasa, fara ca aceasta sa le creeze. Aceasta se face prin anotatia @Autowired.
+Utilizarea IoC și a injecției de dependențe poate ajuta la modulararea unei aplicații și la mai ușor de întreținut,
+deoarece permite o separare a preocupărilor și facilitează schimbarea sau înlocuirea dependențelor fără a afecta restul aplicației.
+');
+
+INSERT INTO `LearnJavaDB`.`iocinfo` (`title`, `description`)
+VALUES ('Practice:',
+        '
+<img class = "center zoom"alt="" src="../photo/IoC/img.png">
+<br><br><br><br><br><br>
+');
+
+INSERT INTO `LearnJavaDB`.`configInfo` (`title`, `description`)
+VALUES ('@Configuration indica faptul ca clasa este o clasa de configurare. ',
+        '
+In aceasta clasa se vor crea bean-urile. Ele vor fi folosite de catre spring. Aceasta anotatie se foloseste in configuratii mai complee.
+Pentru configuratii mai simple se foloseste @Component.
+');
+
+
+INSERT INTO `LearnJavaDB`.`componentInfo` (`title`, `description`)
+VALUES ('@Component indica faptul ca clasa este un component si este si trebuie sa fie inregistrat ca un bean.
+',
+        '
+        Aceasta anotatie de obicei se foloseste in configuratii mai simple,
+        cu anotatia ComponentScan, care indica Spring-ului sa caute toate clasele cu anotatia Component si sa le inregistreze ca bean-uri.
+        ');
+
+INSERT INTO `LearnJavaDB`.`componentInfo` (`title`, `description`)
+VALUES ('@ComponentScan indica faptul ca Spring trebuie sa caute toate clasele cu anotatia Component si sa le inregistreze ca bean-uri.',
+        '
+Putem folosi diferite parametri pentru a specifica unde sa caute Spring.
+<img class = "center zoom"alt="" src="../photo/component/img.png">
+În exemplul de mai sus, clasa AppConfig este adnotată cu @Configuration, ceea ce indică faptul că definește una sau mai multe definiții Bean.
+Adnotarea @ComponentScan îi spune lui Spring să scaneze pachetul com.example.services pentru clase adnotate cu @Component și să creeze bean-uri din acestea.
+');
+
+INSERT INTO `LearnJavaDB`.`importInfo` (`title`, `description`)
+VALUES ('@Import este o adnotare Spring care este folosită pentru a importa alte clase @Configuration și pentru a avea definițiile Bean adăugate la contextul aplicației curente.
+Este adesea folosit în combinație cu adnotarea @Configuration pentru a crea și configura fasole într-un mod mai flexibil și mai puternic.
+',
+        '
+<img class = "center zoom"alt="" src="../photo/component/img.png">
+În exemplul de mai sus, clasa AppConfig este adnotată cu @Configuration,
+ceea ce indică faptul că definește una sau mai multe definiții Bean.
+Adnotarea @Import îi spune lui Spring să importe clasele AppConfig1 și AppConfig2 și să aibă definițiile Bean adăugate în contextul aplicației.
+        ');
 
