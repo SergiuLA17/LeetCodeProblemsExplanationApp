@@ -259,4 +259,16 @@ public class MainController {
         model = javaService.processModel(model,javaService.findImportInfo());
         return "index";
     }
+
+    @GetMapping("/joinInfo")
+    public String joinInfo(Model model) {
+        model = javaService.processModel(model,javaService.findAllJoinInfo());
+        return "index";
+    }
+
+    @GetMapping("/sqlPractice")
+    public String sqlPractice(Model model) {
+        model = javaService.processModel(model,javaService.findAllSqlPractice());
+        return "index";
+    }
 }

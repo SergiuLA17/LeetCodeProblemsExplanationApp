@@ -4,11 +4,13 @@ import com.example.leetcodeproblems.model.entity.info.*;
 import com.example.leetcodeproblems.model.entity.spring.*;
 import com.example.leetcodeproblems.model.entity.practice.*;
 import com.example.leetcodeproblems.model.entity.quiz.*;
+import com.example.leetcodeproblems.model.entity.sql.*;
 
 import com.example.leetcodeproblems.repository.info.*;
 import com.example.leetcodeproblems.repository.practice.*;
 import com.example.leetcodeproblems.repository.quiz.*;
 import com.example.leetcodeproblems.repository.spring.*;
+import com.example.leetcodeproblems.repository.sql.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -96,6 +98,10 @@ public class JavaService {
     private componentinfoRep componentinfoRep;
     @Autowired
     private importinfoRep importinfoRep;
+    @Autowired
+    private joininfoRep joininfoRep;
+    @Autowired
+    private sqlpracticeRep sqlpracticeRep;
 
 
 
@@ -185,6 +191,10 @@ public class JavaService {
     public Iterable<componentinfo> findComponenInfo() {return componentinfoRep.findAll();}
 
     public Iterable<importinfo> findImportInfo() {return importinfoRep.findAll();}
+
+    public Iterable<joinsinfo> findAllJoinInfo() {return joininfoRep.findAll();}
+
+    public Iterable<sqlpractice> findAllSqlPractice() {return sqlpracticeRep.findAll();}
 
 
 

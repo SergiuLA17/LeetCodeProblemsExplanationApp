@@ -23,16 +23,16 @@ VALUES ('Ce-i asta autoboxing/unboxing?',
 ');
 
 INSERT INTO `LearnJavaDB`.`interview` (`title`, `description`)
-VALUES ('Care este diferența dintre o metodă și un <a http://localhost:7777/constructors">constructor?',
+VALUES ('Care este diferența dintre o metodă și un <a "http://localhost:7777/constructors">constructor?</a>',
         '
 <input type=checkbox id="show3">
 <label id="dev3" for="show3">Raspuns: </label>
-<span id="content3"><p>Constructorul participă la crearea instanței, pe când metoda reprezintă o instrucțiune. </p>
-<p><a href="classConstructor.html">Constructorul</a> obligatoriu are denumirea ca și clasa. Metoda are ori ce denumire.</p>
-<p> Metodele pot fi suprascrise și supraâncărcate, pe cănd constructorul poate fi doar supraâncărcat.
-Nu este sens să-l suprascrim, suprascrierea se face la metodele moștenite, dar
-constructorul prea conportamentul de la constructorul superclasei și java, nu ne va permite să-l suprascrim.</p>
-<p>constructorul apelează prin operatorul "new", metodele dacă sunt statice, prin denumirea clase, dacă nu, prin instansul obiectului.</p></span>
+<span id="content3">Constructorul participă la crearea instanței, pe când metoda reprezintă o instrucțiune.
+Constructorul obligatoriu are denumirea ca și clasa. Metoda are ori ce denumire.
+Metodele pot fi suprascrise și supraâncărcate, pe cănd constructorul poate fi doar supraâncărcat.
+Nu este sens să-l suprascrim, suprascrierea se face la metodele moștenite,
+dar constructorul prea conportamentul de la constructorul superclasei și java, nu ne va permite să-l suprascrim.
+Constructorul apelează prin operatorul "new", metodele dacă sunt statice, prin denumirea clase, dacă nu, prin instansul obiectului.</span>
 ');
 
 INSERT INTO `LearnJavaDB`.`interview` (`title`, `description`)
@@ -60,20 +60,20 @@ VALUES ('Putem o pentru this sa setam null?',
 ');
 
 INSERT INTO `LearnJavaDB`.`interview` (`title`, `description`)
-VALUES ('Care este diferenta dintre interface si clasa <a http://localhost:7777/abstractClass">abstracta</a>?',
+VALUES ('Care este diferenta dintre <a href="http://localhost:7777/interfaceClass">interfata</a> si clasa <a http://localhost:7777/abstractClass">abstracta</a>?',
         '
 <input type=checkbox id="show7">
 <label id="dev7" for="show7">Raspuns: </label>
-<span id="content7">Clasa abstracta poate avea variabile, <a http://localhost:7777/constructors">constructor</a> pentru aceste variabile, metode
-implementate sau metode abstracte.
-<p>In <a href="http://localhost:7777/interfaceClass">interfata</a> sunt metode care obligatoriu vor vi implementate in clase care va implementa interfata.</p>
-<p>Metodele in interfata sunt numai publice</p>
-<p>Metodele in clase abstracta sunt cu toate tipuri de <a href="http://localhost:7777/modificators">modificator</a>.</p>
-<p>Interfata reprezinta o abilitate. Clasa abstracta reprezint o stare a obiectului.</p>
-<p>Clasa abstracta este mostenita de acelasi tip de obiecte.
+<span id="content7">
+Clasa abstracta poate avea variabile, constructor pentru aceste variabile, metode implementate sau metode abstracte.
+In interfata sunt metode care obligatoriu vor vi implementate in clase care va implementa interfata.
+Metodele in interfata sunt numai publice.
+Metodele in clase abstracta sunt cu toate tipuri de modificator.
+Interfata reprezinta o abilitate. Clasa abstracta reprezint o stare a obiectului.
+Clasa abstracta este mostenita de acelasi tip de obiecte.
 De ex: tipuri de masine, sedan, coupe ect.
 Interfatele pot fi implementate de diferite tipuri de obiect.
-De ex: a merge, a zbura ect.</p></span>
+De ex: a merge, a zbura ect.</span>
 ');
 
 INSERT INTO `LearnJavaDB`.`interview` (`title`, `description`)
@@ -82,7 +82,7 @@ VALUES ('Cand avem posibilitatea de a folosi si <a href="http://localhost:7777/i
 <input type=checkbox id="show8">
 <label id="dev8" for="show8">Raspuns: </label>
 <span id="content8">Vom alege interfata, deoarece interfata reprezinta un contract care se va realiza in orce caz, deoarece are
-metoda cu <a href="href="http://localhost:7777/modificators">modificatorul</a> public, pe cand in clase abstracte,
+metoda cu modificatorul public, pe cand in clase abstracte,
 metodele pot avea toate tipurile, ce nu garanteaza ca vom putea realiza metoda in orice loc al proeictului.</span>
 ');
 
@@ -92,9 +92,9 @@ VALUES ('Care este diferenta dintre HashSet si <a href="http://localhost:7777/tr
 <input type=checkbox id="show9">
 <label id="dev9" for="show9">Raspuns: </label>
 <span id="content9">
-<p>Unda dintre diferente este ca au diferite structuri de date, una are <a href="http://localhost:7777/hashTableInfo">HashTable?</a>, alta are RedBlackWhite.</p>
-<p>Alta diferenta este in timpul de realizare a operatiilor, HashSet este mai rapid(constanta), TreeSet este mai lent(Logarifmica).</p> in ordine, HashSet nu.</p>
-<p>In hashSet putem avea null, in TreeSet nu.</p>
+Unda dintre diferente este ca au diferite structuri de date, una are hashTableInfo, alta are RedBlackWhite.
+Alta diferenta este in timpul de realizare a operatiilor, HashSet este mai rapid(constanta), TreeSet este mai lent(Logarifmica).
+In hashSet putem avea null, in TreeSet nu.
 </span>
 ');
 
@@ -104,7 +104,7 @@ VALUES ('Cum se compara obiectele in <a href="http://localhost:7777/hashsets">Ha
 <input type=checkbox id="show10">
 <label id="dev10" for="show10">Raspuns: </label>
 <span id="content10">
-<p>Cu ajutorul metodei equals si hashCode, le aranjam in lista pentru a le putea accesa in timp constant.</p>
+Cu ajutorul metodei equals si hashCode, le aranjam in lista pentru a le putea accesa in timp constant.
 </span>
 ');
 
@@ -114,9 +114,9 @@ VALUES ('Poate <a href="http://localhost:7777/treeSetInfo">TreeSet</a> avea null
 <input type=checkbox id="show11">
 <label id="dev11" for="show11">Raspuns: </label>
 <span id="content11">
-<p>Nu, deoarece in TreeSet elementele sunt sortate si in cazul dat,
+Nu, deoarece in TreeSet elementele sunt sortate si in cazul dat,
 seface comparatie intre obiecte, si daca se face comparatie cu null, atunci se arunca exceptie.
-<a href="collectionTreeSet.html">TreeSet</a> este de tip homogeneous objects.</p>
+<a href="http://localhost:7777/treeSetInfo">TreeSet</a> este de tip homogeneous objects.
 </span>
 ');
 
@@ -126,7 +126,7 @@ VALUES ('Ce fel de metode se folosesc pentru sortare si comparare obiectelor <a 
 <input type=checkbox id="show12">
 <label id="dev12" for="show12">Raspuns: </label>
 <span id="content12">
-<p>Putem sa folosim interfata Comparable, care are 2 metode, compare so compare to. Daca nu folosim interfata Comparable, atunci se foloseste natural-ordering.</p>
+Putem sa folosim interfata Comparable, care are 2 metode, compare so compare to. Daca nu folosim interfata Comparable, atunci se foloseste natural-ordering.
 </span>
 ');
 
@@ -136,9 +136,10 @@ VALUES ('Ce este JRE?',
 <input type=checkbox id="show13">
 <label id="dev13" for="show13">Raspuns: </label>
 <span id="content13">
-<p>JRE este Java Runtime Environment, este un mediu de executie pentru a rula aplicatii Java.</p>
+JRE este Java Runtime Environment, este un mediu de executie pentru a rula aplicatii Java.
+Se foloseste pentru a rula aplicatii deja gata.
 </span>
-<p>Se foloseste pentru a rula aplicatii deja gata.</p>');
+');
 
 INSERT INTO `LearnJavaDB`.`interview` (`title`, `description`)
 VALUES ('Cum de procedat cand avem de lucrat cu o parola si cum sa ne asiguram ca in heap nu a ramas parola?',
@@ -146,21 +147,21 @@ VALUES ('Cum de procedat cand avem de lucrat cu o parola si cum sa ne asiguram c
 <input type=checkbox id="show14">
 <label id="dev14" for="show14">Raspuns: </label>
 <span id="content14">
-<p>Putem parola sa o inscrim intr-un char array si dupa ce am termita de lucru cu parola,
+Putem parola sa o inscrim intr-un char array si dupa ce am termita de lucru cu parola,
 in char array putem schimba valorile in care vrem, deoarece char array nu este mutabil
-in comparatie cu String. </p>
+in comparatie cu String.
 </span>
 ');
 
 INSERT INTO `LearnJavaDB`.`interview` (`title`, `description`)
-VALUES ('Care este diferenta intre HashMap si <a href="http://localhost:7777/hashTableInfo">HashTable?',
+VALUES ('Care este diferenta intre HashMap si <a href="http://localhost:7777/hashTableInfo">HashTable?</a>',
         '
 <input type=checkbox id="show15">
 <label id="dev15" for="show15">Raspuns: </label>
 <span id="content15">
-<p>In HashTable nu poate sa salva null, toate metodele sunt sincronizate din cauza data ea lucreaza mai lent. </p>
-<p><a href="OOPStrucDataHashTable.html">HashTable</a> nu este recomandata pentru folosinta, este invechita, mai bine de folosit HashMap </p>
-<p>Daca avem nevoie de a folosi pentru paralelism putem folosi ConcurrentHashMap</p>
+In HashTable nu poate sa salva null, toate metodele sunt sincronizate din cauza data ea lucreaza mai lent.
+HashTable nu este recomandata pentru folosinta, este invechita, mai bine de folosit HashMap.
+Daca avem nevoie de a folosi pentru paralelism putem folosi ConcurrentHashMap.
 </span>
 ');
 
@@ -181,8 +182,8 @@ VALUES ('Ce o safiseze in codul de mai jos?',
 <label id="dev17" for="show17">Raspuns: </label>
 <span id="content17">
 <img class="center" alt="" src="../../../../photo/interviewPractice/img_1.png" ">
-<p>Raspuns:</p>
-<p>Se va afisa "Not Equal", deoarece char daca sunt obiecte diferite, ele se adreseaza la aceleiasi referinta din heap</p>
+Raspuns:
+Se va afisa "Not Equal", deoarece char daca sunt obiecte diferite, ele se adreseaza la aceleiasi referinta din heap
 </span>
 ');
 
@@ -202,7 +203,7 @@ VALUES ('Care este avantajul <a href="http://localhost:7777/enumInfo">enum</a> f
 <input type=checkbox id="show19">
 <label id="dev19" for="show19">Raspuns: </label>
 <span id="content19">
-Avantajul este ca putem sa folosim <a href="http://localhost:7777/enumInfo">enum</a> in switch, in comparatie cu constante, care nu pot fi folosite in switch.
+Avantajul este ca putem sa folosim enum in switch, in comparatie cu constante, care nu pot fi folosite in switch.
 Enum are restrictii fata de tip, pe cand constantele nu au restrictii. De exemplu dorim sa primimt un tip de date, dar cand folosim constante, noi nu stim ce tip de date primim.
 </span>
 ');
@@ -217,3 +218,13 @@ Scope singletone este un singur obiect, care este creat o singura data, si este 
 Pe cand prototype este creat la request si durata de viata este pana la sfarsitul requestului.
 </span>
 ');
+
+INSERT INTO `LearnJavaDB`.`interview` (`title`, `description`)
+VALUES ('Dezavantajele POO:',
+        '<input type=checkbox id="show21">
+<label id="dev21" for="show21">Raspuns: </label>
+<span id="content21">
+Greu de inteles.
+Datorita particularitatilor accesului la date si a numarului mare de entitai, programele scrise pot lucra mai lent.
+COdul scris este mai mare si ocupa mai mult loc. Astfel programele pot avea greutate mare.
+</span>');

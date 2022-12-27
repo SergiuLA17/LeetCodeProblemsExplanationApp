@@ -293,3 +293,27 @@ CREATE TABLE `LearnJavaDB`.`componentinfo`
     `description` text NULL,
     PRIMARY KEY (`id`)
 );
+
+CREATE TABLE `LearnJavaDB`.`importinfo`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`joinsinfo`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`sqlpractice`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);

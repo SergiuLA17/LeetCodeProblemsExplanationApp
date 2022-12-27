@@ -271,7 +271,7 @@
 }
 /*--------------------*/
 #show10,#content10{display:none;}
-#show:checked~#content{display:block;}
+#show10:checked~#content10{display:block;}
 
 #dev10 {
     position: center;
@@ -557,6 +557,33 @@
 }
 
 #content20 {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: #858181;
+    margin-top: 20px;
+    color: #130c0c;
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 25px;
+}
+/*--------------------*/
+#show21,#content21{display:none;}
+#show21:checked~#content21{display:block;}
+
+#dev21 {
+    position: center;
+    padding: 10px 10px;
+    text-align: center;
+    background-color: #a19f9f;
+    margin-top: 10px;
+    color:#111010;
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+#content21 {
     width: 100%;
     padding: 50px 0;
     text-align: center;

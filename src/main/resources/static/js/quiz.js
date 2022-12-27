@@ -137,7 +137,7 @@ const quizArray = [
     },
     {
         id: "20",
-        question: "<img class = \"center zoom\" alt=\"\" src=\"../../../../photo/beans/img.png\" \"> Cate beanuri se vor crea in acest caz?",
+        question: "<img class = \"center zoom\" alt=\"\" src=\"../../../../photo/beans/dasd.png\" \"> Cate beanuri se vor crea in acest caz?",
         options: ["Se vor crea 3 bean-uri.", "Se vor crea 2 bean-uri", "Se va crea un singur bean."],
         correct: "Se bor crea 2 bean-uri",
     },
@@ -152,6 +152,18 @@ const quizArray = [
         question: "Este posibil de creat 2 beanuri singleton?",
         options: ["Nu, deoarece spring creaza doar un bean si il foloseste cand are nevoie.", "Da, deoarece singleton bean se creaza doar intr-un container, dar container pot fi mai multe intr-o aplicatie.", "Da, daor daca o sa-l cream noi singuri."],
         correct: "Da, deoarece singleton bean se creaza doar intr-un container, dar container pot fi mai multe intr-o aplicatie.",
+    },
+    {
+        id: "23",
+        question: "Daca dorim sa importam o configuratie in spring, ce trebuie sa facem?",
+        options: ["Importam prin maven", "Importam prin anoratia @Import", "Nu putem avea 2 sau mai multe configuratii in app spring."],
+        correct: "Importam prin anoratia @Import",
+    },
+    {
+        id: "24",
+        question: "Care afirmatie este corecta?",
+        options: ["@Configuration se foloseste penrtu configuratia bean-urilor mai complee, @Component se foloseste pentru configuratii mai simple.", "@Configuration se foloseste penrtu configuratia bean-urilor mai complee, @Component se foloseste pentru a injecta bean-uri.","@Configuration se foloseste penrtu configuratia aplicatiei spring, @Component este doat o anotatie marker."],
+        correct: "@Configuration se foloseste penrtu configuratia bean-urilor mai complee, @Component se foloseste pentru configuratii mai simple.",
     },
 ];
 //Restart Quiz

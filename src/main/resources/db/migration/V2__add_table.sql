@@ -197,13 +197,6 @@ Datorita incapsularii, se reduc numarul de greseli si permit crearea mai rapida 
 <li>Datorita pilonilor sai, nu este nevoie de scris unul si acelasi cod de mai multe ori. Interfatele si clasele pot fi transformate in biblioteci, care pot fi folosite in alte proiecte. </li>
 </ul>');
 
-INSERT INTO `LearnJavaDB`.`interview` (`title`, `description`)
-VALUES ('Dezavantajele POO:',
-        '<ul>
-<li>Greu de inteles.</li>
-<li>Datorita particularitatilor accesului la date si a numarului mare de entitai, programele scrise pot lucra mai lent.  </li>
-<li>COdul scris este mai mare si ocupa mai mult loc. Astfel programele pot avea greutate mare. </li>
-</ul>');
 
 INSERT INTO `LearnJavaDB`.`gettersetter` (`title`, `description`)
 VALUES ('Sunt folosite pentru a face legatura proiectul in care lucram si obiect de care avem nevoie.',
@@ -389,7 +382,7 @@ deoarece permite o separare a preocupărilor și facilitează schimbarea sau în
 INSERT INTO `LearnJavaDB`.`iocinfo` (`title`, `description`)
 VALUES ('Practice:',
         '
-<img class = "center zoom"alt="" src="../photo/IoC/img.png">
+<img class = "center zoom"alt="" src="../photo/IoC/dasd.png">
 <br><br><br><br><br><br>
 ');
 
@@ -413,19 +406,64 @@ INSERT INTO `LearnJavaDB`.`componentInfo` (`title`, `description`)
 VALUES ('@ComponentScan indica faptul ca Spring trebuie sa caute toate clasele cu anotatia Component si sa le inregistreze ca bean-uri.',
         '
 Putem folosi diferite parametri pentru a specifica unde sa caute Spring.
-<img class = "center zoom"alt="" src="../photo/component/img.png">
+<img class = "center zoom"alt="" src="../photo/component/dasd.png">
 În exemplul de mai sus, clasa AppConfig este adnotată cu @Configuration, ceea ce indică faptul că definește una sau mai multe definiții Bean.
 Adnotarea @ComponentScan îi spune lui Spring să scaneze pachetul com.example.services pentru clase adnotate cu @Component și să creeze bean-uri din acestea.
 ');
 
-INSERT INTO `LearnJavaDB`.`importInfo` (`title`, `description`)
+INSERT INTO `LearnJavaDB`.`importinfo` (`title`, `description`)
 VALUES ('@Import este o adnotare Spring care este folosită pentru a importa alte clase @Configuration și pentru a avea definițiile Bean adăugate la contextul aplicației curente.
 Este adesea folosit în combinație cu adnotarea @Configuration pentru a crea și configura fasole într-un mod mai flexibil și mai puternic.
 ',
         '
-<img class = "center zoom"alt="" src="../photo/component/img.png">
+<img class = "center zoom"alt="" src="../photo/component/dasd.png">
 În exemplul de mai sus, clasa AppConfig este adnotată cu @Configuration,
 ceea ce indică faptul că definește una sau mai multe definiții Bean.
 Adnotarea @Import îi spune lui Spring să importe clasele AppConfig1 și AppConfig2 și să aibă definițiile Bean adăugate în contextul aplicației.
         ');
 
+INSERT INTO `LearnJavaDB`.`joinsinfo` (`title`, `description`)
+VALUES ('Prin operatorul join se poate de unit datele din doua tabele.',
+        '
+Exista mau multe tipuri de join-uri, cele mai folosite sunt:
+INNER JOIN
+LEFT JOIN
+RIGHT JOIN
+');
+
+INSERT INTO `LearnJavaDB`.`joinsinfo` (`title`, `description`)
+VALUES ('INNER JOIN - returneaza randurile care au valori comune in ambele tabele.',
+        '
+De exemplau avem 2 tabele:
+Customers
+<img class = "center zoom"alt="" src="../photo/sql/innerjoin/img_1.png">
+Order
+<img class = "center zoom"alt="" src="../photo/sql/innerjoin/img.png">
+Daca folosim comanda:
+<img class = "center zoom"alt="" src="../photo/sql/innerjoin/img_3.png">
+Care spune ca vrem sa returnam toate campurile din tabelul Customers si Order, unde id-ul din tabelul Customers este egal cu id-ul din tabelul Order.
+Rezultatul va fi:
+<img class = "center zoom"alt="" src="../photo/sql/innerjoin/img_2.png">
+Pentru comanda data:
+<img class = "center zoom"alt="" src="../photo/sql/innerjoin/img_4.png">
+Care pune ca vrem sa primim toate campurile din tabelul Customers si Order, unde id-ul custumerului din tabelul Customers este egal cu id-ul orderului din tabelul Order.
+Rezultatul:
+<img class = "center zoom"alt="" src="../photo/sql/innerjoin/img_5.png">
+Campurile 3 si 4 din tabelul Order nu vor intra in rezultat, deoarece nu exista niciun id din tabelul Customers care sa fie egal cu id-ul din tabelul Order.
+');
+
+INSERT INTO `LearnJavaDB`.`joinsinfo` (`title`, `description`)
+VALUES ('Sarcina este de afisat toate persoanele care preda la cursul de Java.',
+        '
+Avem tabelalel urmatoare.
+Tipul de cursuri:
+<img class = "center zoom"alt="" src="../photo/practiceSql/img.png">
+Persoanele care preda la cursuri:
+<img class = "center zoom"alt="" src="../photo/practiceSql/img_1.png">
+Cursele:
+<img class = "center zoom"alt="" src="../photo/practiceSql/img_2.png">
+
+Comanda:
+<img class = "center zoom"alt="" src="../photo/practiceSql/img_3.png">
+
+');
