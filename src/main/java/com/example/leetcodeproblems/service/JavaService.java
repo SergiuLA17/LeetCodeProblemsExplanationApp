@@ -5,12 +5,14 @@ import com.example.leetcodeproblems.model.entity.spring.*;
 import com.example.leetcodeproblems.model.entity.practice.*;
 import com.example.leetcodeproblems.model.entity.quiz.*;
 import com.example.leetcodeproblems.model.entity.sql.*;
+import com.example.leetcodeproblems.model.entity.answers.*;
 
 import com.example.leetcodeproblems.repository.info.*;
 import com.example.leetcodeproblems.repository.practice.*;
 import com.example.leetcodeproblems.repository.quiz.*;
 import com.example.leetcodeproblems.repository.spring.*;
 import com.example.leetcodeproblems.repository.sql.*;
+import com.example.leetcodeproblems.repository.answer.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -102,6 +104,14 @@ public class JavaService {
     private joininfoRep joininfoRep;
     @Autowired
     private sqlpracticeRep sqlpracticeRep;
+    @Autowired
+    private countinfoRep countinfoRep;
+    @Autowired
+    private groupbyinfoRep groupbyinfoRep;
+    @Autowired
+    private oopanswerRep oopanswerRep;
+    @Autowired
+    private  collectionanswerRep collectionanswerRep;
 
 
 
@@ -195,6 +205,14 @@ public class JavaService {
     public Iterable<joinsinfo> findAllJoinInfo() {return joininfoRep.findAll();}
 
     public Iterable<sqlpractice> findAllSqlPractice() {return sqlpracticeRep.findAll();}
+
+    public Iterable<countinfo> fingCountInfo() {return countinfoRep.findAll();}
+
+    public Iterable<groupbyinfo> findGroupByInfo() {return groupbyinfoRep.findAll();}
+
+    public Iterable<oopanswer> findOOPanswer() {return oopanswerRep.findAll();}
+
+    public Iterable<collectionanswer> findAllCollectionAnswer() {return collectionanswerRep.findAll();}
 
 
 

@@ -271,4 +271,28 @@ public class MainController {
         model = javaService.processModel(model,javaService.findAllSqlPractice());
         return "index";
     }
+
+    @GetMapping("/countInfo")
+    public String countInfo(Model model) {
+        model = javaService.processModel(model,javaService.fingCountInfo());
+        return "index";
+    }
+
+    @GetMapping("/groupByInfo")
+    public String groupByInfo(Model model) {
+        model = javaService.processModel(model,javaService.findGroupByInfo());
+        return "index";
+    }
+
+    @GetMapping("/OOPanswer")
+    public String OOPanswer(Model model) {
+        model = javaService.processModel(model,javaService.findOOPanswer());
+        return "index";
+    }
+
+    @GetMapping("/collectionAnswer")
+    public String collectionAnswer(Model model) {
+        model = javaService.processModel(model,javaService.findAllCollectionAnswer());
+        return "index";
+    }
 }

@@ -10,6 +10,7 @@ public class CreateFiles {
     static final String pathSpring = "src/main/java/com/example/leetcodeproblems/model/entity/spring/";
     static final String pathQuiz = "src/main/java/com/example/leetcodeproblems/CommonLayer/entity/quiz/";
     static final String pathSql = "src/main/java/com/example/leetcodeproblems/model/entity/sql/";
+    static final String pathAnswer = "src/main/java/com/example/leetcodeproblems/model/entity/answers/";
 
 
     static final String pathDaoRepInfo= "src/main/java/com/example/leetcodeproblems/DataAccesLayer/repository/info/";
@@ -17,11 +18,12 @@ public class CreateFiles {
     static final String pathDaoRepSpring= "src/main/java/com/example/leetcodeproblems/repository/spring/";
     static final String pathQuizRep = "src/main/java/com/example/leetcodeproblems/DataAccesLayer/repository/sql/";
     static final String pathSqlRep = "src/main/java/com/example/leetcodeproblems/repository/sql/";
+    static final String pathAnswerRep = "src/main/java/com/example/leetcodeproblems/repository/answer/";
 
     public static void main(String[] args) throws IOException {
-        String name = "groupbyinfo";
-//       createFileInfo(name,pathPractice);
-//       createFileRep(name,pathDaoRepPractice);
+        String name = "collectionanswer";
+       createFileInfo(name,pathAnswer);
+       createFileRep(name,pathAnswerRep);
     }
 
 

@@ -94,23 +94,30 @@ VALUES ('Iterable este interfata care contine o metoda iterator(), aceasta metod
         daca nu mai exista elemente in colectie, next() va arunca exceptia NoSuchElementException.');
 
 INSERT INTO `LearnJavaDB`.`lists` (`title`, `description`)
-VALUES ('List este interfata care extinde interfata Collection.',
-        'List este o colectie care permite elemente duplicate si permite accesarea elementelor prin index.<br>
-        <ul>List contine metodele:
-        <li>get() - returneaza elementul de pe pozitia index,</li>
-        <li>set() - seteaza elementul de pe pozitia index,</li>
-        <li>add() - adauga un element in colectie,</li>
-        <li>indexOf() - returneaza indexul primului element egal cu elementul dat,</li>
-        <li>lastIndexOf() - returneaza indexul ultimului element egal cu elementul dat,</li>
-        <li>listIterator() - returneaza un obiect de tip ListIterator,</li>
-        <li>subList() - returneaza o sublista cu elementele din intervalul (fromIndex, toIndex).</li></ul>
-        <p>List extinde interfetele RandomAccess, Cloneable si Serializable.<br>
-        RandomAccess este o interfata marker care indica ca lista este accesata random, adica elementele nu sunt accesate in ordinea in care sunt adaugate.<br>
-        Cloneable este o interfata marker care indica ca lista poate fi clonata.<br>
-        Serializable este o interfata marker care indica ca lista poate fi serializata.<br>
-        Serializarea representeaza procesul de transformare a unui obiect intr-un sir de biti.<br>
-        Pentru al pastra intr-un file sau pentru a-l transmite pe retea.<br>
-        De la List se extind interfetele ArrayList, LinkedList, Vector si Stack.');
+VALUES ('1)List',
+        '
+Este colectia care stocheaza elmenetele intr-o anumita ordine si permite accesarea lor dupa index.<br>
+Exemple de clase care implementează interfața List includ ArrayList și LinkedList.<br>
+<br>
+<h3>Iată câteva avantaje ale utilizării listelor în programare:</h3><br>
+1)Listele sunt ordonate: Listele mențin ordinea elementelor care le sunt adăugate. Aceasta înseamnă că puteți accesa elementele unei liste după poziția lor (index) în listă.<br>
+2)Listele sunt modificabile: puteți adăuga, elimina și modifica elemente dintr-o listă. Acest lucru face ca listele să fie foarte flexibile și ușor de lucrat.<br>
+3)Listele pot conține orice tip de date: Listele pot conține elemente de orice tip de date, inclusiv numere întregi, numere în virgulă mobilă, șiruri și chiar alte liste.<br>
+4)Listele pot fi repetate cu ușurință: puteți utiliza bucle pentru a repeta elementele unei liste și pentru a efectua acțiuni asupra fiecărui element.<br>
+5)Listele sunt eficiente: Listele sunt implementate folosind matrice, care sunt structuri de date eficiente pentru stocarea și accesarea datelor. Aceasta înseamnă că listele sunt foarte rapide și eficiente pentru stocarea și accesarea unor cantități mari de date.<br>
+6)Listele sunt dinamice: Listele pot crește și micșora după nevoie, ceea ce le face foarte utile pentru stocarea datelor în programe în care cantitatea de date nu este cunoscută în prealabil.<br>
+<br>
+<br>
+<br>
+<h3>Iată câteva potenţiale dezavantaje ale utilizării listelor în programare:</h3><br>
+<br>
+1)Listele pot folosi multă memorie: deoarece listele pot crește și se micșorează dinamic, pot folosi multă memorie, în special pentru listele mari. Aceasta poate fi o problemă dacă lucrați cu memorie limitată sau încercați să optimizați programul pentru performanță.<br>
+2)Listele pot fi mai lente pentru unele operațiuni: unele operațiuni, cum ar fi inserarea sau ștergerea elementelor din mijlocul unei liste, pot fi mai lente în comparație cu alte structuri de date, cum ar fi matrice sau liste legate.<br>
+3)Listele nu sunt potrivite pentru toate tipurile de date: Listele nu sunt cea mai bună alegere pentru structurile de date care trebuie să accepte inserarea sau ștergerea rapidă a elementelor în poziții arbitrare, cum ar fi stivele și cozile. În aceste cazuri, alte structuri de date, cum ar fi linkedList sau matricele, ar putea fi o alegere mai bună.<br>
+<br>
+<br>
+
+');
 
 INSERT INTO `LearnJavaDB`.`arraylists` (`title`, `description`)
 VALUES ('ArrayList este clasa care extinde clasa AbstractList.',
@@ -124,15 +131,31 @@ VALUES ('ArrayList este clasa care extinde clasa AbstractList.',
         ArrayList este reprezentat in memoria calculatorului ca un vector, ce ii permite procesorului de a accesa foarte rapid elementele din memorie');
 
 INSERT INTO `LearnJavaDB`.`sets` (`title`, `description`)
-VALUES ('Set mosteneste Collection.',
-        'Set este o colectie de elemente care nu sunt ordonate si nu sunt indexate.</p>
-        Set nu permite duplicate.<br>
-        -metoda add() este suprascrisa pentru a nu permite duplicate.<br>
-        In set nu putem accesa un element prin index, deoarece nu sunt indexate.<br>
-        Set sunt de tipul HashSet, LinkedHashSet si TreeSet.<br>
-        HashSet este cel mai rapid, dar nu este ordonat.<br>
-        LinkedHashSet este ordonat, dar nu este cel mai rapid.<br>
-        TreeSet este ordonat si este cel mai lent.');
+VALUES ('2)Set',
+        '
+Este interfață care reprezintă o colecție de elemente care nu permite duplicate. <br>
+Exemple de clase care implementează interfața Set includ HashSet și TreeSet.<br>
+<br>
+<h3>Iată câteva avantaje ale utilizării seturilor în programare:</h3><br>
+
+1)Seturile nu permit elemente duplicate: seturile sunt colecții care nu permit elemente duplicate. Acest lucru face seturile utile pentru stocarea datelor acolo unde este important să se asigure că fiecare element este unic.<br>
+2)Seturile sunt eficiente pentru testele de membru: seturile oferă teste rapide de apartenență, ceea ce înseamnă că puteți verifica rapid dacă un element este sau nu într-un set. Acest lucru este util pentru sarcini precum filtrarea duplicatelor dintr-un set de date mare.<br>
+3)Seturile sunt imuabile: seturile sunt imuabile, ceea ce înseamnă că odată ce ați creat un set, nu puteți modifica elementele acestuia. Acesta poate fi un avantaj în anumite situații în care doriți să vă asigurați că elementele setului nu se schimbă.<br>
+4)Seturile sunt sigure pentru fire: seturile sunt sigure pentru fire, ceea ce înseamnă că mai multe fire de execuție pot accesa și modifica un set simultan, fără a provoca conflicte. Acest lucru face seturile utile pentru programarea concomitentă.<br>
+5)Seturile pot fi utilizate cu alte colecții Java: seturile pot fi utilizate cu alte colecții Java, cum ar fi liste și hărți, pentru a efectua operațiuni de setare, cum ar fi intersecția, unirea și diferența.<br>
+6)Seturile sunt ușor de utilizat: seturile sunt simplu de utilizat și necesită cod minim pentru a implementa operațiuni comune, cum ar fi adăugarea și eliminarea elemetelor, testarea apartenenței și iterarea elementelor setului.<br>
+<br>
+<br>
+<h3>Iată câteva dezavantaje potențiale ale utilizării seturilor în programare:</h3><br>
+<br>
+1)Seturile nu mențin ordinea elementelor: Seturile nu mențin ordinea elementelor care le sunt adăugate. Aceasta înseamnă că nu puteți accesa elementele unui set prin poziția lor (index) în set.<br>
+2)Seturile nu sunt potrivite pentru toate tipurile de date: seturile nu sunt cea mai bună alegere pentru structurile de date care trebuie să accepte inserarea sau ștergerea rapidă a elementelor în poziții arbitrare, cum ar fi stivele și cozile. În aceste cazuri, alte structuri de date, cum ar fi listele legate sau matricele, ar putea fi o alegere mai bună.<br>
+3)Seturile nu permit elemente duplicate: deși acesta este, de asemenea, un avantaj al seturilor, poate fi un dezavantaj în anumite situații în care doriți să permiteți elemente duplicate.<br>
+4)Seturile pot folosi multă memorie: seturile pot folosi multă memorie, în special pentru seturile mari. Aceasta poate fi o problemă dacă lucrați cu memorie limitată sau încercați să optimizați programul pentru performanță.<br>
+5)Seturile pot fi mai lente pentru unele operațiuni: unele operații, cum ar fi inserarea sau ștergerea elementelor dintr-un set, pot fi mai lente în comparație cu alte structuri de date, cum ar fi matrice sau liste legate.<br>
+<br>
+<br>
+');
 
 INSERT INTO `LearnJavaDB`.`convertstringtoarrtolist` (`title`, `description`)
 VALUES ('Convertarea String array to List array .',
@@ -465,5 +488,51 @@ Cursele:
 
 Comanda:
 <img class = "center zoom"alt="" src="../photo/practiceSql/img_3.png">
+
+');
+
+INSERT INTO `LearnJavaDB`.`countinfo` (`title`, `description`)
+VALUES ('COUNT() este o functie SQL care numara randurile care indeplinesc o anumita conditie. ',
+        '
+Exemplu:<br>
+<br>
+SELECT COUNT(*) FROM users WHERE age > 30;<br>
+<br>
+Această instrucțiune SELECT ar număra numărul de rânduri din tabelul utilizatorilor în care coloana de vârstă este mai mare de 30.<br>
+Funcția COUNT(*) numără toate rândurile din tabel, indiferent dacă acestea conțin o valoare NULL sau nu.<br>
+<br>
+De asemenea, puteți utiliza funcția COUNT() pentru a număra numărul de rânduri care au o anumită valoare într-o anumită coloană.<br>
+<br>
+De exemplu:<br>
+<br>
+SELECT COUNT(*) FROM users WHERE gender = ''female'';<br>
+Această instrucțiune SELECT ar număra numărul de rânduri din tabelul utilizatori în care coloana de gen are valoarea „femeie”.<br>
+<br>
+De asemenea, puteți utiliza funcția COUNT() în combinație cu alte funcții și clauze, cum ar fi clauza GROUP BY și clauza HAVING, pentru a efectua interogări mai avansate.<br>
+');
+
+
+INSERT INTO `LearnJavaDB`.`groupbyinfo` (`title`, `description`)
+VALUES ('Group By este opratorul care se foloseste cu requestul SELECT, DELETE si UPDATE pentru a grupa randuri dupa o anumita coloana sau coloane.',
+        '
+Exemplu:
+<br>
+SELECT department, COUNT(*) as num_employees<br>
+FROM employees<br>
+GROUP BY department;<br>
+<br>
+Această interogare va selecta toate valorile unice din coloana departamentului și va număra numărul de angajați pentru fiecare departament.<br>
+Rezultatul va fi un tabel cu două coloane: departament și num_angajați.<br>
+
+
+<img class = "center zoom"alt="" src="../photo/groupby/img.png">
+In exemplul dat, am grupat toate randurile existente, si ca rezultat, s-a afisat toate campurile unice.
+Daca vrem sa aflam de cate ori fiecare camp apare, putem folosi functia count()
+<img class = "center zoom"alt="" src="../photo/groupby/img_1.png">
+<br>
+<br>
+<br>
+<br>
+
 
 ');
