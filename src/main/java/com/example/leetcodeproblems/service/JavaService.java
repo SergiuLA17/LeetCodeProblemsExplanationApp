@@ -1,19 +1,42 @@
 package com.example.leetcodeproblems.service;
 
-import com.example.leetcodeproblems.model.entity.info.*;
-import com.example.leetcodeproblems.model.entity.spring.*;
-import com.example.leetcodeproblems.model.entity.practice.*;
-import com.example.leetcodeproblems.model.entity.quiz.*;
-import com.example.leetcodeproblems.model.entity.sql.*;
+import com.example.leetcodeproblems.model.entity.Web.*;
 import com.example.leetcodeproblems.model.entity.answers.*;
-
-import com.example.leetcodeproblems.repository.info.*;
-import com.example.leetcodeproblems.repository.practice.*;
-import com.example.leetcodeproblems.repository.quiz.*;
-import com.example.leetcodeproblems.repository.spring.*;
-import com.example.leetcodeproblems.repository.sql.*;
+import com.example.leetcodeproblems.model.entity.collections.*;
+import com.example.leetcodeproblems.model.entity.git.*;
+import com.example.leetcodeproblems.model.entity.info.*;
+import com.example.leetcodeproblems.model.entity.patterns.*;
+import com.example.leetcodeproblems.model.entity.practice.*;
+import com.example.leetcodeproblems.model.entity.principies.dry.dryinfo;
+import com.example.leetcodeproblems.model.entity.principies.kiss.kissinfo;
+import com.example.leetcodeproblems.model.entity.principies.solid.*;
+import com.example.leetcodeproblems.model.entity.principies.yagni.yagniinfo;
+import com.example.leetcodeproblems.model.entity.quiz.quiz;
+import com.example.leetcodeproblems.model.entity.spring.*;
+import com.example.leetcodeproblems.model.entity.sql.countinfo;
+import com.example.leetcodeproblems.model.entity.sql.groupbyinfo;
+import com.example.leetcodeproblems.model.entity.sql.joinsinfo;
 import com.example.leetcodeproblems.repository.answer.*;
-
+import com.example.leetcodeproblems.repository.collections.dequeinfoRep;
+import com.example.leetcodeproblems.repository.collections.mapinfoRep;
+import com.example.leetcodeproblems.repository.collections.queueinfoRep;
+import com.example.leetcodeproblems.repository.collections.sortedmapinfoRep;
+import com.example.leetcodeproblems.repository.git.*;
+import com.example.leetcodeproblems.repository.info.*;
+import com.example.leetcodeproblems.repository.patterns.gofinfoRep;
+import com.example.leetcodeproblems.repository.patterns.graspinfoRep;
+import com.example.leetcodeproblems.repository.practice.EnumPracticeRep;
+import com.example.leetcodeproblems.repository.practice.sqlpracticeRep;
+import com.example.leetcodeproblems.repository.principies.dry.dryRep;
+import com.example.leetcodeproblems.repository.principies.kiss.kissinfoRep;
+import com.example.leetcodeproblems.repository.principies.solid.*;
+import com.example.leetcodeproblems.repository.principies.yagni.yagniRep;
+import com.example.leetcodeproblems.repository.quiz.QuizRep;
+import com.example.leetcodeproblems.repository.spring.*;
+import com.example.leetcodeproblems.repository.sql.countinfoRep;
+import com.example.leetcodeproblems.repository.sql.groupbyinfoRep;
+import com.example.leetcodeproblems.repository.sql.joininfoRep;
+import com.example.leetcodeproblems.repository.Web.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
@@ -112,6 +135,60 @@ public class JavaService {
     private oopanswerRep oopanswerRep;
     @Autowired
     private  collectionanswerRep collectionanswerRep;
+    @Autowired
+    private  queueinfoRep queueinfoRep;
+    @Autowired
+    private dequeinfoRep dequeinfoRep;
+    @Autowired
+    private mapinfoRep mapinfoRep;
+    @Autowired
+    private sortedmapinfoRep sortedmapinfoRep;
+    @Autowired
+    private solidinfoRep solidinfoRep;
+    @Autowired
+    private soliddipRep soliddipRep;
+    @Autowired
+    private solidispRep solidispRep;
+    @Autowired
+    private solidocpRep solidocpRep;
+    @Autowired
+    private solidsrpRep  solidsrpRep;
+    @Autowired
+    private solidlspRep solidlspRep;
+    @Autowired
+    private solidanswerRep solidanswerRep;
+    @Autowired
+    private kissinfoRep kissinfoRep;
+    @Autowired
+    private kissanswerRep kissanswerRep;
+    @Autowired
+    private dryRep dryinfoRep;
+    @Autowired
+    private dryanswerRep dryanswerRep;
+    @Autowired
+    private yagniRep yagniRep;
+    @Autowired
+    private yagnianswerRep yagnianswerRep;
+    @Autowired
+    private gofinfoRep gofinfoRep;
+    @Autowired
+    private gofanswerRep gofanswerRep;
+    @Autowired
+    private graspinfoRep graspinfoRep;
+    @Autowired
+    private graspanswerRep graspanswerRep;
+    @Autowired
+    private restinfoRep restinfoRep;
+    @Autowired
+    private restanswerRep restanswerRep;
+    @Autowired
+    private soapinfoRep soapinfoRep;
+    @Autowired
+    private soapanswerRep soapanswerRep;
+    @Autowired
+    private gitcommandsRep gitcommandsRep;
+    @Autowired
+    private mergevsrebaseRep mergevsrebaseRep;
 
 
 
@@ -214,11 +291,85 @@ public class JavaService {
 
     public Iterable<collectionanswer> findAllCollectionAnswer() {return collectionanswerRep.findAll();}
 
+    public Iterable<queueinfo> findAllQueueInfo() {return queueinfoRep.findAll();}
 
+    public Iterable<dequeinfo> findDequeInfo() {return dequeinfoRep.findAll();}
+
+    public Iterable<mapinfo> findMapInfo() {return mapinfoRep.findAll();}
+
+    public Iterable<sortedmapinfo> findSortedMapInfo() {return sortedmapinfoRep.findAll();}
+
+    public Iterable<solidinfo> findSolidInfo() {return solidinfoRep.findAll();}
+
+    public Iterable<soliddip> findSolidDIP() {return soliddipRep.findAll();}
+
+    public Iterable<solidsrp> findSolidSRP() {return solidsrpRep.findAll();}
+
+    public Iterable<solidlsp> findSolidLSP() {return solidlspRep.findAll();}
+
+    public Iterable<solidocp> findSolidOCP() {return solidocpRep.findAll();}
+
+    public Iterable<solidisp> findSolidISP() {return solidispRep.findAll();}
+
+    public Iterable<solidanswer> findSolidAnswer() {return solidanswerRep.findAll();}
+
+    public Iterable<kissinfo> findKissInfo() {return kissinfoRep.findAll();}
+
+    public Iterable<kissanswer> findKISSanswer() {return kissanswerRep.findAll();}
 
     public Iterable<quiz> findAllQuiz(){
         return quizRep.findAll();
     }
+
+    public Iterable<dryinfo> findAllDRY(){
+        return dryinfoRep.findAll();
+    }
+
+    public Iterable<dryanswer> findAllDRYanswer(){
+        return dryanswerRep.findAll();
+    }
+
+    public Iterable<yagniinfo> findYagniInfo(){
+        return yagniRep.findAll();
+    }
+
+    public Iterable<yagnianswer> findYagniAnswer(){
+        return yagnianswerRep.findAll();
+    }
+
+    public Iterable<gofinfo> findGOFinfo(){return gofinfoRep.findAll();
+    }
+
+    public Iterable<gofanswer> findGofAnswerInfo(){return gofanswerRep.findAll();
+    }
+
+    public Iterable<graspinfo> findAllGRASPinfo(){return graspinfoRep.findAll();
+    }
+
+    public Iterable<graspanswer> findAllGRASPAnswer(){return graspanswerRep.findAll();
+    }
+
+    public Iterable<restinfo> findRESTinfo(){return restinfoRep.findAll();
+    }
+
+    public Iterable<restanswer> findRESTanswer(){return restanswerRep.findAll();
+    }
+
+    public Iterable<soapinfo> findSOAPinfo(){return soapinfoRep.findAll();
+    }
+
+    public Iterable<soapanswer> findSOAPanswer(){return soapanswerRep.findAll();
+    }
+
+    public Iterable<gitcommands> findGITinfo(){return gitcommandsRep.findAll();
+    }
+
+    public Iterable<mergevsrebase> findMergeAndRebaseINFO(){return mergevsrebaseRep.findAll();
+    }
+
+
+
+
 
     public void saveDataQuiz(int data){
         quiz quiz = new quiz();

@@ -71,3 +71,19 @@ Interfetele defineste niste metode care obligatoriu vor fi implementate in clase
 
 ');
 
+INSERT INTO `LearnJavaDB`.`kissanswer` (`title`, `description`)
+VALUES ('KISS este un principiu de programamre care spune ca codul scris trebuie sa fie simplu si usor de inteles.
+',
+        '
+KISS se traduce prin Keep It Simple, Stupid, adica sa nu complicam lucrurile, sa nu facem codul prea complex.<br>
+De exemplu, daca avem o clasa care are o metoda care face 10 operatii, atunci este mai bine sa facem 10 metode, decat sa facem o metoda care face 10 operatii.<br>
+Astfel, codul va fi mai usor de inteles si de modificat.<br>
+Pentru a respecta acest principiu, trebuie respectam cateva regulo:<br>
+1)Păstrați codul simplu și ușor de citit. Adica sa nu folosim cod complex, deoarece nu va fi usor de inteles de alti programatori si de folosit nume de variabile si metode clase.<br>
+2)Renuntati la rezolvare complexa a sarcinilor. Cea mai buna solutie este cea mai usoare.<br>
+3)Evitati de a scri codul repetat.<br>
+4)Impartiti codul in mai multe module mici, care pot fi usor intretinute si intelese.<br>
+5)Folositi algoritme si structuri de date eficientr, care sa nu consuma prea mult timp si resurse.<br>
+
+');
+

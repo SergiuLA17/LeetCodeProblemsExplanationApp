@@ -349,3 +349,141 @@ CREATE TABLE `LearnJavaDB`.`collectionanswer`
     `description` text NULL,
     PRIMARY KEY (`id`)
 );
+
+CREATE TABLE `LearnJavaDB`.`queueinfo`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`dequeinfo`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`mapinfo`
+  (
+      `id`          INT  NOT NULL AUTO_INCREMENT,
+      `title`       text NULL,
+      `description` text NULL,
+      PRIMARY KEY (`id`)
+  );
+
+CREATE TABLE `LearnJavaDB`.`solidinfo`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`soliddip`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`sortedmapinfo`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`solidisp`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`solidlsp`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`solidocp`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`solidsrp`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`solidanswer`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`kissanswer`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`kissinfo`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`dryinfo`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`dryanswer`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`yagniinfo`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`yagnianswer`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+
