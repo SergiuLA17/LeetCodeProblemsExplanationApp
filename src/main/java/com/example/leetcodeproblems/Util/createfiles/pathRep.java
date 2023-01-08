@@ -1,7 +1,7 @@
 package com.example.leetcodeproblems.Util.createfiles;
 
 public enum pathRep {
-    INFO("src/main/java/com/example/leetcodeproblems/DataAccesLayer/repository/info/"),
+    INFO("src/main/java/com/example/leetcodeproblems/repository/info/"),
     PRACTICE("src/main/java/com/example/leetcodeproblems/repository/practice/"),
     SPRING("src/main/java/com/example/leetcodeproblems/repository/spring/"),
     QUIZ("src/main/java/com/example/leetcodeproblems/DataAccesLayer/repository/sql/"),
@@ -11,7 +11,8 @@ public enum pathRep {
     PRINCIPIES("src/main/java/com/example/leetcodeproblems/repository/principies/"),
     WEB("src/main/java/com/example/leetcodeproblems/repository/Web/"),
     GIT("src/main/java/com/example/leetcodeproblems/repository/git/"),
-    PATTERNS("src/main/java/com/example/leetcodeproblems/repository/patterns/");
+    PATTERNS("src/main/java/com/example/leetcodeproblems/repository/patterns/"),
+    EXCEPTION("src/main/java/com/example/leetcodeproblems/repository/exception/");
 
     private final String path;
 

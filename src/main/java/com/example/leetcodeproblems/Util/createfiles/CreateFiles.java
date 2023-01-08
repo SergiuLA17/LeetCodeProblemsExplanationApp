@@ -8,9 +8,9 @@ import java.io.IOException;
 public class CreateFiles {
 
     public static void main(String[] args) throws IOException {
-        String name = "mergevsrebase";
-       createFileInfo(name, pathEntity.GIT.getPath());
-       createFileRep(name, pathRep.GIT.getPath());
+        String name = "exceptionanswer";
+       createFileInfo(name, pathEntity.ANSWER.getPath());
+       createFileRep(name, pathRep.ANSWER.getPath());
 
     }
 

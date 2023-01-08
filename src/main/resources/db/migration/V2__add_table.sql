@@ -633,4 +633,90 @@ SortedMap nu permit chei duplicate: hărțile sortate nu permit chei duplicate, 
 <br>
 ');
 
+INSERT INTO `LearnJavaDB`.`jmminfo` (`title`, `description`)
+VALUES ('JMM - Java Memory Model',
+        '
+Modelul de memorie Java (JMM) este o specificație a modului în care limbajul de programare Java se comportă în ceea ce privește memoria și concurența.
+Definește regulile care guvernează ordinea în care au loc citirile și scrierile la variabilele partajate și specifică circumstanțele în care un fir poate vedea modificările făcute de un alt fir asupra variabilelor partajate.
+');
 
+INSERT INTO `LearnJavaDB`.`jmminfo` (`title`, `description`)
+VALUES ('JMM - Java Memory Model',
+        '
+JMM este conceput pentru a se asigura că programele Java se comportă corect și previzibil, chiar și în prezența mai multor fire care accesează memoria partajată.
+Face acest lucru impunând anumite restricții asupra modului în care firele de execuție pot accesa variabilele partajate și oferind garanții privind vizibilitatea modificărilor făcute de un fir asupra variabilelor partajate către alte fire.');
+
+INSERT INTO `LearnJavaDB`.`jmminfo` (`title`, `description`)
+VALUES ('JMM - Java Memory Model',
+        '
+Modelul de memorie Java (JMM) este o specificație a modului în care limbajul de programare Java se comportă în ceea ce privește memoria și concurența.
+Definește regulile care guvernează ordinea în care au loc citirile și scrierile la variabilele partajate și specifică circumstanțele în care un fir poate vedea modificările făcute de un alt fir asupra variabilelor partajate.
+
+În general, JMM este un concept important în programarea Java, deoarece ajută la asigurarea corectitudinii și predictibilității programelor Java care folosesc concurența.');
+
+
+INSERT INTO `LearnJavaDB`.`gcinfo` (`title`, `description`)
+VALUES ('GC - Garbage Collection',
+        '
+În Java, colectorul de gunoi este un sistem care eliberează automat obiectele care nu mai sunt folosite de program.
+Colectorul de gunoi rulează în fundal și eliberează memorie prin recuperarea obiectelor care nu mai sunt necesare și făcând acea memorie disponibilă pentru alte obiecte.
+
+');
+
+INSERT INTO `LearnJavaDB`.`gcinfo` (`title`, `description`)
+VALUES ('GC - Garbage Collection',
+        '
+În Java, colectorul de gunoi este un sistem care eliberează automat obiectele care nu mai sunt folosite de program.
+Colectorul de gunoi rulează în fundal și eliberează memorie prin recuperarea obiectelor care nu mai sunt necesare și făcând acea memorie disponibilă pentru alte obiecte.
+
+');
+
+INSERT INTO `LearnJavaDB`.`gcinfo` (`title`, `description`)
+VALUES ('GC - Garbage Collection',
+        '
+Colectorul de gunoi nu este un sistem perfect și este posibil ca o aplicație să consume mai multă memorie decât este disponibilă pe sistem.
+În acest caz, aplicația poate arunca o excepție OutOfMemoryError, indicând faptul că colectorul de gunoi nu a reușit să elibereze suficientă memorie pentru a satisface nevoile aplicației.
+');
+
+INSERT INTO `LearnJavaDB`.`gcinfo` (`title`, `description`)
+VALUES ('GC - Garbage Collection',
+        '
+Puteți folosi metoda System.gc() pentru a solicita ca garbage collector să ruleze, dar nu puteți controla direct când rulează garbage collector sau cum își desfășoară activitatea.
+Comportamentul exact al colectorului de gunoi este dependent de implementare și poate varia între diferitele medii de rulare Java.
+');
+
+
+INSERT INTO `LearnJavaDB`.`gcinfo` (`title`, `description`)
+VALUES ('Cum lucreaza GC',
+        '
+Colectorul de gunoi din Java funcționează prin scanarea periodică a obiectelor la care se poate ajunge din program și prin marcarea oricăror obiecte care nu mai sunt utilizate.
+Un obiect nu mai este utilizat dacă nu există referințe la acel obiect din program.');
+
+INSERT INTO `LearnJavaDB`.`gcinfo` (`title`, `description`)
+VALUES ('Cum lucreaza GC',
+        '
+După ce colectorul de gunoi a marcat toate obiectele neutilizate, elimină obiectele marcate din memorie și eliberează memoria care era folosită de acele obiecte.
+Acest proces este cunoscut sub numele de „colectare de gunoi”.');
+
+INSERT INTO `LearnJavaDB`.`gcinfo` (`title`, `description`)
+VALUES ('Cum lucreaza GC',
+        '
+Colectorul de gunoi folosește un set de algoritmi pentru a determina ce obiecte nu mai sunt folosite și ar trebui să fie colectate.
+Acești algoritmi pot varia în funcție de implementarea mediului de rulare Java, dar în general implică scanarea obiectelor la care
+se poate ajunge din program și urmărirea oricăror referințe la alte obiecte.');
+
+
+
+INSERT INTO `LearnJavaDB`.`gcinfo` (`title`, `description`)
+VALUES ('Cum lucreaza GC',
+        '
+Colectorul de gunoi nu rulează continuu, ci mai degrabă rulează la anumite intervale sau când sistemul este inactiv.
+Puteți utiliza metoda System.gc() pentru a solicita ca garbage collector să ruleze, dar aceasta este doar o sugestie
+pentru mediul de rulare și nu garantează că garbage collector va rula.');
+
+INSERT INTO `LearnJavaDB`.`gcinfo` (`title`, `description`)
+VALUES ('Cum lucreaza GC',
+        '
+În general, colectorul de gunoi ajută la asigurarea faptului că programele Java nu suferă de scurgeri de memorie prin
+eliberarea automată a memoriei care nu mai este utilizată.
+Acest lucru ajută la îmbunătățirea performanței și stabilității programelor Java.');

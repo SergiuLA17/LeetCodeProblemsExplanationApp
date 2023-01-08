@@ -486,4 +486,19 @@ CREATE TABLE `LearnJavaDB`.`yagnianswer`
     PRIMARY KEY (`id`)
 );
 
+CREATE TABLE `LearnJavaDB`.`jmminfo`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `LearnJavaDB`.`gcinfo`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
 

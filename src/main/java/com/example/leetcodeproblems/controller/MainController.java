@@ -456,4 +456,75 @@ public class MainController {
         model = javaService.processModel(model, javaService.findMergeAndRebaseINFO());
         return "index";
     }
+
+    @GetMapping("/ADICinfo")
+    public String ADICinfo(Model model) {
+        model = javaService.processModel(model, javaService.findACIDinfo());
+        return "index";
+    }
+
+    @GetMapping("/NormalFromDB")
+    public String NormalFromDB(Model model) {
+        model = javaService.processModel(model, javaService.findNormalFormInfo());
+        return "index";
+    }
+
+    @GetMapping("/IsolationLevel")
+    public String IsolationLevel(Model model) {
+        model = javaService.processModel(model, javaService.findIsolationLevelInfo());
+        return "index";
+    }
+
+    @GetMapping("/JMMinfo")
+    public String JMMinfo(Model model) {
+        model = javaService.processModel(model, javaService.findJMMinfo());
+        return "index";
+    }
+    @GetMapping("/GarbageCollector")
+    public String GarbageCollector(Model model) {
+        model = javaService.processModel(model, javaService.fincGarbageCOllectorInfo());
+        return "index";
+    }
+
+    @GetMapping("/LyfeCycleBean")
+    public String LyfeCycleBean(Model model) {
+        model = javaService.processModel(model, javaService.lyfeCycleBeanInfo());
+        return "index";
+    }
+
+    @GetMapping("/OMAinfo")
+    public String OMAinfo(Model model) {
+        model = javaService.processModel(model, javaService.findOMAinfp());
+        return "index";
+    }
+
+    @GetMapping("/JPAinfo")
+    public String JPAinfo(Model model) {
+        model = javaService.processModel(model, javaService.findJPAinfo());
+        return "index";
+    }
+
+    @GetMapping("/HibernateInfo")
+    public String HibernateInfo(Model model) {
+        model = javaService.processModel(model, javaService.findHibernateinfo());
+        return "index";
+    }
+
+    @GetMapping("/ExceptionInfo")
+    public String ExceptionInfo(Model model) {
+        model = javaService.processModel(model, javaService.findExceptioninfo());
+        return "index";
+    }
+
+    @GetMapping("/checkedException")
+    public String checkedException(Model model) {
+        model = javaService.processModel(model, javaService.findCheckExceptioRep());
+        return "index";
+    }
+
+    @GetMapping("/ExceptionAnswer")
+    public String exceptionAnswer(Model model) {
+        model = javaService.processModel(model, javaService.findExceptionAnswerInfo());
+        return "index";
+    }
 }
