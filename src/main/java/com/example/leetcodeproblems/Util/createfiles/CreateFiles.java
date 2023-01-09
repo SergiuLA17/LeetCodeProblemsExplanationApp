@@ -4,24 +4,14 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
+
 public class CreateFiles {
-    static final String pathInfo = "src/main/java/com/example/leetcodeproblems/CommonLayer/entity/info/";
-    static final String pathPractice = "src/main/java/com/example/leetcodeproblems/model/entity/practice/";
-    static final String pathSpring = "src/main/java/com/example/leetcodeproblems/model/entity/spring/";
-    static final String pathQuiz = "src/main/java/com/example/leetcodeproblems/CommonLayer/entity/quiz/";
-    static final String pathSql = "src/main/java/com/example/leetcodeproblems/model/entity/sql/";
-
-
-    static final String pathDaoRepInfo= "src/main/java/com/example/leetcodeproblems/DataAccesLayer/repository/info/";
-    static final String pathDaoRepPractice= "src/main/java/com/example/leetcodeproblems/repository/practice/";
-    static final String pathDaoRepSpring= "src/main/java/com/example/leetcodeproblems/repository/spring/";
-    static final String pathQuizRep = "src/main/java/com/example/leetcodeproblems/DataAccesLayer/repository/sql/";
-    static final String pathSqlRep = "src/main/java/com/example/leetcodeproblems/repository/sql/";
 
     public static void main(String[] args) throws IOException {
-        String name = "groupbyinfo";
-//       createFileInfo(name,pathPractice);
-//       createFileRep(name,pathDaoRepPractice);
+        String name = "exceptionanswer";
+       createFileInfo(name, pathEntity.ANSWER.getPath());
+       createFileRep(name, pathRep.ANSWER.getPath());
+
     }
 
 

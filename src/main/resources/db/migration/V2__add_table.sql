@@ -94,23 +94,30 @@ VALUES ('Iterable este interfata care contine o metoda iterator(), aceasta metod
         daca nu mai exista elemente in colectie, next() va arunca exceptia NoSuchElementException.');
 
 INSERT INTO `LearnJavaDB`.`lists` (`title`, `description`)
-VALUES ('List este interfata care extinde interfata Collection.',
-        'List este o colectie care permite elemente duplicate si permite accesarea elementelor prin index.<br>
-        <ul>List contine metodele:
-        <li>get() - returneaza elementul de pe pozitia index,</li>
-        <li>set() - seteaza elementul de pe pozitia index,</li>
-        <li>add() - adauga un element in colectie,</li>
-        <li>indexOf() - returneaza indexul primului element egal cu elementul dat,</li>
-        <li>lastIndexOf() - returneaza indexul ultimului element egal cu elementul dat,</li>
-        <li>listIterator() - returneaza un obiect de tip ListIterator,</li>
-        <li>subList() - returneaza o sublista cu elementele din intervalul (fromIndex, toIndex).</li></ul>
-        <p>List extinde interfetele RandomAccess, Cloneable si Serializable.<br>
-        RandomAccess este o interfata marker care indica ca lista este accesata random, adica elementele nu sunt accesate in ordinea in care sunt adaugate.<br>
-        Cloneable este o interfata marker care indica ca lista poate fi clonata.<br>
-        Serializable este o interfata marker care indica ca lista poate fi serializata.<br>
-        Serializarea representeaza procesul de transformare a unui obiect intr-un sir de biti.<br>
-        Pentru al pastra intr-un file sau pentru a-l transmite pe retea.<br>
-        De la List se extind interfetele ArrayList, LinkedList, Vector si Stack.');
+VALUES ('1)List',
+        '
+Este colectia care stocheaza elmenetele intr-o anumita ordine si permite accesarea lor dupa index.<br>
+Exemple de clase care implementează interfața List includ ArrayList și LinkedList.<br>
+<br>
+<h3>Iată câteva avantaje ale utilizării listelor în programare:</h3><br>
+1)Listele sunt ordonate: Listele mențin ordinea elementelor care le sunt adăugate. Aceasta înseamnă că puteți accesa elementele unei liste după poziția lor (index) în listă.<br>
+2)Listele sunt modificabile: puteți adăuga, elimina și modifica elemente dintr-o listă. Acest lucru face ca listele să fie foarte flexibile și ușor de lucrat.<br>
+3)Listele pot conține orice tip de date: Listele pot conține elemente de orice tip de date, inclusiv numere întregi, numere în virgulă mobilă, șiruri și chiar alte liste.<br>
+4)Listele pot fi repetate cu ușurință: puteți utiliza bucle pentru a repeta elementele unei liste și pentru a efectua acțiuni asupra fiecărui element.<br>
+5)Listele sunt eficiente: Listele sunt implementate folosind matrice, care sunt structuri de date eficiente pentru stocarea și accesarea datelor. Aceasta înseamnă că listele sunt foarte rapide și eficiente pentru stocarea și accesarea unor cantități mari de date.<br>
+6)Listele sunt dinamice: Listele pot crește și micșora după nevoie, ceea ce le face foarte utile pentru stocarea datelor în programe în care cantitatea de date nu este cunoscută în prealabil.<br>
+<br>
+<br>
+<br>
+<h3>Iată câteva potenţiale dezavantaje ale utilizării listelor în programare:</h3><br>
+<br>
+1)Listele pot folosi multă memorie: deoarece listele pot crește și se micșorează dinamic, pot folosi multă memorie, în special pentru listele mari. Aceasta poate fi o problemă dacă lucrați cu memorie limitată sau încercați să optimizați programul pentru performanță.<br>
+2)Listele pot fi mai lente pentru unele operațiuni: unele operațiuni, cum ar fi inserarea sau ștergerea elementelor din mijlocul unei liste, pot fi mai lente în comparație cu alte structuri de date, cum ar fi matrice sau liste legate.<br>
+3)Listele nu sunt potrivite pentru toate tipurile de date: Listele nu sunt cea mai bună alegere pentru structurile de date care trebuie să accepte inserarea sau ștergerea rapidă a elementelor în poziții arbitrare, cum ar fi stivele și cozile. În aceste cazuri, alte structuri de date, cum ar fi linkedList sau matricele, ar putea fi o alegere mai bună.<br>
+<br>
+<br>
+
+');
 
 INSERT INTO `LearnJavaDB`.`arraylists` (`title`, `description`)
 VALUES ('ArrayList este clasa care extinde clasa AbstractList.',
@@ -124,15 +131,31 @@ VALUES ('ArrayList este clasa care extinde clasa AbstractList.',
         ArrayList este reprezentat in memoria calculatorului ca un vector, ce ii permite procesorului de a accesa foarte rapid elementele din memorie');
 
 INSERT INTO `LearnJavaDB`.`sets` (`title`, `description`)
-VALUES ('Set mosteneste Collection.',
-        'Set este o colectie de elemente care nu sunt ordonate si nu sunt indexate.</p>
-        Set nu permite duplicate.<br>
-        -metoda add() este suprascrisa pentru a nu permite duplicate.<br>
-        In set nu putem accesa un element prin index, deoarece nu sunt indexate.<br>
-        Set sunt de tipul HashSet, LinkedHashSet si TreeSet.<br>
-        HashSet este cel mai rapid, dar nu este ordonat.<br>
-        LinkedHashSet este ordonat, dar nu este cel mai rapid.<br>
-        TreeSet este ordonat si este cel mai lent.');
+VALUES ('2)Set',
+        '
+Este interfață care reprezintă o colecție de elemente care nu permite duplicate. <br>
+Exemple de clase care implementează interfața Set includ HashSet și TreeSet.<br>
+<br>
+<h3>Iată câteva avantaje ale utilizării seturilor în programare:</h3><br>
+
+1)Seturile nu permit elemente duplicate: seturile sunt colecții care nu permit elemente duplicate. Acest lucru face seturile utile pentru stocarea datelor acolo unde este important să se asigure că fiecare element este unic.<br>
+2)Seturile sunt eficiente pentru testele de membru: seturile oferă teste rapide de apartenență, ceea ce înseamnă că puteți verifica rapid dacă un element este sau nu într-un set. Acest lucru este util pentru sarcini precum filtrarea duplicatelor dintr-un set de date mare.<br>
+3)Seturile sunt imuabile: seturile sunt imuabile, ceea ce înseamnă că odată ce ați creat un set, nu puteți modifica elementele acestuia. Acesta poate fi un avantaj în anumite situații în care doriți să vă asigurați că elementele setului nu se schimbă.<br>
+4)Seturile sunt sigure pentru fire: seturile sunt sigure pentru fire, ceea ce înseamnă că mai multe fire de execuție pot accesa și modifica un set simultan, fără a provoca conflicte. Acest lucru face seturile utile pentru programarea concomitentă.<br>
+5)Seturile pot fi utilizate cu alte colecții Java: seturile pot fi utilizate cu alte colecții Java, cum ar fi liste și hărți, pentru a efectua operațiuni de setare, cum ar fi intersecția, unirea și diferența.<br>
+6)Seturile sunt ușor de utilizat: seturile sunt simplu de utilizat și necesită cod minim pentru a implementa operațiuni comune, cum ar fi adăugarea și eliminarea elemetelor, testarea apartenenței și iterarea elementelor setului.<br>
+<br>
+<br>
+<h3>Iată câteva dezavantaje potențiale ale utilizării seturilor în programare:</h3><br>
+<br>
+1)Seturile nu mențin ordinea elementelor: Seturile nu mențin ordinea elementelor care le sunt adăugate. Aceasta înseamnă că nu puteți accesa elementele unui set prin poziția lor (index) în set.<br>
+2)Seturile nu sunt potrivite pentru toate tipurile de date: seturile nu sunt cea mai bună alegere pentru structurile de date care trebuie să accepte inserarea sau ștergerea rapidă a elementelor în poziții arbitrare, cum ar fi stivele și cozile. În aceste cazuri, alte structuri de date, cum ar fi listele legate sau matricele, ar putea fi o alegere mai bună.<br>
+3)Seturile nu permit elemente duplicate: deși acesta este, de asemenea, un avantaj al seturilor, poate fi un dezavantaj în anumite situații în care doriți să permiteți elemente duplicate.<br>
+4)Seturile pot folosi multă memorie: seturile pot folosi multă memorie, în special pentru seturile mari. Aceasta poate fi o problemă dacă lucrați cu memorie limitată sau încercați să optimizați programul pentru performanță.<br>
+5)Seturile pot fi mai lente pentru unele operațiuni: unele operații, cum ar fi inserarea sau ștergerea elementelor dintr-un set, pot fi mai lente în comparație cu alte structuri de date, cum ar fi matrice sau liste legate.<br>
+<br>
+<br>
+');
 
 INSERT INTO `LearnJavaDB`.`convertstringtoarrtolist` (`title`, `description`)
 VALUES ('Convertarea String array to List array .',
@@ -467,3 +490,233 @@ Comanda:
 <img class = "center zoom"alt="" src="../photo/practiceSql/img_3.png">
 
 ');
+
+INSERT INTO `LearnJavaDB`.`countinfo` (`title`, `description`)
+VALUES ('COUNT() este o functie SQL care numara randurile care indeplinesc o anumita conditie. ',
+        '
+Exemplu:<br>
+<br>
+SELECT COUNT(*) FROM users WHERE age > 30;<br>
+<br>
+Această instrucțiune SELECT ar număra numărul de rânduri din tabelul utilizatorilor în care coloana de vârstă este mai mare de 30.<br>
+Funcția COUNT(*) numără toate rândurile din tabel, indiferent dacă acestea conțin o valoare NULL sau nu.<br>
+<br>
+De asemenea, puteți utiliza funcția COUNT() pentru a număra numărul de rânduri care au o anumită valoare într-o anumită coloană.<br>
+<br>
+De exemplu:<br>
+<br>
+SELECT COUNT(*) FROM users WHERE gender = ''female'';<br>
+Această instrucțiune SELECT ar număra numărul de rânduri din tabelul utilizatori în care coloana de gen are valoarea „femeie”.<br>
+<br>
+De asemenea, puteți utiliza funcția COUNT() în combinație cu alte funcții și clauze, cum ar fi clauza GROUP BY și clauza HAVING, pentru a efectua interogări mai avansate.<br>
+');
+
+
+INSERT INTO `LearnJavaDB`.`groupbyinfo` (`title`, `description`)
+VALUES ('Group By este opratorul care se foloseste cu requestul SELECT, DELETE si UPDATE pentru a grupa randuri dupa o anumita coloana sau coloane.',
+        '
+Exemplu:
+<br>
+SELECT department, COUNT(*) as num_employees<br>
+FROM employees<br>
+GROUP BY department;<br>
+<br>
+Această interogare va selecta toate valorile unice din coloana departamentului și va număra numărul de angajați pentru fiecare departament.<br>
+Rezultatul va fi un tabel cu două coloane: departament și num_angajați.<br>
+
+
+<img class = "center zoom"alt="" src="../photo/groupby/img.png">
+In exemplul dat, am grupat toate randurile existente, si ca rezultat, s-a afisat toate campurile unice.
+Daca vrem sa aflam de cate ori fiecare camp apare, putem folosi functia count()
+<img class = "center zoom"alt="" src="../photo/groupby/img_1.png">
+<br>
+<br>
+<br>
+<br>
+
+
+');
+
+INSERT INTO `LearnJavaDB`.`queueinfo` (`title`, `description`)
+VALUES ('3)Queue',
+        '
+Este interfață care reprezintă o colecție de elemente care sunt procesate într-o anumită ordine, de obicei primul intrat, primul ieșit (FIFO). Exemple de clase care implementează interfața Queue includ ArrayDeque și LinkedList.
+
+<h3>Iată câteva avantaje ale utilizării cozilor în programare:</h3>
+1)Cozile sunt structuri de date primul intrat, primul ieșit (FIFO): cozile sunt structuri de date primul intrat, primul ieșit, ceea ce înseamnă că primul element adăugat la coadă este și primul care trebuie eliminat. Acest lucru face cozile utile pentru sarcini precum programarea sarcinilor, unde ordinea de execuție este importantă.<br>
+2)Cozile pot fi folosite pentru a stoca date temporar: Cozile pot fi folosite pentru a stoca datele temporar în timp ce acestea așteaptă să fie procesate sau transmise. Acest lucru este util în scenariile în care datele trebuie să fie stocate temporar înainte de a fi procesate.<br>
+3)Cozile pot fi folosite pentru comunicarea între fire: cozile pot fi folosite pentru comunicarea între fire, unde un fir poate adăuga date la coadă, iar un alt thread poate elimina și procesa datele. Acest lucru poate fi util pentru sarcini precum problemele producător-consumator.</br>
+4)Cozile sunt ușor de utilizat: cozile sunt simplu de utilizat și necesită cod minim pentru a implementa operațiuni obișnuite, cum ar fi adăugarea și eliminarea elementelor, testarea apartenenței și iterarea elementelor din coadă.<br>
+5)Cozile pot fi folosite cu alte colecții Java: Cozile pot fi utilizate cu alte colecții Java, cum ar fi liste și seturi, pentru a efectua operațiuni de coadă, cum ar fi inserarea și eliminarea elementelor din partea din față și din spate a cozii.<br>
+6)Cozile sunt eficiente: Cozile sunt implementate folosind matrice sau liste legate, care sunt structuri de date eficiente pentru stocarea și accesarea datelor. Aceasta înseamnă că cozile sunt foarte rapide și eficiente pentru stocarea și accesarea unor cantități mari de date.<br>
+<br>
+<br>
+<h3>Iată câteva dezavantaje potențiale ale utilizării cozilor în programare:</h3><br>
+1)Cozile nu permit acces aleatoriu: Cozile nu permit acces aleatoriu la elemente, ceea ce înseamnă că nu puteți accesa elementele unei cozi prin poziția (indexul) lor în coadă. Puteți accesa doar elementele din față și din spate ale cozii.<br>
+2)Cozile pot folosi multă memorie: Cozile pot folosi multă memorie, în special pentru cozile mari. Aceasta poate fi o problemă dacă lucrați cu memorie limitată sau încercați să optimizați programul pentru performanță.<br>
+3)Cozile pot fi mai lente pentru unele operațiuni: unele operații, cum ar fi inserarea sau ștergerea elementelor din mijlocul unei cozi, pot fi mai lente în comparație cu alte structuri de date, cum ar fi matrice sau liste legate.<br>
+4)Cozile nu sunt potrivite pentru toate tipurile de date: Cozile nu sunt cea mai bună alegere pentru structurile de date care trebuie să accepte inserarea sau ștergerea rapidă a elementelor în poziții arbitrare, cum ar fi stivele și seturile. În aceste cazuri, alte structuri de date, cum ar fi listele legate sau matricele, ar putea fi o alegere mai bună.<br>
+<br>
+<br>
+');
+
+
+
+INSERT INTO `LearnJavaDB`.`dequeinfo` (`title`, `description`)
+VALUES ('4)Dequeue',
+        '
+Este interfață care reprezintă o coadă cu două capete, care este o coadă care permite adăugarea sau eliminarea elementelor de la fiecare capăt.<br>
+Exemple de clase care implementează interfața Deque includ ArrayDeque și LinkedList.<br>
+
+<h3>Iată câteva avantaje ale utilizării deques (cozi duble) în programare:</h3><br>
+1)Deques permite inserarea și ștergerea la ambele capete: Deques permite inserarea și ștergerea elementelor la ambele capete ale cozii, ceea ce le face mai flexibile decât cozile obișnuite care permit doar inserarea și ștergerea la un capăt.<br>
+2)Deques-urile pot fi folosite ca stive sau cozi: Deques-urile pot fi folosite fie ca stive (structuri de date ultimul intrat, primul ieșit), fie ca cozi (structuri de date primul intrat, primul ieșit), în funcție de modul în care sunt utilizate. Acest lucru face deques structuri de date foarte versatile.<br>
+3)Deques permite inserarea și ștergerea eficientă: Deques permite inserarea și ștergerea eficientă a elementelor la ambele capete, ceea ce le face potrivite pentru sarcini precum programarea sarcinilor, unde elementele trebuie inserate și șterse frecvent.<br>
+4)Deques poate fi folosit cu alte colecții Java: Deques poate fi folosit cu alte colecții Java, cum ar fi liste și seturi, pentru a efectua operațiuni deque, cum ar fi inserarea și eliminarea elementelor din față și din spate a deque.<br>
+5)Deques-urile sunt eficiente: Deques-urile sunt implementate folosind matrice sau liste legate, care sunt structuri de date eficiente pentru stocarea și accesarea datelor. Aceasta înseamnă că decurile sunt foarte rapide și eficiente pentru stocarea și accesarea unor cantități mari de date.<br>
+6)Deque-urile sunt ușor de utilizat: Deque-urile sunt simplu de utilizat și necesită cod minim pentru a implementa operațiuni comune, cum ar fi adăugarea și eliminarea elementelor, testarea apartenenței și iterarea elementelor deque-ului.<br>
+<br>
+<br>
+<h3>Iată câteva dezavantaje potențiale ale utilizării deques (cozi duble) în programare:</h3><br>
+1)Deques poate folosi multă memorie: Deques poate folosi multă memorie, în special pentru deques mari. Aceasta poate fi o problemă dacă lucrați cu memorie limitată sau încercați să optimizați programul pentru performanță.<br>
+2)Deque-urile pot fi mai lente pentru unele operațiuni: unele operațiuni, cum ar fi inserarea sau ștergerea elementelor din mijlocul unei deque, pot fi mai lente în comparație cu alte structuri de date, cum ar fi matrice sau liste legate.<br>
+3)Deque-urile nu sunt potrivite pentru toate tipurile de date: Deque-urile nu sunt cea mai bună alegere pentru structurile de date care trebuie să accepte inserarea sau ștergerea rapidă a elementelor în poziții arbitrare, cum ar fi seturile. În aceste cazuri, alte structuri de date, cum ar fi listele legate sau matricele, ar putea fi o alegere mai bună.<br>
+4)Deques nu permit acces aleator: Deques nu permit acces aleator la elemente, ceea ce înseamnă că nu puteți accesa elementele unui deque prin poziția (indexul) lor în deque. Puteți accesa doar elementele din față și din spate ale deque-ului.<br>
+<br>
+<br>
+');
+
+INSERT INTO `LearnJavaDB`.`mapinfo` (`title`, `description`)
+VALUES ('5)Map',
+        '
+Map: o interfață care reprezintă o colecție de perechi cheie-valoare, în care fiecare cheie este unică.<br>
+Exemple de clase care implementează interfața Map includ HashMap, TreeMap și LinkedHashMap.<br>
+
+<h3>Hărțile reprezintă o structură de date utilă pentru stocarea și organizarea datelor, deoarece oferă următoarele avantaje:</h3><br>
+
+1)Căutări rapide: maps vă permit să preluați eficient valoarea asociată cu o anumită cheie. Acest lucru se datorează faptului că maps sunt de obicei implementate folosind tabele hash sau alte structuri de date care permit căutări rapide.
+2)Inserări și ștergeri rapide: maps vă permit, de asemenea, să inserați și să ștergeți rapid perechi cheie-valoare. Acest lucru este util pentru situațiile în care trebuie să adăugați sau să eliminați frecvent date de pe map.
+3)Flexibilitate: maps pot stoca date de orice tip atât ca chei, cât și ca valori, ceea ce le face o structură de date foarte flexibilă. Acest lucru vă permite să utilizați map pentru a stoca o mare varietate de date, inclusiv șiruri de caractere, numere întregi, obiecte și multe altele.
+4)Ușor de utilizat: maps sunt ușor de utilizat și de înțeles și oferă o modalitate convenabilă de a stoca și de a prelua date.
+În general, maps sunt o structură de date utilă pentru stocarea și organizarea datelor și sunt utilizate pe scară largă în multe aplicații.
+<br>
+<br>
+<h3>Dezavantajele utilizării map-urilor în programare sunt:</h3><br>
+1)Fără ordine: maps nu mențin ordinea perechilor cheie-valoare. Aceasta înseamnă că elementele dintr-o map nu pot fi stocate sau preluate într-o anumită ordine. Dacă trebuie să mențineți ordinea elementelor, poate doriți să luați în considerare utilizarea unei structuri de date diferite, cum ar fi o listă sau o coadă.
+2)Operații limitate: maps vă permit doar să efectuați operațiuni de bază, cum ar fi inserarea, ștergerea și căutarea perechilor cheie-valoare. Dacă trebuie să efectuați operațiuni mai avansate asupra datelor dvs., cum ar fi sortarea sau filtrarea, poate fi necesar să utilizați o structură de date diferită sau să scrieți cod suplimentar pentru a efectua aceste operațiuni.
+3)Coliziune hash: maps care utilizează tabele hash pentru a stoca date pot suferi de coliziuni hash, unde două chei diferite sunt mapate la aceeași valoare hash. Acest lucru poate reduce performanța hărții și poate necesita o procesare suplimentară pentru a rezolva coliziunea.
+4)Suprafața de memorie: maps pot necesita o cantitate semnificativă de memorie pentru a stoca cheile și valorile, mai ales dacă cheile și valorile sunt obiecte mari. Acest lucru poate fi o îngrijorare în situațiile în care trebuie să stocați o cantitate mare de date sau să aveți o memorie limitată disponibilă.
+În general, maps sunt o structură de date utilă pentru multe aplicații, dar este posibil să nu fie cea mai bună alegere pentru fiecare situație. Este important să luați în considerare compromisurile și să alegeți structura de date care este cea mai potrivită pentru nevoile dvs.
+');
+
+INSERT INTO `LearnJavaDB`.`sortedmapinfo` (`title`, `description`)
+VALUES ('6)Sorted Mad',
+        '
+Este interfață care extinde interfața Hartă și reprezintă o hartă care este sortată pe baza ordonării naturale a cheilor sale sau pe baza unui comparator personalizat.
+Clasa TreeMap implementează interfața SortedMap.
+
+<h3>Iată câteva avantaje ale utilizării hărților sortate în programare:</h3><br>
+SortedMap  stochează perechi cheie-valoare într-o ordine sortată: sortedMaps sunt hărți care stochează date ca perechi cheie-valoare într-o ordine sortată, pe baza cheilor. Acest lucru vă permite să accesați și să manipulați datele din hartă într-o ordine sortată.<br>
+SortedMap  sunt eficiente: sortedMaps sunt implementate folosind structuri arborescente, cum ar fi arbori roșu-negru, care sunt structuri de date eficiente pentru stocarea și accesarea datelor într-o ordine sortată. Aceasta înseamnă că sortedMaps sunt foarte rapide și eficiente pentru stocarea și accesarea unor cantități mari de date.<br>
+SortedMap  sunt flexibile: sortedMaps pot stoca orice tip de date ca chei și valori, ceea ce le face foarte flexibile și ușor de utilizat.<br>
+SortedMap  pot fi utilizate cu alte colecții Java: sortedMaps pot fi utilizate cu alte colecții Java, cum ar fi liste și seturi, pentru a efectua operațiuni pe sortedMaps, cum ar fi filtrarea, gruparea și sortarea datelor.<br>
+SortedMap  sunt ușor de utilizat: sortedMaps sunt simplu de utilizat și necesită cod minim pentru a implementa operațiuni comune, cum ar fi adăugarea și eliminarea perechilor cheie-valoare, testarea apartenenței și iterarea elementelor sortedMaps.<br>
+SortedMap  sunt sigure pentru fire: sortedMaps sunt sigure pentru fire, ceea ce înseamnă că mai multe fire pot accesa și modifica o hartă sortată simultan, fără a provoca conflicte. Acest lucru face hărțile sortate utile pentru programarea concomitentă.<br>
+<br>
+<br>
+<h3>Iată câteva dezavantaje potențiale ale utilizării hărților sortate în programare:</h3><br>
+SortedMap pot folosi multă memorie: sortedMaps pot folosi multă memorie, în special pentru sortedMaps mari. Aceasta poate fi o problemă dacă lucrați cu memorie limitată sau încercați să optimizați programul pentru performanță.<br>
+SortedMap pot fi mai lente pentru unele operațiuni: unele operații, cum ar fi inserarea sau ștergerea elementelor dintr-o hartă sortată, pot fi mai lente în comparație cu alte structuri de date, cum ar fi matrice sau liste legate.<br>
+SortedMap nu sunt potrivite pentru toate tipurile de date: sortedMaps nu sunt cea mai bună alegere pentru structurile de date care trebuie să accepte inserarea sau ștergerea rapidă a elementelor în poziții arbitrare, cum ar fi stivele și cozile. În aceste cazuri, alte structuri de date, cum ar fi listele legate sau matricele, ar putea fi o alegere mai bună.<br>
+SortedMap nu permit chei duplicate: hărțile sortate nu permit chei duplicate, ceea ce înseamnă că nu puteți avea mai multe perechi cheie-valoare cu aceeași cheie într-o hartă sortată. Aceasta poate fi o limitare în anumite situații în care doriți să permiteți chei duplicate.<br>
+<br>
+<br>
+');
+
+INSERT INTO `LearnJavaDB`.`jmminfo` (`title`, `description`)
+VALUES ('JMM - Java Memory Model',
+        '
+Modelul de memorie Java (JMM) este o specificație a modului în care limbajul de programare Java se comportă în ceea ce privește memoria și concurența.
+Definește regulile care guvernează ordinea în care au loc citirile și scrierile la variabilele partajate și specifică circumstanțele în care un fir poate vedea modificările făcute de un alt fir asupra variabilelor partajate.
+');
+
+INSERT INTO `LearnJavaDB`.`jmminfo` (`title`, `description`)
+VALUES ('JMM - Java Memory Model',
+        '
+JMM este conceput pentru a se asigura că programele Java se comportă corect și previzibil, chiar și în prezența mai multor fire care accesează memoria partajată.
+Face acest lucru impunând anumite restricții asupra modului în care firele de execuție pot accesa variabilele partajate și oferind garanții privind vizibilitatea modificărilor făcute de un fir asupra variabilelor partajate către alte fire.');
+
+INSERT INTO `LearnJavaDB`.`jmminfo` (`title`, `description`)
+VALUES ('JMM - Java Memory Model',
+        '
+Modelul de memorie Java (JMM) este o specificație a modului în care limbajul de programare Java se comportă în ceea ce privește memoria și concurența.
+Definește regulile care guvernează ordinea în care au loc citirile și scrierile la variabilele partajate și specifică circumstanțele în care un fir poate vedea modificările făcute de un alt fir asupra variabilelor partajate.
+
+În general, JMM este un concept important în programarea Java, deoarece ajută la asigurarea corectitudinii și predictibilității programelor Java care folosesc concurența.');
+
+
+INSERT INTO `LearnJavaDB`.`gcinfo` (`title`, `description`)
+VALUES ('GC - Garbage Collection',
+        '
+În Java, colectorul de gunoi este un sistem care eliberează automat obiectele care nu mai sunt folosite de program.
+Colectorul de gunoi rulează în fundal și eliberează memorie prin recuperarea obiectelor care nu mai sunt necesare și făcând acea memorie disponibilă pentru alte obiecte.
+
+');
+
+INSERT INTO `LearnJavaDB`.`gcinfo` (`title`, `description`)
+VALUES ('GC - Garbage Collection',
+        '
+În Java, colectorul de gunoi este un sistem care eliberează automat obiectele care nu mai sunt folosite de program.
+Colectorul de gunoi rulează în fundal și eliberează memorie prin recuperarea obiectelor care nu mai sunt necesare și făcând acea memorie disponibilă pentru alte obiecte.
+
+');
+
+INSERT INTO `LearnJavaDB`.`gcinfo` (`title`, `description`)
+VALUES ('GC - Garbage Collection',
+        '
+Colectorul de gunoi nu este un sistem perfect și este posibil ca o aplicație să consume mai multă memorie decât este disponibilă pe sistem.
+În acest caz, aplicația poate arunca o excepție OutOfMemoryError, indicând faptul că colectorul de gunoi nu a reușit să elibereze suficientă memorie pentru a satisface nevoile aplicației.
+');
+
+INSERT INTO `LearnJavaDB`.`gcinfo` (`title`, `description`)
+VALUES ('GC - Garbage Collection',
+        '
+Puteți folosi metoda System.gc() pentru a solicita ca garbage collector să ruleze, dar nu puteți controla direct când rulează garbage collector sau cum își desfășoară activitatea.
+Comportamentul exact al colectorului de gunoi este dependent de implementare și poate varia între diferitele medii de rulare Java.
+');
+
+
+INSERT INTO `LearnJavaDB`.`gcinfo` (`title`, `description`)
+VALUES ('Cum lucreaza GC',
+        '
+Colectorul de gunoi din Java funcționează prin scanarea periodică a obiectelor la care se poate ajunge din program și prin marcarea oricăror obiecte care nu mai sunt utilizate.
+Un obiect nu mai este utilizat dacă nu există referințe la acel obiect din program.');
+
+INSERT INTO `LearnJavaDB`.`gcinfo` (`title`, `description`)
+VALUES ('Cum lucreaza GC',
+        '
+După ce colectorul de gunoi a marcat toate obiectele neutilizate, elimină obiectele marcate din memorie și eliberează memoria care era folosită de acele obiecte.
+Acest proces este cunoscut sub numele de „colectare de gunoi”.');
+
+INSERT INTO `LearnJavaDB`.`gcinfo` (`title`, `description`)
+VALUES ('Cum lucreaza GC',
+        '
+Colectorul de gunoi folosește un set de algoritmi pentru a determina ce obiecte nu mai sunt folosite și ar trebui să fie colectate.
+Acești algoritmi pot varia în funcție de implementarea mediului de rulare Java, dar în general implică scanarea obiectelor la care
+se poate ajunge din program și urmărirea oricăror referințe la alte obiecte.');
+
+
+
+INSERT INTO `LearnJavaDB`.`gcinfo` (`title`, `description`)
+VALUES ('Cum lucreaza GC',
+        '
+Colectorul de gunoi nu rulează continuu, ci mai degrabă rulează la anumite intervale sau când sistemul este inactiv.
+Puteți utiliza metoda System.gc() pentru a solicita ca garbage collector să ruleze, dar aceasta este doar o sugestie
+pentru mediul de rulare și nu garantează că garbage collector va rula.');
+
+INSERT INTO `LearnJavaDB`.`gcinfo` (`title`, `description`)
+VALUES ('Cum lucreaza GC',
+        '
+În general, colectorul de gunoi ajută la asigurarea faptului că programele Java nu suferă de scurgeri de memorie prin
+eliberarea automată a memoriei care nu mai este utilizată.
+Acest lucru ajută la îmbunătățirea performanței și stabilității programelor Java.');
