@@ -22,6 +22,14 @@ CREATE TABLE `LearnJavaDB`.`isolationlevel`
     PRIMARY KEY (`id`)
 );
 
+CREATE TABLE `LearnJavaDB`.`acidanswer`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
 
 
 INSERT INTO `LearnJavaDB`.`acidinfo` (`title`, `description`)
@@ -121,3 +129,30 @@ VALUES ('Serializable:  ',
         '
 Colectorul de gunoi este o parte importantă a mediului de rulare Java, deoarece ajută la prevenirea scurgerilor de memorie prin eliberarea automată a memoriei care nu mai este utilizată.
 Acest lucru este util în special în programele Java de lungă durată, unde cantitatea de memorie utilizată de program poate crește în timp dacă obiectele neutilizate nu sunt eliberate.');
+
+
+INSERT INTO `LearnJavaDB`.`acidanswer` (`title`, `description`)
+VALUES ('ACID ',
+        '
+ACID - sunt o serie de cerinte care salveaza datele in baza de date.
+Aceste cerinte sunt:
+Atomicitate - garanteaza ca o tranzactie este executata in intregime sau nu este executata deloc.
+Transactia reprezinta un grup de requesturi care sunt executate ca un singur request.
+Consistency - garanteaza ca datele din baza de date sunt corecte, adica exista o stare consistenta a bazei, si daca ddupa fiecare tranzactie, baza trebuie sa fie in aceeasi stare consistenta.
+');
+INSERT INTO `LearnJavaDB`.`acidanswer` (`title`, `description`)
+VALUES ('ACID ',
+        '
+Isolation - garanteaza ca tranzactiile sunt executate independent de alte tranzactii, dar aici pot aparea probleme de sincronizare.
+Trebuie de izolat tranzactiile pentru a nu se intampla ca o tranzactie sa citeasca datele inainte ca alta tranzactie sa le modifice.
+
+
+
+Sunt 2 de rezolvare a acestei probleme:
+1.Blocking - atunci cand o tranzactie se executa, datele sunt blocate si nu pot fi modificate de alte tranzactii.
+2.Versioning - atunci cand baza de date  foloseste o versiune a datelor, si cand o tranzactie este executata,
+se creeaza o noua versiune a datelor, si daca o alta tranzactie vrea sa citeasca datele, se va citi versiunea anterioara a datelor.
+
+Durabilitate - garanteaza ca datele sunt salvate permanent in baza de date, chiar daca sistemul de operare sau calculatorul se opreste brusc.
+');
+

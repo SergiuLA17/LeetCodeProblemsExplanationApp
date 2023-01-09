@@ -1,12 +1,3 @@
-CREATE TABLE `LearnJavaDB`.`soapanswer`
-(
-    `id`          INT  NOT NULL AUTO_INCREMENT,
-    `title`       text NULL,
-    `description` text NULL,
-    PRIMARY KEY (`id`)
-);
-
-
 
 INSERT INTO `LearnJavaDB`.`soapanswer` (`title`, `description`)
 VALUES ('SOAP -  Simple Object Access Protocol ',
