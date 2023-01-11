@@ -2,6 +2,7 @@ package com.example.leetcodeproblems.Util.createfiles;
 
 public enum pathRep {
     INFO("src/main/java/com/example/leetcodeproblems/repository/info/"),
+    AlGORITHMS("src/main/java/com/example/leetcodeproblems/repository/algorithms/"),
     PRACTICE("src/main/java/com/example/leetcodeproblems/repository/practice/"),
     SPRING("src/main/java/com/example/leetcodeproblems/repository/spring/"),
     QUIZ("src/main/java/com/example/leetcodeproblems/DataAccesLayer/repository/sql/"),

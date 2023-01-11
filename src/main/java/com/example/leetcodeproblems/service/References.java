@@ -1,6 +1,7 @@
 package com.example.leetcodeproblems.service;
 
 import com.example.leetcodeproblems.repository.Web.*;
+import com.example.leetcodeproblems.repository.algorithms.sortmergeRep;
 import com.example.leetcodeproblems.repository.answer.*;
 import com.example.leetcodeproblems.repository.collections.*;
 import com.example.leetcodeproblems.repository.exception.*;
@@ -190,6 +191,14 @@ public class References {
     private checkRep checkRep;
     @Autowired
     private exceptionanswerRep exceptionanswerRep;
+    @Autowired
+    private acidasnwerRep acidasnwerRep;
+    @Autowired
+    private sortmergeRep sortmergeRep;
+
+    public sortmergeRep getSortmergeRep() { return sortmergeRep; }
+
+    public acidasnwerRep getAcidasnwerRep() {return acidasnwerRep;}
 
     public exceptionanswerRep getExceptionanswerRep() {return exceptionanswerRep;}
 

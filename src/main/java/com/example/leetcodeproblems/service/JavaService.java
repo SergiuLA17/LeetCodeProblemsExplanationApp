@@ -2,6 +2,7 @@ package com.example.leetcodeproblems.service;
 
 import com.example.leetcodeproblems.model.entity.Web.restinfo;
 import com.example.leetcodeproblems.model.entity.Web.soapinfo;
+import com.example.leetcodeproblems.model.entity.algorithms.sortmerge;
 import com.example.leetcodeproblems.model.entity.answers.*;
 import com.example.leetcodeproblems.model.entity.collections.dequeinfo;
 import com.example.leetcodeproblems.model.entity.collections.mapinfo;
@@ -36,8 +37,9 @@ public class JavaService {
     @Autowired
     References references;
 
+    public Iterable<sortmerge> findSortMergeAll() {return references.getSortmergeRep().findAll();}
 
-
+    public Iterable<acidanswer> findAcidAnswerAll() {return references.getAcidasnwerRep().findAll();}
 
     public Iterable<Java> findJavaAll() {return references.getJavaRepository().findAll();}
 

@@ -527,4 +527,17 @@ public class MainController {
         model = javaService.processModel(model, javaService.findExceptionAnswerInfo());
         return "index";
     }
+
+    @GetMapping("/ACIDanswer")
+    public String ACIDanswer(Model model) {
+        model = javaService.processModel(model, javaService.findAcidAnswerAll());
+        return "index";
+    }
+
+    @GetMapping("/SortMerge")
+    public String SortMerge(Model model) {
+        model = javaService.processModel(model, javaService.findSortMergeAll());
+        return "index";
+    }
+
 }
