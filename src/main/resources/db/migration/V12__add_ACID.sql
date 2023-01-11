@@ -134,25 +134,24 @@ Acest lucru este util în special în programele Java de lungă durată, unde ca
 INSERT INTO `LearnJavaDB`.`acidanswer` (`title`, `description`)
 VALUES ('ACID ',
         '
-ACID - sunt o serie de cerinte care salveaza datele in baza de date.
-Aceste cerinte sunt:
-Atomicitate - garanteaza ca o tranzactie este executata in intregime sau nu este executata deloc.
-Transactia reprezinta un grup de requesturi care sunt executate ca un singur request.
-Consistency - garanteaza ca datele din baza de date sunt corecte, adica exista o stare consistenta a bazei, si daca ddupa fiecare tranzactie, baza trebuie sa fie in aceeasi stare consistenta.
+ACID - sunt o serie de cerinte care salveaza datele in baza de date.<br>
+Aceste cerinte sunt:<br>
+Atomicitate - garanteaza ca o tranzactie este executata in intregime sau nu este executata deloc.<br>
+Transactia reprezinta un grup de requesturi care sunt executate ca un singur request.<br>
+Consistency - garanteaza ca datele din baza de date sunt corecte, adica exista o stare consistenta a bazei, si daca ddupa fiecare tranzactie, baza trebuie sa fie in aceeasi stare consistenta.<br>
 ');
 INSERT INTO `LearnJavaDB`.`acidanswer` (`title`, `description`)
 VALUES ('ACID ',
         '
-Isolation - garanteaza ca tranzactiile sunt executate independent de alte tranzactii, dar aici pot aparea probleme de sincronizare.
-Trebuie de izolat tranzactiile pentru a nu se intampla ca o tranzactie sa citeasca datele inainte ca alta tranzactie sa le modifice.
-
-
-
-Sunt 2 de rezolvare a acestei probleme:
-1.Blocking - atunci cand o tranzactie se executa, datele sunt blocate si nu pot fi modificate de alte tranzactii.
+Isolation - garanteaza ca tranzactiile sunt executate independent de alte tranzactii, dar aici pot aparea probleme de sincronizare.<br>
+Trebuie de izolat tranzactiile pentru a nu se intampla ca o tranzactie sa citeasca datele inainte ca alta tranzactie sa le modifice.<br>
+<br>
+<br>
+Sunt 2 de rezolvare a acestei probleme:<br>
+1.Blocking - atunci cand o tranzactie se executa, datele sunt blocate si nu pot fi modificate de alte tranzactii.<br>
 2.Versioning - atunci cand baza de date  foloseste o versiune a datelor, si cand o tranzactie este executata,
-se creeaza o noua versiune a datelor, si daca o alta tranzactie vrea sa citeasca datele, se va citi versiunea anterioara a datelor.
-
-Durabilitate - garanteaza ca datele sunt salvate permanent in baza de date, chiar daca sistemul de operare sau calculatorul se opreste brusc.
+se creeaza o noua versiune a datelor, si daca o alta tranzactie vrea sa citeasca datele, se va citi versiunea anterioara a datelor.<br>
+<br>
+Durabilitate - garanteaza ca datele sunt salvate permanent in baza de date, chiar daca sistemul de operare sau calculatorul se opreste brusc.<br>
 ');
 

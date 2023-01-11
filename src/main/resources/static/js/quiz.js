@@ -11,7 +11,7 @@ let startScreen = document.querySelector(".start-screen");
 let startButton = document.getElementById("start-button");
 let questionCount;
 let scoreCount = 0;
-let count = 61;
+let count = 1000;
 let countdown;
 //Questions and Options array
 const quizArray = [
@@ -199,7 +199,7 @@ nextBtn.addEventListener(
                 questionCount + 1 + " of " + quizArray.length + " Question";
             //display quiz
             quizDisplay(questionCount);
-            count = 61;
+            count = 1000;
             clearInterval(countdown);
             timerDisplay();
         }
@@ -284,7 +284,7 @@ function initial() {
     quizContainer.innerHTML = "";
     questionCount = 0;
     scoreCount = 0;
-    count = 61;
+    count = 1000;
     clearInterval(countdown);
     timerDisplay();
     quizCreator();
