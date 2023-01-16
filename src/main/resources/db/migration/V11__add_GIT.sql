@@ -14,6 +14,26 @@ CREATE TABLE `LearnJavaDB`.`mergevsrebase`
     PRIMARY KEY (`id`)
 );
 
+CREATE TABLE `LearnJavaDB`.`gitlist`
+(
+    `id`          INT  NOT NULL AUTO_INCREMENT,
+    `title`       text NULL,
+    `description` text NULL,
+    PRIMARY KEY (`id`)
+);
+
+INSERT INTO `LearnJavaDB`.`gitlist` (`title`, `description`)
+VALUES ('GIT',
+        '
+<ul>
+    <li><a href="http://localhost:7777/GITcommands">commands</a></li>
+    <li><a href="http://localhost:7777/MergeAndRebase">merge vs rebase</a></li>
+</ul>
+
+');
+
+
+
 
 INSERT INTO `LearnJavaDB`.`gitcommands` (`title`, `description`)
 VALUES ('GIT',

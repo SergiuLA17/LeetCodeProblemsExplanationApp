@@ -8,9 +8,9 @@ import java.io.IOException;
 public class CreateFiles {
 
     public static void main(String[] args) throws IOException {
-        String name = "sortmerge";
-       createFileInfo(name, pathEntity.ALGORITHMS.getPath());
-       createFileRep(name, pathRep.AlGORITHMS.getPath());
+        String name = "iostream";
+       createFileInfo(name, pathEntity.INFO.getPath());
+       createFileRep(name, pathRep.INFO.getPath());
 
     }
 

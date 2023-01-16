@@ -5,15 +5,14 @@ import com.example.leetcodeproblems.repository.algorithms.sortmergeRep;
 import com.example.leetcodeproblems.repository.answer.*;
 import com.example.leetcodeproblems.repository.collections.*;
 import com.example.leetcodeproblems.repository.exception.*;
-import com.example.leetcodeproblems.repository.git.gitcommandsRep;
-import com.example.leetcodeproblems.repository.git.mergevsrebaseRep;
+import com.example.leetcodeproblems.repository.git.*;
 import com.example.leetcodeproblems.repository.info.*;
-import com.example.leetcodeproblems.repository.patterns.gofinfoRep;
-import com.example.leetcodeproblems.repository.patterns.graspinfoRep;
-import com.example.leetcodeproblems.repository.practice.EnumPracticeRep;
-import com.example.leetcodeproblems.repository.practice.sqlpracticeRep;
+import com.example.leetcodeproblems.repository.multithreading.*;
+import com.example.leetcodeproblems.repository.patterns.*;
+import com.example.leetcodeproblems.repository.practice.*;
 import com.example.leetcodeproblems.repository.principies.dry.dryRep;
 import com.example.leetcodeproblems.repository.principies.kiss.kissinfoRep;
+import com.example.leetcodeproblems.repository.principies.principieslistRep;
 import com.example.leetcodeproblems.repository.principies.solid.*;
 import com.example.leetcodeproblems.repository.principies.yagni.yagniRep;
 import com.example.leetcodeproblems.repository.quiz.QuizRep;
@@ -195,6 +194,83 @@ public class References {
     private acidasnwerRep acidasnwerRep;
     @Autowired
     private sortmergeRep sortmergeRep;
+    @Autowired
+    private datastructureinfoRep datastructureinfoRep;
+    @Autowired
+    private keywordsinfoRep keywordsinfoRep;
+    @Autowired
+    private fieldinfoRep fieldinfoRep;
+    @Autowired
+    private objectinfoRep objectinfoRep;
+    @Autowired
+    private ifelseinfoRep ifelseinfoRep;
+    @Autowired
+    private forinfoRep forinfoRep;
+    @Autowired
+    private foreachinfoRep foreachinfoRep;
+    @Autowired
+    private whileinfoRep whileinfoRep;
+    @Autowired
+    private dowhileinfoRep dowhileinfoRep;
+    @Autowired
+    private loopinfoRep loopinfoRep;
+    @Autowired
+    private iterationinfoRep iterationinfoRep;
+    @Autowired
+    private arraysinfoRep arraysinfoRep;
+    @Autowired
+    private syntaxinfoRep syntaxinfoRep;
+    @Autowired
+    private principieslistRep principieslistRep;
+    @Autowired
+    private patternsListRep patternsListRep;
+    @Autowired
+    private gitlistRep gitlistRep;
+    @Autowired
+    private multithreadinginfoRep multithreadinginfoRep;
+    @Autowired
+    private happensbeforeRep happensbeforeRep;
+    @Autowired
+    private multithreadinglistRep multithreadinglistRep;
+
+
+    public multithreadinglistRep getMultithreadinglistRep() {return multithreadinglistRep;}
+
+    public happensbeforeRep getHappensbeforeRep() {return happensbeforeRep;}
+
+    public multithreadinginfoRep getMultithreadinginfoRep() {return multithreadinginfoRep;}
+
+    public gitlistRep getGitlistRep() {return gitlistRep;}
+
+    public patternsListRep getPatternsListRep() {return patternsListRep;}
+
+    public principieslistRep getPrincipieslistRep() {return principieslistRep;}
+
+    public syntaxinfoRep getSyntaxinfoRep() {return syntaxinfoRep;}
+
+    public arraysinfoRep getArraysinfoRep() {return arraysinfoRep;}
+
+    public iterationinfoRep getIterationinfoRep() {return iterationinfoRep;}
+
+    public loopinfoRep getLoopinfoRep() {return loopinfoRep;}
+
+    public forinfoRep getForinfoRep() {return forinfoRep;}
+
+    public foreachinfoRep getForeachinfoRep() {return foreachinfoRep;}
+
+    public whileinfoRep getWhileinfoRep() {return whileinfoRep;}
+
+    public dowhileinfoRep getDowhileinfoRep() {return dowhileinfoRep;}
+
+    public ifelseinfoRep getIfelseinfoRep() {return ifelseinfoRep;}
+
+    public objectinfoRep getObjectinfoRep() {return objectinfoRep;}
+
+    public fieldinfoRep getFieldinfoRep() {return fieldinfoRep;}
+
+    public keywordsinfoRep getKeywordsinfoRep() {return keywordsinfoRep;}
+
+    public datastructureinfoRep getDatastructureinfoRep() {return datastructureinfoRep;}
 
     public sortmergeRep getSortmergeRep() { return sortmergeRep; }
 

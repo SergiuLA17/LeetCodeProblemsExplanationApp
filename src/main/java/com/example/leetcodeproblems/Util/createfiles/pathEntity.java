@@ -12,6 +12,7 @@ public enum pathEntity {
     PRINCIPIES("src/main/java/com/example/leetcodeproblems/model/entity/principies/"),
     Web("src/main/java/com/example/leetcodeproblems/model/entity/Web/"),
     GIT("src/main/java/com/example/leetcodeproblems/model/entity/git/"),
+    MULTITHREADING("src/main/java/com/example/leetcodeproblems/model/entity/multithreading/"),
     EXCEPTION("src/main/java/com/example/leetcodeproblems/model/entity/exception/"),
     PATTERNS("src/main/java/com/example/leetcodeproblems/model/entity/patterns/");
 
