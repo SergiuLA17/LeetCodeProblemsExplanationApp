@@ -540,4 +540,118 @@ public class MainController {
         return "index";
     }
 
+    @GetMapping("/DataStructures")
+    public String DataStructures(Model model) {
+        model = javaService.processModel(model, javaService.findDataStructureInfo());
+        return "index";
+    }
+
+    @GetMapping("/Keywords")
+    public String Keywords(Model model) {
+        model = javaService.processModel(model, javaService.findKeywordsInfo());
+        return "index";
+    }
+
+    @GetMapping("/Fields")
+    public String Fields(Model model) {
+        model = javaService.processModel(model, javaService.findFieldInfo());
+        return "index";
+    }
+
+    @GetMapping("/Object")
+    public String Object(Model model) {
+        model = javaService.processModel(model, javaService.findObjectInfo());
+        return "index";
+    }
+
+    @GetMapping("/IfElse")
+    public String IfElse(Model model) {
+        model = javaService.processModel(model, javaService.findIfElseInfo());
+        return "index";
+    }
+
+    @GetMapping("/Loops")
+    public String Loops(Model model) {
+        model = javaService.processModel(model, javaService.findLoopInfo());
+        return "index";
+    }
+
+    @GetMapping("/DoWhile")
+    public String DoWhile(Model model) {
+        model = javaService.processModel(model, javaService.findDoWhileInfo());
+        return "index";
+    }
+
+    @GetMapping("/For")
+    public String For(Model model) {
+        model = javaService.processModel(model, javaService.findForInfo());
+        return "index";
+    }
+
+    @GetMapping("/ForEach")
+    public String ForEach(Model model) {
+        model = javaService.processModel(model, javaService.findForEach());
+        return "index";
+    }
+
+    @GetMapping("/While")
+    public String While(Model model) {
+        model = javaService.processModel(model, javaService.findWileInfo());
+        return "index";
+    }
+
+    @GetMapping("/Iteration")
+    public String Iteration(Model model) {
+        model = javaService.processModel(model, javaService.findIterationInfo());
+        return "index";
+    }
+
+    @GetMapping("/Arrays")
+    public String Arrays(Model model) {
+        model = javaService.processModel(model, javaService.findArraysInfo());
+        return "index";
+    }
+
+    @GetMapping("/Syntax")
+    public String Syntax(Model model) {
+        model = javaService.processModel(model, javaService.findSyntaxInfo());
+        return "index";
+    }
+
+    @GetMapping("/PrincipiesList")
+    public String PrincipiesList(Model model) {
+        model = javaService.processModel(model, javaService.findPrincipiesList());
+        return "index";
+    }
+
+    @GetMapping("/PatternList")
+    public String PatternList(Model model) {
+        model = javaService.processModel(model, javaService.findPatternsList());
+        return "index";
+    }
+
+    @GetMapping("/GitList")
+    public String GitList(Model model) {
+        model = javaService.processModel(model, javaService.findGitList());
+        return "index";
+    }
+
+    @GetMapping("/MultiThreading")
+    public String MultiThreading(Model model) {
+        model = javaService.processModel(model, javaService.findMultithreadingInfo());
+        return "index";
+    }
+
+    @GetMapping("/HappensBefore")
+    public String HappensBefore(Model model) {
+        model = javaService.processModel(model, javaService.findHappensBeforeInfo());
+        return "index";
+    }
+
+    @GetMapping("/MultiThreadingList")
+    public String MultiThreadingList(Model model) {
+        model = javaService.processModel(model, javaService.findMultithreadingList());
+        return "index";
+    }
+
 }

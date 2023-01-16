@@ -11,19 +11,23 @@ import com.example.leetcodeproblems.model.entity.collections.sortedmapinfo;
 import com.example.leetcodeproblems.model.entity.exception.check;
 import com.example.leetcodeproblems.model.entity.exception.exception;
 import com.example.leetcodeproblems.model.entity.git.gitcommands;
+import com.example.leetcodeproblems.model.entity.git.gitlist;
 import com.example.leetcodeproblems.model.entity.git.mergevsrebase;
 import com.example.leetcodeproblems.model.entity.info.*;
 import com.example.leetcodeproblems.model.entity.patterns.gofinfo;
 import com.example.leetcodeproblems.model.entity.patterns.graspinfo;
+import com.example.leetcodeproblems.model.entity.patterns.patternslist;
 import com.example.leetcodeproblems.model.entity.practice.enumpractice;
 import com.example.leetcodeproblems.model.entity.practice.sqlpractice;
 import com.example.leetcodeproblems.model.entity.principies.dry.dryinfo;
 import com.example.leetcodeproblems.model.entity.principies.kiss.kissinfo;
+import com.example.leetcodeproblems.model.entity.principies.principieslist;
 import com.example.leetcodeproblems.model.entity.principies.solid.*;
 import com.example.leetcodeproblems.model.entity.principies.yagni.yagniinfo;
 import com.example.leetcodeproblems.model.entity.quiz.quiz;
 import com.example.leetcodeproblems.model.entity.spring.*;
 import com.example.leetcodeproblems.model.entity.sql.*;
+import com.example.leetcodeproblems.model.entity.multithreading.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
@@ -36,6 +40,45 @@ import java.util.List;
 public class JavaService {
     @Autowired
     References references;
+
+    public Iterable<multithreadinglist> findMultithreadingList() {return references.getMultithreadinglistRep().findAll();}
+
+    public Iterable<happensbefore> findHappensBeforeInfo() {return references.getHappensbeforeRep().findAll();}
+
+
+    public Iterable<multithreadinginfo> findMultithreadingInfo() {return references.getMultithreadinginfoRep().findAll();}
+
+    public Iterable<gitlist> findGitList() {return references.getGitlistRep().findAll();}
+
+    public Iterable<patternslist> findPatternsList() {return references.getPatternsListRep().findAll();}
+
+    public Iterable<principieslist> findPrincipiesList() {return references.getPrincipieslistRep().findAll();}
+
+    public Iterable<syntaxinfo> findSyntaxInfo() {return references.getSyntaxinfoRep().findAll();}
+
+    public Iterable<arraysinfo> findArraysInfo() {return references.getArraysinfoRep().findAll();}
+
+    public Iterable<iterationinfo> findIterationInfo() {return references.getIterationinfoRep().findAll();}
+
+    public Iterable<whileinfo> findWileInfo() {return references.getWhileinfoRep().findAll();}
+
+    public Iterable<dowhileinfo> findDoWhileInfo() {return references.getDowhileinfoRep().findAll();}
+
+    public Iterable<foreachinfo> findForEach() {return references.getForeachinfoRep().findAll();}
+
+    public Iterable<forinfo> findForInfo() {return references.getForinfoRep().findAll();}
+
+    public Iterable<loopinfo> findLoopInfo() {return references.getLoopinfoRep().findAll();}
+
+    public Iterable<ifelseinfo> findIfElseInfo() {return references.getIfelseinfoRep().findAll();}
+
+    public Iterable<objectinfo> findObjectInfo() {return references.getObjectinfoRep().findAll();}
+
+    public Iterable<fieldinfo> findFieldInfo() {return references.getFieldinfoRep().findAll();}
+
+    public Iterable<keywordsinfo> findKeywordsInfo() {return references.getKeywordsinfoRep().findAll();}
+
+    public Iterable<datastructureinfo> findDataStructureInfo() {return references.getDatastructureinfoRep().findAll();}
 
     public Iterable<sortmerge> findSortMergeAll() {return references.getSortmergeRep().findAll();}
 

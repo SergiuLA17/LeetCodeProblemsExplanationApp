@@ -1,54 +1,31 @@
 package com.example.leetcodeproblems.Util.SortAlghoritmsImpl;
 
-import java.util.Arrays;
 
 public class QuickSort {
-
-
-    public static void main(String[] args) {
-        int[] arr = {11, 52, 23, 44, 34, 76, 17, 28, 49, 10};
-//        int testLen = 10000000;
-//
-//        int[] arr1 = new int[testLen];
-//        int[] arr2 = new int[testLen];
-//
-//        System.out.println("\n-----Random array------");
-//
-//        for (int i = 0; i < testLen; i++) {
-//            arr2[i] = arr1[i] = (int)Math.round(Math.random() * 100000);
-//        }
-
-        System.out.println("Quick sort:");
-        measureTime(() -> quickSort(arr, 0, arr.length - 1));
-
-        System.out.println("Arrays.sort:" + Arrays.toString(arr));
-
-
-    }
 
     public static void quickSort(int[] arr, int from, int to) {
 
         if (from < to) {
 
-            int divideIndex = partition(arr, from, to);
+            int divideIndex = partition(arr, from, to); //indexul care va impari array-ul in 2
 
-            quickSort(arr, from, divideIndex - 1);
+            quickSort(arr, from, divideIndex - 1);  // partea din stanga
 
-            quickSort(arr, divideIndex, to);
+            quickSort(arr, divideIndex, to);            // partea din dreapta
         }
     }
 
     private static int partition(int[] arr, int from, int to) {
-        int rightIndex = to;
-        int leftIndex = from;
-        System.out.println("Current array: " + Arrays.toString(arr));
-        System.out.println("Current array\n");
+        int rightIndex = to;                                            //indexul pana la care se parcurge vectorul
+        int leftIndex = from;                                           //indexul de la care se parcurge vectorul
+//        System.out.println("Current array: " + Arrays.toString(arr));
+//        System.out.println("Current array\n");
         for (int i = from; i <= to; i++) {
-            System.out.print(arr[i]+" ");
+//            System.out.print(arr[i]+" ");
         }
-        System.out.println("\n");
-        int pivot = arr[from + (to - from) / 2];
-        System.out.println("Pivot: " + pivot);
+//        System.out.println("\n");
+        int pivot = arr[from + (to - from) / 2]; //reprezinta elementul dupa care se face
+//        System.out.println("Pivot: " + pivot);
         while (leftIndex <= rightIndex) {
 
             while (arr[leftIndex] < pivot) {
@@ -69,14 +46,15 @@ public class QuickSort {
             }
         }
         return leftIndex;
+        //se returneaza indexul care va fi folosit pentru a imparti vectorul in 2
     }
 
     private static void swap(int[] array, int index1, int index2) {
-        System.out.println("Swap "+array[index1]+" with "+array[index2]);
+//        System.out.println("Swap "+array[index1]+" with "+array[index2]);
         int tmp  = array[index1];
         array[index1] = array[index2];
         array[index2] = tmp;
-        System.out.println("Current after swap: " + Arrays.toString(array));
+//        System.out.println("Current after swap: " + Arrays.toString(array));
     }
 
 
