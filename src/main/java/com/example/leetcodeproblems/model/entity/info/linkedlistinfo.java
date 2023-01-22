@@ -4,5 +4,5 @@ import com.example.leetcodeproblems.model.entity.Tables;
 import jakarta.persistence.Entity;
 
 @Entity
-public class jmminfo extends Tables {
+public class linkedlistinfo extends Tables {
 }

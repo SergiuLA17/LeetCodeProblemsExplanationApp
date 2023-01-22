@@ -1,25 +1,3 @@
-INSERT INTO `LearnJavaDB`.`collectionAnswer` (`title`, `description`)
-VALUES ('Collection este o interfata care defineste un grup de obiecte numite elemente.',
-        '
-Collection este interfata de baza in framework-ul Java Collections.<br>
-Collection ofera metode de lucru cu elemente ca, adaugarea, stergerea, cautarea elmenetelor.<br>
-Cu alte cuvinte Collection repreinta un container care ofera diferite metode de lucru cu elementele care se afla in el. <br>
-Collection ofera mai multe interfete ca:<br>
-');
-
-INSERT INTO `LearnJavaDB`.`collectionAnswer` (`title`, `description`)
-VALUES ('1)List',
-        '
-List este colectia care stcheaza elementele intr-o anumita ordine si elementele se acceseaza dupa index.<br>
-Interfata list se implementeaza in clasele ArrayList si LinkedList.<br>
-Avantajele list sunt mentinerea odrinei elementelor, ce permite accesarea lor dupa index.<br>
-Este foarte flexibila, datorita faptului ca putem adauga, elimina sau modifica elementele. Putem folosi orice tip de date.<br>
-Este rapida si eficienta, deoarece foloseste ca structura de date matrice.<br>
-Sunt dinamice, adica cand nu stim cantitatea de elemente, listele pot fi usor modificate dupa lungime.<br>
-Dinte dezavantaje putem evidentia ca pot folosi multă memorie, daceasta problema apare atunci cand lucram cu memorie limitata sau cand vrem sa optimizam un program.<br>
-Pot fi mai lente in unele operatiuni ca, inserarea sau stergerea elementelor din mijlocul listei.<br>
-
-');
 
 INSERT INTO `LearnJavaDB`.`collectionAnswer` (`title`, `description`)
 VALUES ('2)Set',

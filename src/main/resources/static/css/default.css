@@ -296,3 +296,91 @@ p {
 	justify-content: center;
 	align-items: center;
 }
+
+.bg-black {
+	--tw-bg-opacity: 1;
+	background-color: rgba(0,0,0,var(--tw-bg-opacity));
+}
+.mb-4 {
+	margin-bottom: 1rem;
+}
+.rounded-md {
+	border-radius: .375rem;
+}
+
+.flex {
+	display: flex;
+}
+
+.items-center {
+	align-items: center;
+}
+
+.text-gray-200 {
+	--tw-text-opacity: 1;
+	color: rgba(217,217,227,var(--tw-text-opacity));
+}
+
+.px-4 {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.py-2 {
+	padding-bottom: .5rem;
+	padding-top: .5rem;
+}
+
+.text-xs {
+	font-size: .75rem;
+	line-height: 1rem;
+}
+
+.font-sans {
+	font-family: Söhne, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI
+}
+
+.hljs-attr, .hljs-number, .hljs-selector-attr, .hljs-selector-class, .hljs-selector-pseudo, .hljs-template-variable, .hljs-type, .hljs-variable {
+	color: #e11111;
+}
+.overflow-y-auto {
+	overflow-y:auto
+}
+
+.whitespace-pre-wrap {
+	white-space:pre-wrap
+}
+
+.hljs-comment {
+	color:hsla(0, 0%, 100%, .5)
+}
+.p-4 {
+	padding:1rem
+}
+code {
+	font-size: 87.5%;
+	color: #f5f0f0;
+	word-break: break-word;
+}
+
+code, kbd, pre, samp {
+	font-family: Söhne Mono,Monaco,Andale Mono,Ubuntu Mono,monospace;
+	font-size: 1em;
+}
+
+.hljs-doctag, .hljs-formula, .hljs-keyword, .hljs-literal {
+	color:#2e95d3
+}
+
+.hljs-addition, .hljs-attribute, .hljs-meta-string, .hljs-regexp, .hljs-string {
+	color:#00a67d
+}
+
+.hljs-built_in, .hljs-class .hljs-title {
+	color:#e9950c
+}
+
+pre2 {
+	white-space: pre-wrap;
+
+}

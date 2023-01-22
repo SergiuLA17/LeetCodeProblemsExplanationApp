@@ -86,13 +86,6 @@ CREATE TABLE `LearnJavaDB`.`iterables`
     PRIMARY KEY (`id`)
 );
 
-CREATE TABLE `LearnJavaDB`.`lists`
-(
-    `id`          INT  NOT NULL AUTO_INCREMENT,
-    `title`       text NULL,
-    `description` text NULL,
-    PRIMARY KEY (`id`)
-);
 
 CREATE TABLE `LearnJavaDB`.`arraylists`
 (
@@ -102,13 +95,6 @@ CREATE TABLE `LearnJavaDB`.`arraylists`
     PRIMARY KEY (`id`)
 );
 
-CREATE TABLE `LearnJavaDB`.`sets`
-(
-    `id`          INT  NOT NULL AUTO_INCREMENT,
-    `title`       text NULL,
-    `description` text NULL,
-    PRIMARY KEY (`id`)
-);
 
 CREATE TABLE `LearnJavaDB`.`convertstringtoarrtolist`
 (
@@ -350,14 +336,6 @@ CREATE TABLE `LearnJavaDB`.`collectionanswer`
     PRIMARY KEY (`id`)
 );
 
-CREATE TABLE `LearnJavaDB`.`queueinfo`
-(
-    `id`          INT  NOT NULL AUTO_INCREMENT,
-    `title`       text NULL,
-    `description` text NULL,
-    PRIMARY KEY (`id`)
-);
-
 CREATE TABLE `LearnJavaDB`.`dequeinfo`
 (
     `id`          INT  NOT NULL AUTO_INCREMENT,
@@ -486,13 +464,6 @@ CREATE TABLE `LearnJavaDB`.`yagnianswer`
     PRIMARY KEY (`id`)
 );
 
-CREATE TABLE `LearnJavaDB`.`jmminfo`
-(
-    `id`          INT  NOT NULL AUTO_INCREMENT,
-    `title`       text NULL,
-    `description` text NULL,
-    PRIMARY KEY (`id`)
-);
 
 CREATE TABLE `LearnJavaDB`.`gcinfo`
 (

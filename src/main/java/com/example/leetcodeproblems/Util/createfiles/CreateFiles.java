@@ -8,13 +8,10 @@ import java.io.IOException;
 public class CreateFiles {
 
     public static void main(String[] args) throws IOException {
-        String name = "iostream";
+        String name = "refactor";
        createFileInfo(name, pathEntity.INFO.getPath());
        createFileRep(name, pathRep.INFO.getPath());
-
     }
-
-
 
     static private void createFileInfo(String fileName, String path) throws IOException {
         File file = new File(path + fileName + ".java");
