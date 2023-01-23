@@ -1,6 +1,5 @@
 package com.example.leetcodeproblems.repository;
 
-import com.example.leetcodeproblems.model.entity.info.refactor;
 import com.example.leetcodeproblems.model.entity.roadmap;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;

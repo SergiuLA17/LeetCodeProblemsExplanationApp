@@ -382,5 +382,12 @@ code, kbd, pre, samp {
 
 pre2 {
 	white-space: pre-wrap;
-
+	font-size: 11pt;
+	color: rgb(255, 255, 255);
 }
+pre3 {
+	white-space: pre-wrap;
+	font-size: 11pt;
+	color: rgb(255, 255, 255);
+}
+
