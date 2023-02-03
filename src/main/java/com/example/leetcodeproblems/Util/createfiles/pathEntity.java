@@ -2,6 +2,7 @@ package com.example.leetcodeproblems.Util.createfiles;
 
 public enum pathEntity {
     INFO("src/main/java/com/example/leetcodeproblems/model/entity/info/"),
+    TOOLS("src/main/java/com/example/leetcodeproblems/model/entity/tools/"),
     ALGORITHMS("src/main/java/com/example/leetcodeproblems/model/entity/algorithms/"),
     PRACTICE("src/main/java/com/example/leetcodeproblems/model/entity/practice/"),
     SPRING("src/main/java/com/example/leetcodeproblems/model/entity/spring/"),
